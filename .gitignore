@@ -40,3 +40,4 @@ secrets/
 !data/processed/tournament/
 !data/processed/temporal/
 !data/dimensions/player_identity_registry.csv
+.vendor/
