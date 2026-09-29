@@ -7,6 +7,5 @@ next-env.d.ts
 npm-debug.log*
 .DS_Store
 
-# third-party visual assets: local prototype only (see WEB_BUILD_REPORT.md)
-/public/assets/map/
-/public/assets/kpl/
+# Runtime assets under public/ must stay in Git so production deployments can
+# serve the same team imagery and map that are available during local previews.
