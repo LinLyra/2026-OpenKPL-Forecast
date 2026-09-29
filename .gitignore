@@ -1,0 +1,42 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+data/raw/external/*
+!data/raw/external/.gitkeep
+data/interim/*
+data/processed/*
+features/**/*.parquet
+models/*.joblib
+reports/audit/*.csv
+reports/audit/*.json
+data/dimensions/*
+!data/dimensions/team_identity_registry.csv
+!data/dimensions/team_season_membership.csv
+reports/benchmark/*.parquet
+reports/data_quality/*.csv
+evaluation/*.parquet
+
+# caches, temp files, OS metadata
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+*.log
+*.tmp
+*.swp
+*~
+Icon?
+
+# credentials / secrets
+.env
+.env.*
+*.pem
+*.key
+secrets/
+
+# v1.0 prospective freeze: processed inputs required to reproduce the frozen forecast
+!data/processed/tournament/
+!data/processed/temporal/
+!data/dimensions/player_identity_registry.csv

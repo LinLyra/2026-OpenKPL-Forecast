@@ -1,0 +1,5 @@
+term,coef,se,z,p_value_normal,note
+intercept,0.03677274077518637,0.0690769841370003,0.5323443290786268,0.5944875351988306,in-sample on out-of-time S1 predictions; slope 1 / intercept 0 = S1 correct
+logit_S1,0.8118771425820885,0.08600661102987192,9.439706237234558,3.7382596826320744e-21,in-sample on out-of-time S1 predictions; slope 1 / intercept 0 = S1 correct
+BO7,-0.011647259022855636,0.19483401630749508,-0.05978041844845743,0.9523305214945901,in-sample on out-of-time S1 predictions; slope 1 / intercept 0 = S1 correct
+BO7_x_logit_S1,1.087353736388236,0.3366198839875407,3.230212438753268,0.0012369826858008319,in-sample on out-of-time S1 predictions; slope 1 / intercept 0 = S1 correct

@@ -1,0 +1,37 @@
+{
+  "created_at": "2026-09-29T00:46:16Z",
+  "prior_locks": {
+    "reports/roster_audit/baseline_lock.json": "3f6c4c5067d36046591bfaca9c659dfcb6070a7835b470c47d375ff7689083f0",
+    "reports/roster_collection/phase_b_lock.json": "573c18cf5007a0e76c401861074551016ca81fcaa7deb48e49cacc5d9b10307d",
+    "reports/player_model/v05_experiment_lock.json": "2feaceffe4c20809b9012dcd504d182a9b8b7585f24ca1ca00205c304dc412b4"
+  },
+  "groups": {
+    "v05_artifacts": {
+      "data/processed/modeling/player_roster_features.parquet": "c67842a41e07546f4b9207f6226805435bac0491eaaf33dd27837e17629aff6d",
+      "data/processed/modeling/player_roster_predictions.parquet": "9bd708c4ce79e7b1e1e1eda9d3ab8138d6119735a908f2560de6cdf2d7d2658b",
+      "reports/player_model/model_metrics.csv": "c514f91335111e756755b54be34dfd80bf077fa67453708ec69427cc53f24c54",
+      "reports/player_model/season_metrics.csv": "33ac18459f25c16c0265471056089879c322c0f682582990d29a0cfcb4ad4235",
+      "reports/player_model/bootstrap_deltas.csv": "39bf4288f21bec97cc5ad25e188c8228d769beacdab0f586d5a2fd2a8c8bfbc2",
+      "reports/player_model/initial_run_metrics.csv": "e605a479626e8df9e804d9d4c20bf6d997bf780d1bd2866511f7dc560783bcfb",
+      "reports/player_model/v05_player_roster_benchmark.md": "28a83f3bbf63e714ac9ee1d8263c41a4b488456bb805783ae049841025430f86"
+    },
+    "draft_feature_inputs": {
+      "data/processed/features/hero_temporal_features.parquet": "e70f8893351b8483e5b7960ebb03bb49001cf502c678ed926a96c0bb177c3357",
+      "data/processed/features/hero_synergy_temporal.parquet": "f4b5bcc78185b0261244de93f85b03edf19147dc46f6e8239eeaa6f28665693d",
+      "data/processed/features/hero_counter_temporal.parquet": "25dec819c24f4cab34e0b80b45576820ab149252a581125f716b5d582e01c98f",
+      "data/processed/features/series_hero_usage.parquet": "c459b60baf05fe9f370312f387fce969015b9fe07e459ffa9789da8ec7b7d050"
+    },
+    "v05_source_code": {
+      "src/openkpl/player_model/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/openkpl/player_model/data.py": "819c228d940e6ace82b1c26c44e2f8c771f63db45c0dc2e84d2088c48e444fd4",
+      "src/openkpl/player_model/experiment.py": "108dc30acbcab2b810f39ae8b1cd6027c41cd9c478dc2593c7ee9fbed0fb8e9e",
+      "src/openkpl/player_model/features.py": "9253170bee08036cca7beacbad29a83046d892ea44caaaedcdd25574a299243f",
+      "src/openkpl/player_model/figures.py": "43fede6008a33a6511df613415b65d079cef71a21dcdb5c71b1384c56af74d2c",
+      "src/openkpl/player_model/lock.py": "743aeb1da1cf9812a76d15db9116a90a34c8f8cc181cf447e57917cfba9c9b33",
+      "src/openkpl/player_model/models.py": "94e7e87e61e170faebe44752a7372d6b49ee9305d9c0e1e75c34608f071e1339",
+      "src/openkpl/player_model/ratings.py": "e2e90126fc7e0799fcf83267066ec1355b792afeb5b26ddfda2ba732c0300dc2",
+      "src/openkpl/player_model/rotation.py": "60f600abe01f48e8ac39414c678d13f06f6a006b9cfed476ae727ce1dc6879cd",
+      "src/openkpl/player_model/run.py": "85aacf241f3cd97480a7820c858ec521c1a2dafb499fdd1b8c07bed5500578bf"
+    }
+  }
+}

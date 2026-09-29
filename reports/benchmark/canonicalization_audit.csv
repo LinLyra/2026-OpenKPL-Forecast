@@ -1,0 +1,2 @@
+﻿total_series,completed_series,resolved_series,unresolved_series,conflicted_series,excluded_series,label_eligible_series,completed_but_excluded_series,canonical_team_count,no_self_play_after_canonicalization,no_duplicate_series_id,no_label_from_status_not_4,winner_is_one_of_two_canonical_teams,no_simultaneous_alias_ambiguity,raw_names_preserved,membership_problems,clean
+1284,1239,1284,0,0,45,1239,0,26,True,True,True,True,True,True,,True

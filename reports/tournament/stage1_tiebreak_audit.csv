@@ -1,0 +1,34 @@
+run,group,boundary,consequence_under_primary,p_tied_on_series_wins,p_resolved_by_game_diff,p_reached_final_fallback
+PRIMARY,MASTER,rank 1 | rank 2,none (Master #1/#2 are symmetric in every draw scenario),0.52242,0.433616,0.088804
+PRIMARY,MASTER,rank 2 | rank 3,seed slot vs no seed slot,0.543413,0.438702,0.104711
+PRIMARY,MASTER,rank 3 | rank 4,"none (both direct, unseeded)",0.526142,0.424632,0.10151
+PRIMARY,MASTER,rank 4 | rank 5,direct knockout vs breakthrough,0.467601,0.38242,0.085181
+PRIMARY,MASTER,rank 5 | rank 6,breakthrough selection order (M5 picks first),0.329844,0.277109,0.052735
+PRIMARY,ELITE,rank 1 | rank 2,direct knockout vs breakthrough,0.384891,0.319577,0.065314
+PRIMARY,ELITE,rank 2 | rank 3,none under ELITE_2_TO_5 (matters only under SELECTION_POOL_ANY),0.509086,0.41187,0.097216
+PRIMARY,ELITE,rank 3 | rank 4,none under ELITE_2_TO_5 (matters only under SELECTION_POOL_ANY),0.552522,0.441381,0.111141
+PRIMARY,ELITE,rank 4 | rank 5,none under ELITE_2_TO_5 (matters only under SELECTION_POOL_ANY),0.555567,0.446646,0.108921
+PRIMARY,ELITE,rank 5 | rank 6,breakthrough vs stage-1 elimination,0.500564,0.416398,0.084166
+PRIMARY,ANY,any consequential boundary,affected probability mass,0.963504,,0.338428
+TIEBREAK_T2_WINS_LOT,MASTER,rank 1 | rank 2,none (Master #1/#2 are symmetric in every draw scenario),0.52242,0.0,0.52242
+TIEBREAK_T2_WINS_LOT,MASTER,rank 2 | rank 3,seed slot vs no seed slot,0.543413,0.0,0.543413
+TIEBREAK_T2_WINS_LOT,MASTER,rank 3 | rank 4,"none (both direct, unseeded)",0.526142,0.0,0.526142
+TIEBREAK_T2_WINS_LOT,MASTER,rank 4 | rank 5,direct knockout vs breakthrough,0.467601,0.0,0.467601
+TIEBREAK_T2_WINS_LOT,MASTER,rank 5 | rank 6,breakthrough selection order (M5 picks first),0.329844,0.0,0.329844
+TIEBREAK_T2_WINS_LOT,ELITE,rank 1 | rank 2,direct knockout vs breakthrough,0.384891,0.0,0.384891
+TIEBREAK_T2_WINS_LOT,ELITE,rank 2 | rank 3,none under ELITE_2_TO_5 (matters only under SELECTION_POOL_ANY),0.509086,0.0,0.509086
+TIEBREAK_T2_WINS_LOT,ELITE,rank 3 | rank 4,none under ELITE_2_TO_5 (matters only under SELECTION_POOL_ANY),0.552522,0.0,0.552522
+TIEBREAK_T2_WINS_LOT,ELITE,rank 4 | rank 5,none under ELITE_2_TO_5 (matters only under SELECTION_POOL_ANY),0.555567,0.0,0.555567
+TIEBREAK_T2_WINS_LOT,ELITE,rank 5 | rank 6,breakthrough vs stage-1 elimination,0.500564,0.0,0.500564
+TIEBREAK_T2_WINS_LOT,ANY,any consequential boundary,affected probability mass,0.963504,,0.963504
+TIEBREAK_T3_WINS_GAMEDIFF_STRENGTH,MASTER,rank 1 | rank 2,none (Master #1/#2 are symmetric in every draw scenario),0.52242,0.433616,0.088804
+TIEBREAK_T3_WINS_GAMEDIFF_STRENGTH,MASTER,rank 2 | rank 3,seed slot vs no seed slot,0.543413,0.438702,0.104711
+TIEBREAK_T3_WINS_GAMEDIFF_STRENGTH,MASTER,rank 3 | rank 4,"none (both direct, unseeded)",0.526142,0.424632,0.10151
+TIEBREAK_T3_WINS_GAMEDIFF_STRENGTH,MASTER,rank 4 | rank 5,direct knockout vs breakthrough,0.467601,0.38242,0.085181
+TIEBREAK_T3_WINS_GAMEDIFF_STRENGTH,MASTER,rank 5 | rank 6,breakthrough selection order (M5 picks first),0.329844,0.277109,0.052735
+TIEBREAK_T3_WINS_GAMEDIFF_STRENGTH,ELITE,rank 1 | rank 2,direct knockout vs breakthrough,0.384891,0.319577,0.065314
+TIEBREAK_T3_WINS_GAMEDIFF_STRENGTH,ELITE,rank 2 | rank 3,none under ELITE_2_TO_5 (matters only under SELECTION_POOL_ANY),0.509086,0.41187,0.097216
+TIEBREAK_T3_WINS_GAMEDIFF_STRENGTH,ELITE,rank 3 | rank 4,none under ELITE_2_TO_5 (matters only under SELECTION_POOL_ANY),0.552522,0.441381,0.111141
+TIEBREAK_T3_WINS_GAMEDIFF_STRENGTH,ELITE,rank 4 | rank 5,none under ELITE_2_TO_5 (matters only under SELECTION_POOL_ANY),0.555567,0.446646,0.108921
+TIEBREAK_T3_WINS_GAMEDIFF_STRENGTH,ELITE,rank 5 | rank 6,breakthrough vs stage-1 elimination,0.500564,0.416398,0.084166
+TIEBREAK_T3_WINS_GAMEDIFF_STRENGTH,ANY,any consequential boundary,affected probability mass,0.963504,,0.338428

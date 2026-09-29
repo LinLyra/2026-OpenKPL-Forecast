@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+data/raw/external/*
+!data/raw/external/.gitkeep
+data/interim/*
+data/processed/*
+features/**/*.parquet
+models/*.joblib
+reports/audit/*.csv
+reports/audit/*.json

@@ -1,0 +1,42 @@
+area,metric,value,denominator,pct,action,notes
+collection,validated_temporal_series_total,1466,,,,
+collection,series_successfully_fetched,1466,1466.0,100.0,,
+collection,series_unsupported,136,1466.0,9.28,,"endpoint answers but returns no lineups (2022S1 schema); counted as fetched, lineup-unsupported"
+collection,series_failed,0,1466.0,0.0,,
+collection,series_not_attempted,0,1466.0,0.0,,
+collection,series_with_retries,7,1466.0,0.48,,
+collection,series_game_count_matches_score,1466,1466.0,100.0,,
+games,games_recovered,6140,6140.0,100.0,,
+games,games_with_complete_5v5_lineups,5555,6140.0,90.47,,
+games,games_missing_players,585,6140.0,9.53,NOT_REPAIRED,anomaly; includes NO_LINEUP 2022S1
+games,games_no_lineup,556,6140.0,9.06,NOT_REPAIRED,anomaly
+games,games_missing_winner,719,6140.0,11.71,NOT_REPAIRED,anomaly
+games,games_missing_winner_with_lineup,163,6140.0,2.65,NOT_REPAIRED,anomaly
+games,games_with_repeated_heroes,35,6140.0,0.57,NOT_REPAIRED,"anomaly; game numbers: {""7"": 35}"
+games,games_with_missing_heroes,9,6140.0,0.15,NOT_REPAIRED,anomaly; empty hero_name / hero_id 0 in source; excluded from hero-keyed statistics
+games,games_with_unknown_role,4443,6140.0,72.36,,positions all 0
+games,games_with_roles_not_1_to_5,64,6140.0,1.04,NOT_REPAIRED,anomaly
+games,games_with_source_battle_id,635,6140.0,10.34,,
+games,games_with_video_id,6133,6140.0,99.89,,
+games,duplicate_game_keys,0,6140.0,0.0,NOT_REPAIRED,anomaly
+players,appearance_rows,55840,,,,
+players,appearances_missing_player_id,29,55840.0,0.05,NOT_REPAIRED,anomaly
+players,appearances_team_unmapped,29,55840.0,0.05,NOT_REPAIRED,anomaly
+players,player_ids,332,,,,
+players,unique_derived_handles,411,,,,
+players,players_with_transfers,128,332.0,38.55,,
+players,identity_review_pairs,2,,,,"same derived handle, different player_id; not merged"
+players,identity_conflicts_same_game,0,2.0,0.0,,
+players,handles_with_unstripped_team_prefix,82,332.0,24.7,NOT_REPAIRED,anomaly; display prefix != source team name
+wzry,unique_exact_match,1942,5586.0,34.77,,
+wzry,multiple_exact_matches,0,5586.0,0.0,,
+wzry,no_match,3314,5586.0,59.33,,
+wzry,unresolved_team_identity,330,5586.0,5.91,,
+wzry,source_conflict,0,5586.0,0.0,,
+wzry,winner_contradictions,0,1942.0,0.0,,
+drafts,identified_games,1942,,,,
+drafts,wzry_bp_picks_differ_from_battle_heroes,1,1942.0,0.05,NOT_REPAIRED,anomaly (WZRY-internal): KPL2023S2M6W2D1#G1
+drafts,draft_events,34951,,,,
+drafts,events_nonstandard_bp_shape,31,34951.0,0.09,NOT_REPAIRED,anomaly
+drafts,events_hero_id_unmapped,6,34951.0,0.02,NOT_REPAIRED,anomaly
+drafts,events_team_unmapped,0,34951.0,0.0,NOT_REPAIRED,anomaly

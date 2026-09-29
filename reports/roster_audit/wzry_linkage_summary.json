@@ -1,0 +1,84 @@
+{
+  "lock_problems": [],
+  "kplow_universe_seasons": [
+    "KPL2022S2",
+    "KPL2023S1",
+    "KPL2023S2",
+    "KPL2024S1",
+    "KPL2024S2",
+    "KPL2024S3",
+    "KPL2025S1",
+    "KPL2025S2",
+    "KPL2025S3",
+    "KPL2026S1",
+    "KPL2026S2"
+  ],
+  "kplow_games_in_universe": 2627,
+  "wzry_rows": 5586,
+  "wzry_team_names_mapped": 10785,
+  "wzry_team_name_slots": 11172,
+  "wzry_unmapped_team_names": [
+    "CW",
+    "DQ",
+    "EMC",
+    "ESG",
+    "GOG",
+    "HH",
+    "HI",
+    "HJG",
+    "MD",
+    "NOVA",
+    "ROX",
+    "TLG",
+    "TY",
+    "VSG",
+    "Wkk",
+    "YYG",
+    "东莞Wz",
+    "喵鱼",
+    "嵊州SZG",
+    "斗鱼XHW",
+    "无锡JXG",
+    "昆山SC",
+    "虎牙小当家",
+    "镇江VTG"
+  ],
+  "wzry_rows_with_unmapped_team": 330,
+  "kplow_unmapped_team_names": [],
+  "hero_names_wzry_not_in_kplow": [
+    "云中君",
+    "亚瑟",
+    "刘备",
+    "司马懿",
+    "妲己",
+    "成吉思汗",
+    "百里玄策",
+    "程咬金",
+    "雅典娜",
+    "高渐离"
+  ],
+  "matched_by_season_F3W": {
+    "KPL2023S1": 560,
+    "KPL2023S2": 555,
+    "KPL2022S2": 27,
+    "KPL2024S1": 26
+  },
+  "F3_unique_matches": 1194,
+  "F3_winner_status": {
+    "AGREE": 1168,
+    "KPLOW_WINNER_BLANK": 26
+  },
+  "F3_unique_matches_by_season": {
+    "KPL2023S1": 569,
+    "KPL2023S2": 555,
+    "KPL2022S2": 43,
+    "KPL2024S1": 27
+  },
+  "wzry_row_vs_chronology_spearman": 0.3709,
+  "wzry_row_order_monotonic_share": 0.0017,
+  "untestable_fingerprints": {
+    "F4_pair_ordered_bp": "kplow has no ban records and pick order only via getSeasonHeroComboMatches (2026 seasons only)",
+    "F5_pair_ordered_bp_final_heroes": "requires F4",
+    "equipment": "kplow getScheduleDetail has no equipment field"
+  }
+}

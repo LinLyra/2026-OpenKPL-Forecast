@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-09-29T01:48:21Z",
+  "n": 1000000,
+  "seed": 20261002,
+  "primary_scenario": {
+    "stage1_tiebreak": "T1_WINS_GAMEDIFF_LOT",
+    "breakthrough_selection": "OPTIMAL_SELECTION",
+    "selection_pool": "ELITE_2_TO_5",
+    "knockout_draw": "K1_SEEDS_OPPOSITE_HALVES",
+    "probability_transform": "PRIMARY"
+  },
+  "af_outcomes": {
+    "strength_last_match_before_cutoff": true,
+    "annual_finals_rows_in_canonical": 0,
+    "post_cutoff_rows_in_canonical": 0,
+    "ok": true
+  },
+  "matrices": {
+    "BO5": {
+      "max_complement_error": 2.220446049250313e-16,
+      "min": 0.060316784852596304,
+      "max": 0.9396832151474037
+    },
+    "BO7": {
+      "max_complement_error": 2.220446049250313e-16,
+      "min": 0.060316784852596304,
+      "max": 0.9396832151474037
+    }
+  },
+  "convergence": {
+    "max_change_500k_to_1M": 0.0010120000000000129,
+    "tolerance": 0.002,
+    "independent_seed_max_abs_diff": {
+      "champion": 0.0006059999999999954,
+      "final": 0.0005370000000000097,
+      "knockout": 0.001825000000000021
+    },
+    "independent_seed_max_z": {
+      "champion": 1.214842938181768,
+      "final": 0.9395058381941785,
+      "knockout": 2.6596731650044427
+    },
+    "converged": true
+  },
+  "ledger": {
+    "status": "verified_existing",
+    "rows": 36,
+    "content_sha256_excluding_generated_at": "dfe42a35d4b9b458928f9ae2c61d3c1a0deacbfcf2ba5a3f7760d4fc47a90638"
+  },
+  "freeze_gate_partial": {
+    "1_identities_resolve": true,
+    "2_stage1_schedule_verified": false,
+    "3_advancement_verified": false,
+    "4_breakthrough_selection_verified": false,
+    "5_draw_bracket_verified": false,
+    "5a_bracket_wiring_status": "SECONDARY_TRANSCRIPTION",
+    "6_no_unresolved_rule_materially_changes_championship": true,
+    "7_tests_pass": null,
+    "8_locks_pass": null,
+    "9_af_outcomes_absent": true
+  },
+  "unresolved_rule_material": false,
+  "sanity_all_passed": true,
+  "lock_after_run": "PASS"
+}

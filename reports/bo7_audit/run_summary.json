@@ -1,0 +1,40 @@
+{
+ "started_at": "2026-09-29T00:58:38Z",
+ "promotion_rule_sha256": "7aa328234a5f50cb6f4ad6e4f7e4eee4596136538ff773b3fa341ce384dc07b9",
+ "lock_created_at": "2026-09-29T00:57:29Z",
+ "bo7_series_all_b5_seasons": 178,
+ "bo7_validation_series": 162,
+ "bo5_validation_series": 1032,
+ "criteria_primary": {
+  "1_oot_logloss_improves": true,
+  "2_brier_not_materially_worse": true,
+  "3_ci_predominantly_below_zero": false,
+  "4_beta_direction_stable": false,
+  "5a_not_single_season_driven": true,
+  "5b_no_high_instability": false,
+  "6_calibration_not_worse": true
+ },
+ "decision": "REJECT_BO7_CORRECTION",
+ "criteria_secondary": {
+  "1_oot_logloss_improves": false,
+  "2_brier_not_materially_worse": false,
+  "3_ci_predominantly_below_zero": false,
+  "4_beta_direction_stable": false,
+  "5a_not_single_season_driven": false,
+  "5b_no_high_instability": false,
+  "6_calibration_not_worse": true
+ },
+ "secondary_passes_all": false,
+ "secondary_beats_primary_95": false,
+ "bo5_control_criteria": {
+  "1_oot_logloss_improves": false,
+  "2_brier_not_materially_worse": true,
+  "3_ci_predominantly_below_zero": false,
+  "4_beta_direction_stable": false,
+  "5a_not_single_season_driven": false,
+  "5b_no_high_instability": true,
+  "6_calibration_not_worse": true
+ },
+ "bo5_control_would_pass_rule": false,
+ "lock_after_run": "verified"
+}

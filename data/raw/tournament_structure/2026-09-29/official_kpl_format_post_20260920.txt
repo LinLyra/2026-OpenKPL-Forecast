@@ -1,0 +1,29 @@
+SOURCE: https://news.qq.com/rain/a/20260920A09UIC00
+PUBLISHER: 王者荣耀职业联赛官方账号 (KPL official account)
+PUBLISHED: 2026-09-20 16:20 (Asia/Shanghai)
+RETRIEVED: 2026-09-29 (agent WebFetch; verbatim text excerpt of the fetched page)
+NOTE: the Stage 1 schedule itself is published only as an image ("赛事日历及擂台赛赛程详见长图"); its text is not in this post.
+
+2026KPL年度总决赛赛程赛制、赛事日历正式公布！
+
+【赛事时间】
+
+赛事日历及擂台赛赛程详见长图
+
+✨擂台赛： 10月2日-10月18日
+
+✨突围赛： 10月20日-10月22日
+
+✨淘汰赛： 10月27日-11月8日
+
+✨总决赛： 11月14日
+
+【赛制规则】
+
+✨擂台赛：12支队伍划分为大师组、精英组，进行组外单循环BO5对抗，两个组别独立排名。大师组前四名、精英组第一名晋级淘汰赛；大师组第五、六名，精英组第二至五名进入突围赛。擂台赛每一轮BO5对局里，大师组7人大名单全部选手，都需要至少登场一小局。
+
+✨突围赛：高顺位队伍依次挑选对手，采用BO7（全局BP+巅峰对决）单败赛制，胜者拿到淘汰赛入场资格。
+
+✨淘汰赛：对阵以抽签方式确定，大师组第一、第二名拥有种子签位，全程BO7（全局BP+巅峰对决）双败淘汰制。
+
+✨本次年度总决赛设置7000万人民币总奖金池。

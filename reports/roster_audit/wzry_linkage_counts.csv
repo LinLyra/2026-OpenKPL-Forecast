@@ -1,0 +1,13 @@
+direction,level,rows_total,sample_rows_tested,unique_exact_match,multiple_matches,no_match,fingerprint_not_unique_within_source
+WZRY->kplow,F1_team_pair,5586,5256,0,5000,256,5256
+WZRY->kplow,F2_pair_hero10,5586,5256,1194,0,4062,0
+WZRY->kplow,F3_pair_team_heroes,5586,5256,1194,0,4062,0
+WZRY->kplow,F3W_pair_team_heroes_winner,5586,5256,1168,0,4088,0
+WZRY->kplow,D1_hero10,5586,5586,1194,0,4392,2
+WZRY->kplow,D2_hero_sides,5586,5586,1194,0,4392,2
+kplow(2023 full)->WZRY,F1_team_pair,1136,1136,0,1136,0,1136
+kplow(2023 full)->WZRY,F2_pair_hero10,1136,1129,1124,0,5,0
+kplow(2023 full)->WZRY,F3_pair_team_heroes,1136,1136,1124,0,12,0
+kplow(2023 full)->WZRY,F3W_pair_team_heroes_winner,1136,1127,1115,0,12,0
+kplow(2023 full)->WZRY,D1_hero10,1136,1129,1124,0,5,0
+kplow(2023 full)->WZRY,D2_hero_sides,1136,1136,1124,0,12,0

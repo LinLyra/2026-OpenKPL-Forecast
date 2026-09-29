@@ -1,0 +1,43 @@
+feature,group,class,in_models,note
+expected_core_strength,PLAYER,PRE_SERIES_SAFE,True,
+top5_player_rating_mean,PLAYER,PRE_SERIES_SAFE,True,
+top5_player_rating_sum,PLAYER,PRE_SERIES_SAFE,False,excluded from models: equals 5x top5 mean when the pool has >= 5 players
+recent_player_rating_mean,PLAYER,PRE_SERIES_SAFE,True,
+player_rating_max,PLAYER,PRE_SERIES_SAFE,True,
+player_rating_min,PLAYER,PRE_SERIES_SAFE,True,
+player_rating_std,PLAYER,PRE_SERIES_SAFE,True,
+returning_players_from_previous_series,ROSTER,PRE_SERIES_SAFE,True,
+core5_overlap_previous_series,ROSTER,PRE_SERIES_SAFE,True,
+rolling_unique_players_used,ROSTER,PRE_SERIES_SAFE,True,
+rolling_lineup_changes,ROSTER,PRE_SERIES_SAFE,True,
+rolling_rotation_rate,ROSTER,PRE_SERIES_SAFE,True,
+roster_stability_3_series,ROSTER,PRE_SERIES_SAFE,True,
+roster_stability_5_series,ROSTER,PRE_SERIES_SAFE,True,
+roster_stability_10_series,ROSTER,PRE_SERIES_SAFE,True,
+days_since_player_last_appearance,ROSTER,PRE_SERIES_SAFE,True,
+days_since_team_last_series,ROSTER,PRE_SERIES_SAFE,True,
+new_player_count,ROSTER,PRE_SERIES_SAFE,True,
+recently_returned_player_count,ROSTER,PRE_SERIES_SAFE,True,
+is_first_series_of_season,ROSTER,PRE_SERIES_SAFE,True,
+player6_rating,BENCH,PRE_SERIES_SAFE,True,
+player7_rating,BENCH,PRE_SERIES_SAFE,True,
+bench_mean_rating,BENCH,PRE_SERIES_SAFE,True,
+bench_gap_to_core,BENCH,PRE_SERIES_SAFE,True,
+historical_substitution_frequency,BENCH,PRE_SERIES_SAFE,True,
+historical_performance_when_rotating,BENCH,PRE_SERIES_SAFE,True,
+historical_number_of_players_used,BENCH,PRE_SERIES_SAFE,True,
+player_hero_experience_depth,HERO,PRE_SERIES_SAFE,True,
+player_hero_diversity,HERO,PRE_SERIES_SAFE,True,
+weighted_player_hero_winrate,HERO,PRE_SERIES_SAFE,True,
+weighted_player_hero_games,HERO,PRE_SERIES_SAFE,True,
+team_hero_depth,HERO,PRE_SERIES_SAFE,True,
+hero_pool_concentration,HERO,PRE_SERIES_SAFE,True,
+logit_b5,TEAM,PRE_SERIES_SAFE,True,logit of the frozen v0.3.1 B5 out-of-time prediction
+oracle_actual_lineup_rating_mean,ORACLE,RETROSPECTIVE_ONLY,False,uses the target series' actual lineup; oracle models O1-O3 only
+oracle_actual_lineup_rating_min,ORACLE,RETROSPECTIVE_ONLY,False,uses the target series' actual lineup; oracle models O1-O3 only
+oracle_actual_lineup_rating_max,ORACLE,RETROSPECTIVE_ONLY,False,uses the target series' actual lineup; oracle models O1-O3 only
+oracle_unique_players_used,ORACLE,RETROSPECTIVE_ONLY,False,uses the target series' actual lineup; oracle models O1-O3 only
+oracle_lineup_changes,ORACLE,RETROSPECTIVE_ONLY,False,uses the target series' actual lineup; oracle models O1-O3 only
+oracle_players_entered_after_game1,ORACLE,RETROSPECTIVE_ONLY,False,uses the target series' actual lineup; oracle models O1-O3 only
+oracle_players_a,ORACLE,RETROSPECTIVE_ONLY,False,uses the target series' actual lineup; oracle models O1-O3 only
+oracle_players_b,ORACLE,RETROSPECTIVE_ONLY,False,uses the target series' actual lineup; oracle models O1-O3 only

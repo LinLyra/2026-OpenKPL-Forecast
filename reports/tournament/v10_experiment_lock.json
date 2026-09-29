@@ -1,0 +1,54 @@
+{
+  "created_at": "2026-09-29T01:43:05Z",
+  "prior_locks": {
+    "reports/roster_audit/baseline_lock.json": "3f6c4c5067d36046591bfaca9c659dfcb6070a7835b470c47d375ff7689083f0",
+    "reports/roster_collection/phase_b_lock.json": "573c18cf5007a0e76c401861074551016ca81fcaa7deb48e49cacc5d9b10307d",
+    "reports/player_model/v05_experiment_lock.json": "2feaceffe4c20809b9012dcd504d182a9b8b7585f24ca1ca00205c304dc412b4",
+    "reports/game_draft_model/v06_experiment_lock.json": "66943b1d841594182e63e7365ce8b5204476919a5b4e706f06ec355ad8025320",
+    "reports/bo7_audit/v061_experiment_lock.json": "2d67e583e7c0164c32480fdac5e09ed53150291470a1446d8ff9567f29114791"
+  },
+  "groups": {
+    "v061_outputs": {
+      "reports/bo7_audit/PROMOTION_RULE.md": "7aa328234a5f50cb6f4ad6e4f7e4eee4596136538ff773b3fa341ce384dc07b9",
+      "reports/bo7_audit/bo5_negative_control.csv": "02e4f899b25c17e99d05d6de11593ad6fb355db0595eeaeb47c4c65e995cbf7c",
+      "reports/bo7_audit/bo7_beta_stability.csv": "504c669700767750c9be9a94d8ab538c57ecb3164027e3d4a770168981570d16",
+      "reports/bo7_audit/bo7_bootstrap.csv": "9a94ec02ee42fbca01b981c57bf31c860013014974a69384458e728e6e284ab0",
+      "reports/bo7_audit/bo7_calibration_models.csv": "b92566a490a79fb6f8cdf93015248cc8cedf271645dd61d6a007dcfb30f965ee",
+      "reports/bo7_audit/bo7_drop_one_validation_season.csv": "86e8ce5bb6977bc5e24477cb85c895f3c4f0fddf966c205eedf65b47d1c534e6",
+      "reports/bo7_audit/bo7_favorite_bins.csv": "9d98581c6f6883407185d0faef78ff12ed8675157d31f7d83e441c7325fe0cd8",
+      "reports/bo7_audit/bo7_leave_one_season_out.csv": "78a64b2b373b96e2ffe99425d5ad494ee08232dac69a8ecf4f4d4d3c46812e04",
+      "reports/bo7_audit/bo7_temporal_results.csv": "f9713d611b1ffc84e5b9e188b5cce1b5d9175696b9eeb2909f1377f1ee9e1d6a",
+      "reports/bo7_audit/run_summary.json": "7e8ed4e88339b690f5bf9756de1f690c833ce97917aa6302fd32dc56ff8cfc08",
+      "reports/bo7_audit/v061_bo7_calibration_audit.md": "4035d019d902ce3a89f95559daf447e844a25d0be71305a435e5c9966f8931e5"
+    },
+    "v061_source_code": {
+      "src/openkpl/bo7_audit/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/openkpl/bo7_audit/audit.py": "5c65500c4ad62716e50ca7ba4bba7159d964796cbee2c0a66aee0f275fe20b41",
+      "src/openkpl/bo7_audit/lock.py": "cf9305acfb94ced00d8bc32f0c0469a06d0d5985706b8604a932e9f4630c4865",
+      "src/openkpl/bo7_audit/run.py": "475df12ce227315ef21e4ec6aa2ebc7a01efdd63b23a564758b353f048aa407b"
+    },
+    "b5_inputs": {
+      "data/processed/temporal/v2026_09_28/canonical_series.parquet": "cdc8862ea1a3378c629358191d83de6587a22c616e681fcf9981ce936b83e235",
+      "reports/benchmark/v2026_09_28/hyperparameters.json": "01124d67aebdc3b47e3774ca1d03e1b80a9e7b6bf3dec508f396c5d917164003",
+      "reports/benchmark/v2026_09_28/temporal_predictions.parquet": "b6c770612e8d911bd4ecfe82bc1e1790c5f103a4af7c7797053f85ee27595961",
+      "data/dimensions/team_identity_registry.csv": "176477747ad796a1e6329cdeb2d085ac64f2b249b5f386c1bf18a0a5f057d448",
+      "src/openkpl/modeling/temporal/season_reset.py": "f3e768fc1a10d402675074fd9bf3e58446b7649b5e7b91003c2a4460b3b277e4",
+      "src/openkpl/modeling/temporal/elo.py": "95444bad7df69b9144c10b1b6ad4bf7de74a1d17c3d2303c23167052cdfc51c3",
+      "src/openkpl/modeling/temporal/base.py": "a757c832bfd1f53a9793b835d57ba82bf4b079a1796373472f2978ff53442833"
+    },
+    "tournament_structure": {
+      "config/2026_annual_finals_rules.yaml": "8e28f8d86b048adabd459c93fcbc189ce2f1a370657167fa842aa90afe7d9e1a",
+      "data/raw/tournament_structure/2026-09-29/CAPTURE_MANIFEST.json": "7db000a2774697c5e9b12735de4bcaf4bc9b93455bebc465e261eb026847c0c6",
+      "data/raw/tournament_structure/2026-09-29/kpl_api_probe_20260929.json": "eb5ff4f7ec9076b77681b64fe34214c0f236e0332633cce16fea2c1ba37bd9f2",
+      "data/raw/tournament_structure/2026-09-29/official_kpl_format_post_20260920.txt": "c3d73b2ef92b8b896c8196cd222ca09a32c23a5031d37c9e9bad97b04557b25d",
+      "data/raw/tournament_structure/2026-09-29/official_kpl_participants_post_20260921.txt": "50ca0caf99c0f90c99f870b3e255bdbc4a298f84846e66a9ed0d7b142a576e89",
+      "data/raw/tournament_structure/2026-09-29/secondary_sources_excerpt.txt": "365592fc1c83ca4798b8fd28238e7179e769c2a51ff77c1804a5bdc460c67fc1",
+      "data/raw/tournament_structure/2026-09-29/wikipedia_2026_annual_finals_excerpt.txt": "f45e6e17a69e7820c8ad6fcd078b826edb53e4ab68b449866720c67ca2087cf0"
+    },
+    "frozen_strength": {
+      "data/processed/tournament/frozen_team_strength_2026.parquet": "49cacffc24c1eca84f78e4c1772e38b4a7be0d9ddca09bbdca78d85d69907dc7",
+      "data/processed/tournament/frozen_team_strength_2026.sha256.json": "9d17af12849376275fc2d818e30ed6979c4f7e1fa6381b79ea51ab67e4a5d27e",
+      "data/processed/tournament/annual_finals_2026_teams.parquet": "dc7ed8e697e127fdec968fe76635dec42a0b4ca0e9c5881cc9605723193fc75e"
+    }
+  }
+}

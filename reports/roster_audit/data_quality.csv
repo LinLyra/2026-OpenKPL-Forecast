@@ -1,0 +1,30 @@
+check,n_checked,n_flagged,examples,action,notes
+duplicate series IDs (validated dataset),1466,0,,NOT_REPAIRED,
+"duplicate game IDs (scheduleid, round)",2679,0,,NOT_REPAIRED,
+duplicate battle_id mapping to >1 game,635,0,,NOT_REPAIRED,
+game mapped to >1 battle_id,635,0,,NOT_REPAIRED,
+game without parent series,2679,0,,NOT_REPAIRED,
+duplicate game_number inside series,2679,0,,NOT_REPAIRED,
+game numbers not contiguous 1..N,640,0,,NOT_REPAIRED,
+game count != validated series score,640,0,,NOT_REPAIRED,
+per-game winners inconsistent with series score,619,0,,NOT_REPAIRED,
+games with blank winner,2679,27,KPL2024S1M1W1D1#1; KPL2022S2M1W1D1#1; KPL2022S2M1W1D1#2; KPL2022S2M1W1D1#3; KPL2022S2M1W1D1#4,NOT_REPAIRED,excludes games with no lineup (2022S1 schema)
+games with no lineup,2679,12,KPL2022S1M1W1D1; KPL2022S1M2W4D2; KPL2022S1M3W3D2; KPL2022S1M1W5D1; KPL2022S1M5W4D1,NOT_REPAIRED,"rows present, players empty"
+same player twice for same team/game,2631,0,,NOT_REPAIRED,
+team with !=5 players / not 5v5,2631,4,KPL2023S2M1W1D2#1; KPL2023S2M1W1D2#2; KPL2023S2M1W3D1#1; KPL2023S2M4W3D1#4,NOT_REPAIRED,
+duplicate hero in game,2631,18,KPL2023S1M14W2D1#7; KPL2023S1M14W3D1#7; KPL2023S1M14W4D1#7; KPL2023S1M14W6D1#7; KPL2023S1M14W7D1#7,NOT_REPAIRED,rounds of flagged games: {7: 18}
+player team unknown,2631,0,,NOT_REPAIRED,
+unknown roles (positions all 0),2631,1490,KPL2022S2M10W5D2#1; KPL2022S2M10W5D2#2; KPL2022S2M10W5D2#3; KPL2022S2M10W5D2#4; KPL2022S2M11W5D3#1,NOT_REPAIRED,
+roles not exactly 1..5,2631,33,KPL2025S3M1W2D3#1; KPL2025S3M1W2D3#2; KPL2025S3M1W2D3#3; KPL2025S3M1W2D3#4; KPL2025S3M1W2D3#5,NOT_REPAIRED,
+same player appearing for both teams (series roster),6485,0,,NOT_REPAIRED,
+missing player IDs (game rows),26310,4,KPL2023S2M1W1D2#1; KPL2023S2M1W1D2#2; KPL2023S2M1W3D1#1; KPL2023S2M4W3D1#4,NOT_REPAIRED,
+missing hero IDs (game rows),26310,0,,NOT_REPAIRED,
+game player not in series roster,26310,0,,NOT_REPAIRED,
+impossible negative kills (team totals),1070,0,,NOT_REPAIRED,per-player K/D/A not available
+impossible durations (<300s or >3600s),635,0,,NOT_REPAIRED,
+BP picks inconsistent with final hero lineup,812,0,,NOT_REPAIRED,
+battle result inconsistent with game winner,812,0,,NOT_REPAIRED,
+battle_id epoch prefix date != schedule_date,1070,0,,NOT_REPAIRED,"battle_id prefix interpreted as unix seconds (INFERENCE, consistent on all rows if 0)"
+unstable source IDs (player id -> >1 real name),299,0,,NOT_REPAIRED,
+real name mapped to >1 player id,145,0,,NOT_REPAIRED,could be namesakes; not merged
+validated v0.3 artifacts changed since baseline lock,0,0,,NOT_REPAIRED,

@@ -1,0 +1,644 @@
+{
+  "selection": {
+    "metric": "log_loss (mean, probabilities clipped to [1e-6, 1-1e-6])",
+    "tie_break": "log loss rounded to 1e-10, then Brier rounded to 1e-10, then closeness to the untuned default (K=24, scale=400, rho=1, half_life=inf); remaining exact ties by sorted parameter tuple",
+    "inner_objective": "online one-step-ahead predictions over all development rows before the outer validation start"
+  },
+  "development_cutoff_exclusive": "2026-09-28 00:00:00",
+  "defaults_for_tie_break": {
+    "k": 24.0,
+    "scale": 400.0,
+    "rho": 1.0,
+    "half_life_days": "inf",
+    "lambda_slot": 0.0
+  },
+  "fixed_models": {
+    "B0": {},
+    "B1": {
+      "alpha": 5.0,
+      "beta": 5.0
+    },
+    "B2": {
+      "k": 24.0,
+      "scale": 400.0
+    }
+  },
+  "search_grids": {
+    "B3": {
+      "k": [
+        8.0,
+        12.0,
+        16.0,
+        20.0,
+        24.0,
+        32.0,
+        40.0,
+        48.0,
+        64.0,
+        80.0
+      ],
+      "scale": [
+        200.0,
+        300.0,
+        400.0,
+        600.0
+      ]
+    },
+    "B4": {
+      "k": [
+        8.0,
+        12.0,
+        16.0,
+        20.0,
+        24.0,
+        32.0,
+        40.0,
+        48.0,
+        64.0,
+        80.0
+      ],
+      "half_life_days": [
+        14.0,
+        30.0,
+        60.0,
+        90.0,
+        180.0,
+        365.0,
+        730.0,
+        "inf"
+      ]
+    },
+    "B5": {
+      "k": [
+        8.0,
+        12.0,
+        16.0,
+        20.0,
+        24.0,
+        32.0,
+        40.0,
+        48.0,
+        64.0,
+        80.0
+      ],
+      "rho": [
+        0.0,
+        0.1,
+        0.25,
+        0.4,
+        0.5,
+        0.6,
+        0.75,
+        0.9,
+        1.0
+      ]
+    }
+  },
+  "fixed_within_tuned_models": {
+    "B3": {},
+    "B4": {
+      "scale": 400.0
+    },
+    "B5": {
+      "scale": 400.0
+    }
+  },
+  "fold_level_selections": {
+    "B3": [
+      {
+        "fold_id": "F01",
+        "validation_season": "KPL2022S2",
+        "selected": {
+          "k": 40.0,
+          "scale": 400.0
+        },
+        "inner_n": 136,
+        "inner_log_loss": 0.6748548396416534,
+        "inner_brier": 0.2408412699814392,
+        "n_configs_tied_at_best": 2,
+        "inner_data_through": "2022-05-08 18:00:00",
+        "inner_cutoff_exclusive": "2022-06-08 15:00:00"
+      },
+      {
+        "fold_id": "F02",
+        "validation_season": "KPL2023S1",
+        "selected": {
+          "k": 32.0,
+          "scale": 300.0
+        },
+        "inner_n": 272,
+        "inner_log_loss": 0.6622001106704042,
+        "inner_brier": 0.23471724835436303,
+        "n_configs_tied_at_best": 2,
+        "inner_data_through": "2022-09-03 17:00:00",
+        "inner_cutoff_exclusive": "2023-02-10 15:00:00"
+      },
+      {
+        "fold_id": "F03",
+        "validation_season": "KPL2023S2",
+        "selected": {
+          "k": 40.0,
+          "scale": 400.0
+        },
+        "inner_n": 408,
+        "inner_log_loss": 0.6598644165326099,
+        "inner_brier": 0.23370795937139802,
+        "n_configs_tied_at_best": 2,
+        "inner_data_through": "2023-05-13 18:00:00",
+        "inner_cutoff_exclusive": "2023-06-14 14:00:00"
+      },
+      {
+        "fold_id": "F04",
+        "validation_season": "KPL2024S1",
+        "selected": {
+          "k": 40.0,
+          "scale": 400.0
+        },
+        "inner_n": 544,
+        "inner_log_loss": 0.6541705587076571,
+        "inner_brier": 0.23100034098729266,
+        "n_configs_tied_at_best": 2,
+        "inner_data_through": "2023-09-10 17:00:00",
+        "inner_cutoff_exclusive": "2024-01-31 14:00:00"
+      },
+      {
+        "fold_id": "F05",
+        "validation_season": "KPL2024S2",
+        "selected": {
+          "k": 40.0,
+          "scale": 400.0
+        },
+        "inner_n": 680,
+        "inner_log_loss": 0.6427781691034248,
+        "inner_brier": 0.2255922670029137,
+        "n_configs_tied_at_best": 2,
+        "inner_data_through": "2024-05-18 17:00:00",
+        "inner_cutoff_exclusive": "2024-06-12 14:00:00"
+      },
+      {
+        "fold_id": "F06",
+        "validation_season": "KPL2024S3",
+        "selected": {
+          "k": 40.0,
+          "scale": 400.0
+        },
+        "inner_n": 816,
+        "inner_log_loss": 0.6422930342381561,
+        "inner_brier": 0.22532544817321287,
+        "n_configs_tied_at_best": 2,
+        "inner_data_through": "2024-09-15 18:00:00",
+        "inner_cutoff_exclusive": "2024-10-02 17:00:00"
+      },
+      {
+        "fold_id": "F07",
+        "validation_season": "KPL2025S1",
+        "selected": {
+          "k": 40.0,
+          "scale": 400.0
+        },
+        "inner_n": 869,
+        "inner_log_loss": 0.6398650749270489,
+        "inner_brier": 0.22412469490104728,
+        "n_configs_tied_at_best": 2,
+        "inner_data_through": "2024-11-16 17:30:00",
+        "inner_cutoff_exclusive": "2025-02-12 14:00:00"
+      },
+      {
+        "fold_id": "F08",
+        "validation_season": "KPL2025S2",
+        "selected": {
+          "k": 40.0,
+          "scale": 400.0
+        },
+        "inner_n": 1005,
+        "inner_log_loss": 0.6332625796058369,
+        "inner_brier": 0.22113674180549034,
+        "n_configs_tied_at_best": 2,
+        "inner_data_through": "2025-05-10 18:00:00",
+        "inner_cutoff_exclusive": "2025-06-05 14:00:00"
+      },
+      {
+        "fold_id": "F09",
+        "validation_season": "KPL2025S3",
+        "selected": {
+          "k": 24.0,
+          "scale": 300.0
+        },
+        "inner_n": 1141,
+        "inner_log_loss": 0.6344233719945156,
+        "inner_brier": 0.22193782410377755,
+        "n_configs_tied_at_best": 4,
+        "inner_data_through": "2025-09-07 18:00:00",
+        "inner_cutoff_exclusive": "2025-09-28 14:00:00"
+      },
+      {
+        "fold_id": "F10",
+        "validation_season": "KPL2026S1",
+        "selected": {
+          "k": 40.0,
+          "scale": 400.0
+        },
+        "inner_n": 1194,
+        "inner_log_loss": 0.6276564372029544,
+        "inner_brier": 0.21867158679095333,
+        "n_configs_tied_at_best": 2,
+        "inner_data_through": "2025-11-08 17:30:00",
+        "inner_cutoff_exclusive": "2026-01-14 14:00:00"
+      },
+      {
+        "fold_id": "F11",
+        "validation_season": "KPL2026S2",
+        "selected": {
+          "k": 40.0,
+          "scale": 400.0
+        },
+        "inner_n": 1330,
+        "inner_log_loss": 0.6302969362222373,
+        "inner_brier": 0.21944908189559487,
+        "n_configs_tied_at_best": 2,
+        "inner_data_through": "2026-04-11 17:00:00",
+        "inner_cutoff_exclusive": "2026-06-17 14:00:00"
+      }
+    ],
+    "B4": [
+      {
+        "fold_id": "F01",
+        "validation_season": "KPL2022S2",
+        "selected": {
+          "k": 40.0,
+          "half_life_days": "inf"
+        },
+        "inner_n": 136,
+        "inner_log_loss": 0.6748548396416534,
+        "inner_brier": 0.2408412699814392,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2022-05-08 18:00:00",
+        "inner_cutoff_exclusive": "2022-06-08 15:00:00"
+      },
+      {
+        "fold_id": "F02",
+        "validation_season": "KPL2023S1",
+        "selected": {
+          "k": 48.0,
+          "half_life_days": "inf"
+        },
+        "inner_n": 272,
+        "inner_log_loss": 0.6622246808021124,
+        "inner_brier": 0.23466636605951627,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2022-09-03 17:00:00",
+        "inner_cutoff_exclusive": "2023-02-10 15:00:00"
+      },
+      {
+        "fold_id": "F03",
+        "validation_season": "KPL2023S2",
+        "selected": {
+          "k": 40.0,
+          "half_life_days": "inf"
+        },
+        "inner_n": 408,
+        "inner_log_loss": 0.6598644165326099,
+        "inner_brier": 0.23370795937139802,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2023-05-13 18:00:00",
+        "inner_cutoff_exclusive": "2023-06-14 14:00:00"
+      },
+      {
+        "fold_id": "F04",
+        "validation_season": "KPL2024S1",
+        "selected": {
+          "k": 40.0,
+          "half_life_days": "inf"
+        },
+        "inner_n": 544,
+        "inner_log_loss": 0.6541705587076571,
+        "inner_brier": 0.23100034098729266,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2023-09-10 17:00:00",
+        "inner_cutoff_exclusive": "2024-01-31 14:00:00"
+      },
+      {
+        "fold_id": "F05",
+        "validation_season": "KPL2024S2",
+        "selected": {
+          "k": 40.0,
+          "half_life_days": "inf"
+        },
+        "inner_n": 680,
+        "inner_log_loss": 0.6427781691034248,
+        "inner_brier": 0.2255922670029137,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2024-05-18 17:00:00",
+        "inner_cutoff_exclusive": "2024-06-12 14:00:00"
+      },
+      {
+        "fold_id": "F06",
+        "validation_season": "KPL2024S3",
+        "selected": {
+          "k": 40.0,
+          "half_life_days": "inf"
+        },
+        "inner_n": 816,
+        "inner_log_loss": 0.6422930342381561,
+        "inner_brier": 0.22532544817321287,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2024-09-15 18:00:00",
+        "inner_cutoff_exclusive": "2024-10-02 17:00:00"
+      },
+      {
+        "fold_id": "F07",
+        "validation_season": "KPL2025S1",
+        "selected": {
+          "k": 40.0,
+          "half_life_days": "inf"
+        },
+        "inner_n": 869,
+        "inner_log_loss": 0.6398650749270489,
+        "inner_brier": 0.22412469490104728,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2024-11-16 17:30:00",
+        "inner_cutoff_exclusive": "2025-02-12 14:00:00"
+      },
+      {
+        "fold_id": "F08",
+        "validation_season": "KPL2025S2",
+        "selected": {
+          "k": 40.0,
+          "half_life_days": "inf"
+        },
+        "inner_n": 1005,
+        "inner_log_loss": 0.6332625796058369,
+        "inner_brier": 0.22113674180549034,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2025-05-10 18:00:00",
+        "inner_cutoff_exclusive": "2025-06-05 14:00:00"
+      },
+      {
+        "fold_id": "F09",
+        "validation_season": "KPL2025S3",
+        "selected": {
+          "k": 40.0,
+          "half_life_days": 730.0
+        },
+        "inner_n": 1141,
+        "inner_log_loss": 0.6341773069472182,
+        "inner_brier": 0.22171393875742215,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2025-09-07 18:00:00",
+        "inner_cutoff_exclusive": "2025-09-28 14:00:00"
+      },
+      {
+        "fold_id": "F10",
+        "validation_season": "KPL2026S1",
+        "selected": {
+          "k": 40.0,
+          "half_life_days": "inf"
+        },
+        "inner_n": 1194,
+        "inner_log_loss": 0.6276564372029544,
+        "inner_brier": 0.21867158679095333,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2025-11-08 17:30:00",
+        "inner_cutoff_exclusive": "2026-01-14 14:00:00"
+      },
+      {
+        "fold_id": "F11",
+        "validation_season": "KPL2026S2",
+        "selected": {
+          "k": 48.0,
+          "half_life_days": 730.0
+        },
+        "inner_n": 1330,
+        "inner_log_loss": 0.6277058103955707,
+        "inner_brier": 0.21866673290287666,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2026-04-11 17:00:00",
+        "inner_cutoff_exclusive": "2026-06-17 14:00:00"
+      }
+    ],
+    "B5": [
+      {
+        "fold_id": "F01",
+        "validation_season": "KPL2022S2",
+        "selected": {
+          "k": 40.0,
+          "rho": 1.0
+        },
+        "inner_n": 136,
+        "inner_log_loss": 0.6748548396416534,
+        "inner_brier": 0.2408412699814392,
+        "n_configs_tied_at_best": 9,
+        "inner_data_through": "2022-05-08 18:00:00",
+        "inner_cutoff_exclusive": "2022-06-08 15:00:00"
+      },
+      {
+        "fold_id": "F02",
+        "validation_season": "KPL2023S1",
+        "selected": {
+          "k": 48.0,
+          "rho": 1.0
+        },
+        "inner_n": 272,
+        "inner_log_loss": 0.6622246808021124,
+        "inner_brier": 0.23466636605951627,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2022-09-03 17:00:00",
+        "inner_cutoff_exclusive": "2023-02-10 15:00:00"
+      },
+      {
+        "fold_id": "F03",
+        "validation_season": "KPL2023S2",
+        "selected": {
+          "k": 40.0,
+          "rho": 1.0
+        },
+        "inner_n": 408,
+        "inner_log_loss": 0.6598644165326099,
+        "inner_brier": 0.23370795937139802,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2023-05-13 18:00:00",
+        "inner_cutoff_exclusive": "2023-06-14 14:00:00"
+      },
+      {
+        "fold_id": "F04",
+        "validation_season": "KPL2024S1",
+        "selected": {
+          "k": 40.0,
+          "rho": 1.0
+        },
+        "inner_n": 544,
+        "inner_log_loss": 0.6541705587076571,
+        "inner_brier": 0.23100034098729266,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2023-09-10 17:00:00",
+        "inner_cutoff_exclusive": "2024-01-31 14:00:00"
+      },
+      {
+        "fold_id": "F05",
+        "validation_season": "KPL2024S2",
+        "selected": {
+          "k": 40.0,
+          "rho": 1.0
+        },
+        "inner_n": 680,
+        "inner_log_loss": 0.6427781691034248,
+        "inner_brier": 0.2255922670029137,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2024-05-18 17:00:00",
+        "inner_cutoff_exclusive": "2024-06-12 14:00:00"
+      },
+      {
+        "fold_id": "F06",
+        "validation_season": "KPL2024S3",
+        "selected": {
+          "k": 40.0,
+          "rho": 0.9
+        },
+        "inner_n": 816,
+        "inner_log_loss": 0.6420039199469939,
+        "inner_brier": 0.22536382871536878,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2024-09-15 18:00:00",
+        "inner_cutoff_exclusive": "2024-10-02 17:00:00"
+      },
+      {
+        "fold_id": "F07",
+        "validation_season": "KPL2025S1",
+        "selected": {
+          "k": 40.0,
+          "rho": 0.9
+        },
+        "inner_n": 869,
+        "inner_log_loss": 0.6396965656854776,
+        "inner_brier": 0.22420285076085433,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2024-11-16 17:30:00",
+        "inner_cutoff_exclusive": "2025-02-12 14:00:00"
+      },
+      {
+        "fold_id": "F08",
+        "validation_season": "KPL2025S2",
+        "selected": {
+          "k": 40.0,
+          "rho": 1.0
+        },
+        "inner_n": 1005,
+        "inner_log_loss": 0.6332625796058369,
+        "inner_brier": 0.22113674180549034,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2025-05-10 18:00:00",
+        "inner_cutoff_exclusive": "2025-06-05 14:00:00"
+      },
+      {
+        "fold_id": "F09",
+        "validation_season": "KPL2025S3",
+        "selected": {
+          "k": 40.0,
+          "rho": 0.9
+        },
+        "inner_n": 1141,
+        "inner_log_loss": 0.6336461959135307,
+        "inner_brier": 0.22145923856130897,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2025-09-07 18:00:00",
+        "inner_cutoff_exclusive": "2025-09-28 14:00:00"
+      },
+      {
+        "fold_id": "F10",
+        "validation_season": "KPL2026S1",
+        "selected": {
+          "k": 48.0,
+          "rho": 0.9
+        },
+        "inner_n": 1194,
+        "inner_log_loss": 0.6274774124334315,
+        "inner_brier": 0.21855154241912558,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2025-11-08 17:30:00",
+        "inner_cutoff_exclusive": "2026-01-14 14:00:00"
+      },
+      {
+        "fold_id": "F11",
+        "validation_season": "KPL2026S2",
+        "selected": {
+          "k": 48.0,
+          "rho": 0.9
+        },
+        "inner_n": 1330,
+        "inner_log_loss": 0.6274381060700551,
+        "inner_brier": 0.21849630198827014,
+        "n_configs_tied_at_best": 1,
+        "inner_data_through": "2026-04-11 17:00:00",
+        "inner_cutoff_exclusive": "2026-06-17 14:00:00"
+      }
+    ]
+  },
+  "final_development_selected": {
+    "B0": {
+      "selected": {},
+      "note": "fixed a priori; not tuned"
+    },
+    "B1": {
+      "selected": {
+        "alpha": 5.0,
+        "beta": 5.0
+      },
+      "note": "fixed a priori; not tuned"
+    },
+    "B2": {
+      "selected": {
+        "k": 24.0,
+        "scale": 400.0
+      },
+      "note": "fixed a priori; not tuned"
+    },
+    "B3": {
+      "selected": {
+        "k": 40.0,
+        "scale": 400.0
+      },
+      "inner_n": 1466,
+      "inner_log_loss": 0.6324711466565185,
+      "inner_brier": 0.2205938236788906,
+      "n_configs_tied_at_best": 2
+    },
+    "B4": {
+      "selected": {
+        "k": 48.0,
+        "half_life_days": 730.0
+      },
+      "inner_n": 1466,
+      "inner_log_loss": 0.6289645393194518,
+      "inner_brier": 0.21939025803285145,
+      "n_configs_tied_at_best": 1
+    },
+    "B5": {
+      "selected": {
+        "k": 48.0,
+        "rho": 0.9
+      },
+      "inner_n": 1466,
+      "inner_log_loss": 0.6290112907214124,
+      "inner_brier": 0.21936378732529108,
+      "n_configs_tied_at_best": 1
+    }
+  },
+  "e_slot": {
+    "lambda_grid": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "k_scale_source": "B3 fold-level selection",
+    "min_slot_examples": 5,
+    "predecessors": {
+      "TEAM_JDG": "TEAM_VG"
+    }
+  },
+  "identifiability_notes": [
+    "Elo probabilities depend on K and scale only through K/scale; equivalent pairs tie exactly and are resolved by closeness to scale=400.",
+    "Fold F01 inner window is a single season: rho (B5) is not identifiable there and falls back to the tie-break (rho=1)."
+  ]
+}

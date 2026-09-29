@@ -1,0 +1,25 @@
+{
+  "n_eval_series": 1194,
+  "seasons": [
+    "KPL2023S1",
+    "KPL2023S2",
+    "KPL2024S1",
+    "KPL2024S2",
+    "KPL2024S3",
+    "KPL2025S1",
+    "KPL2025S2",
+    "KPL2025S3",
+    "KPL2026S1",
+    "KPL2026S2"
+  ],
+  "figures": [
+    "brier_by_season.png",
+    "calibration_comparison.png",
+    "logloss_by_season.png",
+    "model_comparison.png",
+    "player_rating_history.png",
+    "rotation_strength_2026.png"
+  ],
+  "lock_after_run": "verified",
+  "final_state_config": "P2|series|k=8|m=0|core=LAST"
+}

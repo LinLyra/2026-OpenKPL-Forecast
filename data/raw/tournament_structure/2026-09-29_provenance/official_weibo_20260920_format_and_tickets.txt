@@ -1,0 +1,18 @@
+RETRIEVED: 2026-09-29 (agent WebFetch; verbatim excerpts)
+TIER: 1 (official KPL Weibo account, viewed through the sina.cn mirror, which labels the author "微博认证：KPL王者荣耀职业联赛官方微博")
+
+[1] https://www.sina.cn/news/detail/5345222013223292.html
+AUTHOR: KPL王者荣耀职业联赛 (official Weibo) — POSTED: 2026-09-20 13:55 (发布于 北京)
+"#2026KPL年总赛程# #2026KPL年度总决赛# 赛程赛制、赛事日历正式公布！ 【赛事时间】 擂台赛：10月2日-10月18日 突围赛：10月20日-10月22日 淘汰赛：10月27日-11月8日 总决赛：11月14日"
+"突围赛：高顺位队伍依次挑选对手，采用BO7（全局BP+巅峰对决）单败赛制，胜者拿到淘汰赛入场资格。"
+"淘汰赛：对阵以抽签方式确定，大师组第一、第二名拥有种子签位，全程BO7（全局BP+巅峰对决）双败淘汰制。"
+"赛事日历及擂台赛赛程详见长图。"   (the 36-series schedule is an image; no text transcription is published)
+
+[2] https://www.sina.cn/news/detail/5345223271776753.html
+AUTHOR: KPL王者荣耀职业联赛 (official Weibo) — POSTED: 2026-09-20 14:00 (发布于 广东)
+"#2026KPL年度总决赛# 擂台赛&突围赛广州站【售票指南】"
+"【售票场次】 擂台赛：10月2日-10月7日、10月9日-10月18日；突围赛：10月20日-10月22日；"
+"【场馆地址】 广州体育馆2号馆（广东省广州市白云区白云大道南785号）"
+"*注：优惠价适用于工作日下午5点场"
+
+[3] Club reposts on the same mirror page (Tier 2): 成都AG超玩会 2026-09-20 19:15 "【成都AG超玩会·2026王者荣耀KPL年度总决赛擂台赛赛程】 广州，新的赛事起点。"; 北京JDG王者荣耀分部 2026-09-20 14:00 "【北京JDG2026KPL年度总决赛擂台赛赛程】 ... 我们广州见！" (per-team schedules published as images only).

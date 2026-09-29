@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg"> -->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>王者荣耀职业联赛官网</title>
+    <!-- Aegis Web SDK 2.0 - 前端监控 -->
+    <script src="https://aegis.cdn-go.cn/aegis-sdk-v2/2.5.65/aegis.min.js"></script>
+    <script>
+      window.AegisV2 = new Aegis({
+        id: 'SDK-90fee0510690a2bdf1ff',
+        hostUrl: {
+          url: 'https://galileotelemetry.tencent.com/collect',
+        },
+        env: 'production',
+        plugin: {
+          pv: true,
+          aid: true,
+          error: true,
+          device: true,
+          close: true,
+          pagePerformance: true,
+          webVitals: true,
+          spa: true,
+          api: true,
+          assetSpeed: true,
+          session: true,
+          fId: false,
+          ie: false,
+        },
+      });
+      // 初始化后立即设置 uid，确保所有上报数据都带用户标识
+      (function() {
+        var uid = localStorage.getItem('uuid');
+        if (!uid) {
+          uid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+            var r = Math.random() * 16 | 0;
+            return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+          });
+          localStorage.setItem('uuid', uid);
+        }
+        window.AegisV2.setConfig({ uid: uid });
+      })();
+    </script>
+  <meta name="build-infos" content="BuildTime:2026-09-23 17:07:19, commitId:e051760, version:1.1.0.89, BuildNum:89">
+		<meta name="description" content="KPL官方网站 - 提供完整赛程及回放，比赛进程、历史节目、战队选手介绍等信息应有尽有，还可获取实时出装铭文、深度赛事数据等内容~">
+		<meta name="keywords" content="KPL, KPL官网, 王者荣耀职业联赛">
+		<link rel="icon" href="./images/main-logo.png" type="image/png">
+    <script type="module" crossorigin src="./static/index-DLQZLYyn.js"></script>
+    <link rel="stylesheet" crossorigin href="./static/index-CBjeYbdW.css">
+  </head>
+  <body>
+    <div id="app"></div>
+		<!--<div id="afooter"></div>-->
+		<!--<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>-->
+		<!--<script src="https://game.gtimg.cn/images/js/milo-utils/eruda/3.0.0/eruda.js"></script>-->
+		<!--<script>eruda.init();</script>-->
+  </body>
+</html>

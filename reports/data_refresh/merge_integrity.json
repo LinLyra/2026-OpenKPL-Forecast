@@ -1,0 +1,87 @@
+{
+  "total_series": 1466,
+  "completed_label_eligible": 1466,
+  "completed_by_season": {
+    "KPL2022S1": 136,
+    "KPL2022S2": 136,
+    "KPL2023S1": 136,
+    "KPL2023S2": 136,
+    "KPL2024S1": 136,
+    "KPL2024S2": 136,
+    "KPL2024S3": 53,
+    "KPL2025S1": 136,
+    "KPL2025S2": 136,
+    "KPL2025S3": 53,
+    "KPL2026S1": 136,
+    "KPL2026S2": 136
+  },
+  "duplicate_series_ids": 0,
+  "unresolved_identities": 0,
+  "identity_conflicts": 0,
+  "labels_with_status_not_4": 0,
+  "rows_at_or_after_holdout": 0,
+  "labels_at_or_after_holdout": 0,
+  "annual_finals_2026_rows": 0,
+  "winner_not_consistent_with_score": 0,
+  "winner_not_one_of_two_teams": 0,
+  "raw_names_preserved": true,
+  "old_completed_rows": 1239,
+  "old_completed_missing_in_new": 0,
+  "old_completed_fields_changed": {
+    "season": 0,
+    "team_a": 0,
+    "team_b": 0,
+    "score_a": 0,
+    "score_b": 0,
+    "start_time_raw": 0,
+    "status": 0
+  },
+  "old_completed_still_label_eligible": 1239,
+  "canonical_team_count": 28,
+  "canonical_teams_2026S2": [
+    "TEAM_AG",
+    "TEAM_DRG",
+    "TEAM_DYG",
+    "TEAM_EDGM",
+    "TEAM_ESTAR",
+    "TEAM_HERO",
+    "TEAM_JDG",
+    "TEAM_KSG",
+    "TEAM_LGD_NBW",
+    "TEAM_RNGM",
+    "TEAM_RW",
+    "TEAM_SYG",
+    "TEAM_TESA",
+    "TEAM_TTG",
+    "TEAM_WB",
+    "TEAM_WE",
+    "TEAM_WOLVES",
+    "TEAM_WST"
+  ],
+  "latest_completed_series": "2026-09-12 18:00:00",
+  "membership_rows": 204,
+  "membership_SYG_WST": [
+    {
+      "season": "KPL2026S2",
+      "canonical_team_id": "TEAM_SYG",
+      "slot_type": "TEMPORARY",
+      "entry_type": "QUALIFIER",
+      "continuity_type": "NEW_ENTRY",
+      "predecessor_team_id": "",
+      "evidence_status": "EXTERNALLY_VERIFIED"
+    },
+    {
+      "season": "KPL2026S2",
+      "canonical_team_id": "TEAM_WST",
+      "slot_type": "TEMPORARY",
+      "entry_type": "UNKNOWN",
+      "continuity_type": "NEW_ENTRY",
+      "predecessor_team_id": "",
+      "evidence_status": "EXTERNALLY_VERIFIED"
+    }
+  ],
+  "provenance_counts": {
+    "previous": 1194,
+    "refresh": 272
+  }
+}

@@ -1,0 +1,292 @@
+# 2026 KPL Annual Finals — tournament rule manifest (STRUCTURE ONLY; no competitive outcome).
+# Written 2026-09-29 BEFORE any tournament simulation was run. Scenario definitions and the materiality
+# threshold below are pre-registered and must not be changed after seeing simulation output.
+#
+# verification_status vocabulary:
+#   VERIFIED_OFFICIAL            stated verbatim in an official KPL post
+#   VERIFIED_OFFICIAL_IMPLIED    follows necessarily from official text (no interpretation needed)
+#   SECONDARY_TRANSCRIPTION      transcription (Wikipedia/guide) of official material not available as text
+#   SECONDARY_INTERPRETATION     a secondary source's reading of an ambiguous official rule
+#   UNRESOLVED                   not found in any source; handled only by bounded scenarios
+#
+# Information timing: all sources were RETRIEVED 2026-09-29, i.e. after the information cutoff, so every rule
+# carries post_cutoff_structure_information: true (POST_CUTOFF_STRUCTURE_INFORMATION). All official items were
+# PUBLISHED 2026-09-20..22, before the cutoff. No source contained any Annual Finals result.
+
+manifest_version: "1.0"
+information_cutoff:
+  value: "2026-09-28 00:00:00"
+  timezone: Asia/Shanghai
+  inclusive: false
+  source: "openkpl.evaluation.benchmark.MODEL_FREEZE_DATE (established v0.3 freeze; development_cutoff_exclusive)"
+  notes: >
+    The project's established cutoff is stricter than the suggested 2026-09-28 23:59:59 and equivalent in content:
+    the last KPL series before the Annual Finals was 2026-09-12 and none occurred between 2026-09-13 and 2026-10-01.
+
+sources:
+  OFFICIAL_FORMAT: {url: "https://news.qq.com/rain/a/20260920A09UIC00", publisher: "KPL official account", published: "2026-09-20 16:20", capture: "data/raw/tournament_structure/2026-09-29/official_kpl_format_post_20260920.txt"}
+  OFFICIAL_PARTICIPANTS: {url: "https://news.qq.com/rain/a/20260921A06HJ500", publisher: "KPL official account", published: "2026-09-21 18:44", capture: "data/raw/tournament_structure/2026-09-29/official_kpl_participants_post_20260921.txt"}
+  WIKIPEDIA: {url: "https://zh.wikipedia.org/wiki/王者荣耀职业联赛2026年年度总决赛", publisher: "Wikipedia (secondary; cites official posts 2026-09-20/21)", published: "live page", capture: "data/raw/tournament_structure/2026-09-29/wikipedia_2026_annual_finals_excerpt.txt"}
+  SECONDARY: {url: "several (Hupu 2026-09-20, 17173 2026-09-22, globalgameguide)", publisher: "secondary media", published: "2026-09-20..28", capture: "data/raw/tournament_structure/2026-09-29/secondary_sources_excerpt.txt"}
+  KPL_API: {url: "https://kplshop-op.timi-esports.qq.com/kplow", publisher: "official data API", published: "n/a", capture: "data/raw/tournament_structure/2026-09-29/kpl_api_probe_20260929.json"}
+
+teams:
+  # group rank = annual qualification points order (official group lists; order from Wikipedia points table)
+  master:
+    - {official_name: 重庆狼队, seed: 1}
+    - {official_name: 成都AG超玩会, seed: 2}
+    - {official_name: 北京JDG, seed: 3}
+    - {official_name: 广州TTG, seed: 4}
+    - {official_name: KSG, seed: 5}
+    - {official_name: 北京WB, seed: 6}
+  elite:
+    - {official_name: 长沙TES.A, seed: 7}
+    - {official_name: 上海EDG.M, seed: 8}
+    - {official_name: 杭州LGD.NBW, seed: 9}
+    - {official_name: 深圳DYG, seed: 10}
+    - {official_name: 济南RW侠, seed: 11}
+    - {official_name: 南通Hero久竞, seed: 12}
+
+rules:
+  - id: R01_PARTICIPANTS_AND_GROUPS
+    rule: "12 teams; Master = annual points 1-6, Elite = 7-12; group membership as listed under teams"
+    source: OFFICIAL_PARTICIPANTS
+    source_date: "2026-09-21"
+    retrieved_at: "2026-09-29"
+    verification_status: VERIFIED_OFFICIAL
+    post_cutoff_structure_information: true
+    notes: "Within-group seed order (annual points) is from the Wikipedia points table; it is not used by any stage-1 ranking rule."
+  - id: R02_STAGE_DATES
+    rule: "擂台赛 2026-10-02..10-18; 突围赛 10-20..10-22; 淘汰赛 10-27..11-08; 总决赛 11-14"
+    source: OFFICIAL_FORMAT
+    source_date: "2026-09-20"
+    retrieved_at: "2026-09-29"
+    verification_status: VERIFIED_OFFICIAL
+    post_cutoff_structure_information: true
+    notes: ""
+  - id: R03_STAGE1_FORMAT
+    rule: "Cross-group single round robin, BO5: every Master team plays every Elite team exactly once (36 series); no intra-group series; the two groups are ranked independently"
+    source: OFFICIAL_FORMAT
+    source_date: "2026-09-20"
+    retrieved_at: "2026-09-29"
+    verification_status: VERIFIED_OFFICIAL
+    post_cutoff_structure_information: true
+    notes: "The 36 pairings follow necessarily from the official rule (VERIFIED_OFFICIAL_IMPLIED); only dates depend on R04."
+  - id: R04_STAGE1_SCHEDULE_DATES
+    rule: "Stage 1 dates/order as listed under stage1_schedule"
+    source: WIKIPEDIA
+    source_date: "2026-09-20 (official image)"
+    retrieved_at: "2026-09-29"
+    verification_status: SECONDARY_TRANSCRIPTION
+    post_cutoff_structure_information: true
+    notes: >
+      Official schedule exists only as an image. Wikipedia transcription: 36 series, each Master-Elite pair exactly once
+      (checked in code). Opening day (TTG-DYG, KSG-RW, AG-Hero) independently confirmed by the Hupu headline and a guide.
+      Dates only affect the prediction ledger, not any probability (frozen strength; no within-tournament updating).
+  - id: R05_STAGE1_ADVANCEMENT
+    rule: "Master #1-#4 and Elite #1 -> knockout; Master #5-#6 and Elite #2-#5 -> breakthrough; Elite #6 eliminated"
+    source: OFFICIAL_FORMAT
+    source_date: "2026-09-20"
+    retrieved_at: "2026-09-29"
+    verification_status: VERIFIED_OFFICIAL
+    post_cutoff_structure_information: true
+    notes: ""
+  - id: R06_STAGE1_RANKING_AND_TIEBREAK
+    rule: "UNKNOWN. Official text only says groups are ranked independently."
+    source: WIKIPEDIA
+    source_date: "n/a"
+    retrieved_at: "2026-09-29"
+    verification_status: UNRESOLVED
+    post_cutoff_structure_information: true
+    notes: >
+      Wikipedia's empty standings table has columns 胜/负/积分/净胜局 (wins, losses, points, game differential), which suggests
+      wins and game differential matter, but no ranking order, points scheme or final tiebreak (加赛/lot) is published.
+      Head-to-head cannot break ties because same-group teams never meet. Handled by bounded scenarios
+      stage1_tiebreak_scenarios; the probability mass reaching each criterion is reported.
+  - id: R07_MASTER_ROTATION
+    rule: "Every Master team must field all 7 registered players for at least one game in every stage-1 BO5; Elite teams exempt; not applicable after stage 1"
+    source: OFFICIAL_FORMAT
+    source_date: "2026-09-20"
+    retrieved_at: "2026-09-29"
+    verification_status: VERIFIED_OFFICIAL
+    post_cutoff_structure_information: true
+    notes: "Stage-1-only scope per Wikipedia and a guide (SECONDARY). PRIMARY forecast does not adjust B5 for this rule (v0.5 rejected roster adjustments)."
+  - id: R08_BREAKTHROUGH_FORMAT
+    rule: "6 teams (Master #5, #6, Elite #2-#5); BO7 (global BP + 巅峰对决); single elimination; 3 winners advance"
+    source: OFFICIAL_FORMAT
+    source_date: "2026-09-20"
+    retrieved_at: "2026-09-29"
+    verification_status: VERIFIED_OFFICIAL
+    post_cutoff_structure_information: true
+    notes: ""
+  - id: R09_BREAKTHROUGH_SELECTION
+    rule: "Higher-positioned teams choose opponents in sequence (高顺位队伍依次挑选对手)"
+    source: OFFICIAL_FORMAT
+    source_date: "2026-09-20"
+    retrieved_at: "2026-09-29"
+    verification_status: VERIFIED_OFFICIAL
+    post_cutoff_structure_information: true
+    notes: "Strategic choice is officially allowed, so OPTIMAL_SELECTION is PRIMARY. Selection takes place at the 10-18 ceremony (guide)."
+  - id: R10_BREAKTHROUGH_SELECTION_DETAIL
+    rule: "Master #5 chooses first from Elite #2-#5; Master #6 chooses from the remaining three; the last two Elite teams play each other"
+    source: WIKIPEDIA
+    source_date: "2026-09-20/21 (cited)"
+    retrieved_at: "2026-09-29"
+    verification_status: SECONDARY_INTERPRETATION
+    post_cutoff_structure_information: true
+    notes: >
+      Derived from Wikipedia placeholders: match 1 (10-20) "D5 vs J", match 2 (10-21) "D6 vs J", match 3 (10-22) "J vs J".
+      Alternative reading (any remaining team may be chosen, incl. M5 choosing M6) is run as scenario SELECTION_POOL_ANY.
+  - id: R11_KNOCKOUT_FORMAT
+    rule: "8 teams; BO7 (global BP + 巅峰对决) double elimination; the two surviving teams contest the final"
+    source: OFFICIAL_FORMAT
+    source_date: "2026-09-20"
+    retrieved_at: "2026-09-29"
+    verification_status: VERIFIED_OFFICIAL
+    post_cutoff_structure_information: true
+    notes: ""
+  - id: R12_KNOCKOUT_BRACKET_WIRING
+    rule: "As in knockout_bracket (UB QF1-4; UB SF W1-W2, W3-W4; LB R1 L1-L3, L2-L4; LB R2 W(LB1a)-L(SF1), W(LB1b)-L(SF2); UBF; LBSF; LBF L(UBF)-W(LBSF); final UBF winner vs LBF winner)"
+    source: WIKIPEDIA
+    source_date: "2026-09-20/21 (cited)"
+    retrieved_at: "2026-09-29"
+    verification_status: SECONDARY_TRANSCRIPTION
+    post_cutoff_structure_information: true
+    notes: "Wiring and dates from the Wikipedia bracket; consistent with the official 10-27..11-08 window (13 knockout dates)."
+  - id: R13_KNOCKOUT_DRAW
+    rule: "First-round pairings are decided by draw; Master #1 and #2 have seed slots"
+    source: OFFICIAL_FORMAT
+    source_date: "2026-09-20"
+    retrieved_at: "2026-09-29"
+    verification_status: VERIFIED_OFFICIAL
+    post_cutoff_structure_information: true
+    notes: >
+      The meaning of a seed slot (bracket position, opponent pot, same-group restriction) is NOT published. A guide says
+      seeds "won't meet in the first round" (SECONDARY_INTERPRETATION). Handled by knockout_draw_scenarios. The draw is
+      held 10-22 (guide), after the cutoff, so PRIMARY simulates it; no realized bracket is used.
+  - id: R14_FINAL
+    rule: "Final 2026-11-14, BO7, UBF winner vs LBF winner; no carried advantage stated"
+    source: WIKIPEDIA
+    source_date: "2026-09-20/21 (cited)"
+    retrieved_at: "2026-09-29"
+    verification_status: SECONDARY_TRANSCRIPTION
+    post_cutoff_structure_information: true
+    notes: >
+      Venue 五粮液文化体育中心综合体育馆 (Phoenix Mountain Sports Park, Chengdu). No source mentions a game advantage, side
+      choice advantage or bracket reset for the upper-bracket team; modeled as a neutral BO7 (B5 is format-agnostic anyway).
+  - id: R15_PLAYER_LOANS
+    rule: "Each team may loan at most one player from non-qualified KPL clubs' summer rosters (loan window 09-13..09-16)"
+    source: SECONDARY
+    source_date: "2026-09 (official Weibo quoted by Sina)"
+    retrieved_at: "2026-09-29"
+    verification_status: SECONDARY_TRANSCRIPTION
+    post_cutoff_structure_information: true
+    notes: "Not used by PRIMARY (no roster adjustment). Listed as a known limitation (e.g. Fly loaned to 重庆狼队 per Wikipedia roster)."
+
+stage1_schedule:   # master team listed first; times not modeled
+  - ["2026-10-02", 广州TTG, 深圳DYG]
+  - ["2026-10-02", KSG, 济南RW侠]
+  - ["2026-10-02", 成都AG超玩会, 南通Hero久竞]
+  - ["2026-10-03", 北京WB, 杭州LGD.NBW]
+  - ["2026-10-03", 北京JDG, 上海EDG.M]
+  - ["2026-10-03", 重庆狼队, 长沙TES.A]
+  - ["2026-10-04", KSG, 深圳DYG]
+  - ["2026-10-04", 广州TTG, 南通Hero久竞]
+  - ["2026-10-04", 成都AG超玩会, 济南RW侠]
+  - ["2026-10-05", 北京WB, 长沙TES.A]
+  - ["2026-10-05", 北京JDG, 杭州LGD.NBW]
+  - ["2026-10-05", 重庆狼队, 上海EDG.M]
+  - ["2026-10-06", 广州TTG, 济南RW侠]
+  - ["2026-10-06", 北京JDG, 南通Hero久竞]
+  - ["2026-10-06", 成都AG超玩会, 深圳DYG]
+  - ["2026-10-07", KSG, 长沙TES.A]
+  - ["2026-10-07", 北京WB, 上海EDG.M]
+  - ["2026-10-07", 成都AG超玩会, 杭州LGD.NBW]
+  - ["2026-10-09", 重庆狼队, 南通Hero久竞]
+  - ["2026-10-09", 北京JDG, 深圳DYG]
+  - ["2026-10-10", 广州TTG, 杭州LGD.NBW]
+  - ["2026-10-10", 重庆狼队, 济南RW侠]
+  - ["2026-10-11", 广州TTG, 上海EDG.M]
+  - ["2026-10-11", 成都AG超玩会, 长沙TES.A]
+  - ["2026-10-12", KSG, 南通Hero久竞]
+  - ["2026-10-12", 北京WB, 深圳DYG]
+  - ["2026-10-14", 北京JDG, 济南RW侠]
+  - ["2026-10-14", 重庆狼队, 杭州LGD.NBW]
+  - ["2026-10-15", 成都AG超玩会, 上海EDG.M]
+  - ["2026-10-15", 广州TTG, 长沙TES.A]
+  - ["2026-10-16", 北京WB, 南通Hero久竞]
+  - ["2026-10-16", 重庆狼队, 深圳DYG]
+  - ["2026-10-17", KSG, 杭州LGD.NBW]
+  - ["2026-10-17", 北京WB, 济南RW侠]
+  - ["2026-10-18", KSG, 上海EDG.M]
+  - ["2026-10-18", 北京JDG, 长沙TES.A]
+
+breakthrough:
+  selection_order: [M5, M6]          # R10
+  selectable_pool: ELITE_2_TO_5      # R10; alternative ANY_REMAINING in scenario SELECTION_POOL_ANY
+  matches: [["2026-10-20", M5, CHOSEN_BY_M5], ["2026-10-21", M6, CHOSEN_BY_M6], ["2026-10-22", REMAINING_1, REMAINING_2]]
+  format: BO7
+
+knockout_bracket:   # slots s0..s7; QF1=(s0,s1) QF2=(s2,s3) QF3=(s4,s5) QF4=(s6,s7); half A = QF1,QF2; half B = QF3,QF4
+  QF1: {date: "2026-10-27", a: s0, b: s1}
+  QF2: {date: "2026-10-28", a: s2, b: s3}
+  QF3: {date: "2026-10-29", a: s4, b: s5}
+  QF4: {date: "2026-10-30", a: s6, b: s7}
+  LB1A: {date: "2026-10-31", a: L_QF1, b: L_QF3}
+  LB1B: {date: "2026-11-01", a: L_QF2, b: L_QF4}
+  SF1: {date: "2026-11-02", a: W_QF1, b: W_QF2}
+  SF2: {date: "2026-11-03", a: W_QF3, b: W_QF4}
+  LB2A: {date: "2026-11-04", a: W_LB1A, b: L_SF1}
+  LB2B: {date: "2026-11-05", a: W_LB1B, b: L_SF2}
+  UBF: {date: "2026-11-06", a: W_SF1, b: W_SF2}
+  LBSF: {date: "2026-11-07", a: W_LB2A, b: W_LB2B}
+  LBF: {date: "2026-11-08", a: L_UBF, b: W_LBSF}
+  FINAL: {date: "2026-11-14", a: W_UBF, b: W_LBF}
+  format: BO7
+
+scenarios:
+  primary:
+    stage1_tiebreak: T1_WINS_GAMEDIFF_LOT
+    breakthrough_selection: OPTIMAL_SELECTION
+    selection_pool: ELITE_2_TO_5
+    knockout_draw: K1_SEEDS_OPPOSITE_HALVES
+    probability_transform: PRIMARY
+  stage1_tiebreak_scenarios:
+    T1_WINS_GAMEDIFF_LOT: "series wins, then game differential (净胜局), then uniform lot (stand-in for 加赛/unknown)"
+    T2_WINS_LOT: "series wins, then uniform lot (game differential ignored)"
+    T3_WINS_GAMEDIFF_STRENGTH: "series wins, then game differential, then a strength-weighted playoff proxy (Plackett-Luce on frozen B5 ratings)"
+  breakthrough_selection_scenarios:
+    OPTIMAL_SELECTION: "selector picks the legal opponent maximizing its own frozen-B5 BO7 win probability (PRIMARY: choice officially allowed)"
+    RANDOM_LEGAL_SELECTION: "uniform over legal opponents"
+    ADVERSARIAL_SELECTION: "selector picks the legal opponent minimizing its own win probability (the knockout draw after the breakthrough is random, so the least favorable downstream path reduces to the strongest opponent)"
+  selection_pool_scenarios:
+    ELITE_2_TO_5: "R10 reading"
+    SELECTION_POOL_ANY: "any remaining breakthrough team may be chosen (M5 may choose M6)"
+  knockout_draw_scenarios:
+    K1_SEEDS_OPPOSITE_HALVES: "M1 and M2 drawn into opposite halves (one per half, random QF within half); other 6 teams randomly fill the remaining 6 slots"
+    K2_SEEDS_NOT_PAIRED: "uniform random pairing of all 8 subject only to M1 and M2 not meeting in the first round (guide's reading)"
+    K3_SEEDS_OPPOSITE_HALVES_VS_BREAKTHROUGH: "as K1, and each seed's first-round opponent is drawn from the 3 breakthrough qualifiers"
+  probability_transforms:   # applied to the series log-odds z = logit(p_B5): p' = sigmoid(lambda * z)
+    PRIMARY: {bo5_lambda: 1.0, bo7_lambda: 1.0}
+    CONSERVATIVE: {bo5_lambda: 0.85, bo7_lambda: 0.85}
+    AGGRESSIVE: {bo5_lambda: 1.15, bo7_lambda: 1.15}
+    BO7_SENSITIVITY: {bo5_lambda: 1.0, bo7_lambda: 1.161}
+    notes: >
+      0.85 ~ the B5 BO5 historical calibration slope (v0.6: 0.83) and overall slope (0.90); 1.15 is the symmetric expansion.
+      1.161 = v0.6.1 pooled strong-shrinkage (C4) BO7 beta on all historical BO7; REJECTED for PRIMARY, sensitivity only.
+  neutral_format:
+    NEUTRAL_FORMAT: >
+      Descriptive counterfactual: all 12 teams play a full single round robin of BO5 (66 series); top 8 by series wins
+      (then game differential, then lot) enter the SAME double-elimination bracket with a fully random draw (no seeds),
+      BO7 throughout. No groups, no protected seeds, no opponent selection, no direct elimination by group.
+
+materiality:
+  # pre-registered: an unresolved rule "materially changes championship probabilities" if switching between its
+  # bounded scenarios moves any team's championship probability by more than this many absolute probability points,
+  # beyond Monte Carlo noise (|delta| > threshold AND |delta| > 4 * combined MC SE).
+  championship_abs_threshold: 0.01
+simulation:
+  n_sims_primary: 1000000
+  n_sims_scenario: 1000000
+  seed: 20261002
+  convergence_checkpoints: [10000, 100000, 500000, 1000000]

@@ -1,0 +1,15 @@
+{
+  "eval_games": 5005,
+  "eval_series": 1194,
+  "draft_eval_games": 1426,
+  "figures": [
+    "bo5_vs_bo7.png",
+    "draft_calibration.png",
+    "draft_information_gain.png",
+    "draft_model_comparison.png",
+    "game_model_comparison.png",
+    "series_probability_calibration.png",
+    "win_probability_by_draft_step.png"
+  ],
+  "lock_after_run": "verified"
+}

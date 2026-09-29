@@ -1,0 +1,47 @@
+season,season_id,metric,numerator,denominator,coverage_pct,method,notes
+2026 Spring,KPL2026S1,series_total,136,136,100.0,FULL_COLLECTION,validated canonical temporal dataset (completed)
+2026 Spring,KPL2026S1,series_with_stable_ids,136,136,100.0,FULL_COLLECTION,scheduleid is the source series ID (getScheduleList); getScheduleDetail accepted it for every counted series
+2026 Spring,KPL2026S1,series_with_game_records,136,136,100.0,FULL_COLLECTION,round_details count equals validated score_a+score_b
+2026 Spring,KPL2026S1,games_total,573,573,100.0,FULL_COLLECTION,sum of validated series scores
+2026 Spring,KPL2026S1,games_with_game_ids,306,573,53.4,FULL_COLLECTION,"source battle_id only via getSeasonHeroComboMatches for site-listed hero combos; (scheduleid, round) composite key covers every game with records"
+2026 Spring,KPL2026S1,games_with_composite_key_scheduleid_round,573,573,100.0,FULL_COLLECTION,not a source game ID; source positional key
+2026 Spring,KPL2026S1,games_with_winner,573,573,100.0,FULL_COLLECTION,round_details.win_team
+2026 Spring,KPL2026S1,games_with_blue_red_side,0,573,0.0,FULL_COLLECTION,no per-game side field in any tested endpoint; side exists only as team-season aggregates (getTeamsIntro)
+2026 Spring,KPL2026S1,games_with_complete_10_player_lineup,573,573,100.0,FULL_COLLECTION,"10 players, 5 per team, team from series roster"
+2026 Spring,KPL2026S1,games_with_player_ids,573,573,100.0,FULL_COLLECTION,all 10 playerid non-empty
+2026 Spring,KPL2026S1,games_with_roles,573,573,100.0,FULL_COLLECTION,each team positions exactly {1..5}
+2026 Spring,KPL2026S1,games_with_hero_assignments,573,573,100.0,FULL_COLLECTION,10 hero_id > 0 mapped to playerid
+2026 Spring,KPL2026S1,games_with_kda,0,573,0.0,FULL_COLLECTION,no per-player per-game K/D/A in any tested endpoint (season aggregates only)
+2026 Spring,KPL2026S1,games_with_team_kills,306,573,53.4,FULL_COLLECTION,team kill totals only via getSeasonHeroComboMatches
+2026 Spring,KPL2026S1,games_with_duration,306,573,53.4,FULL_COLLECTION,via getSeasonHeroComboMatches
+2026 Spring,KPL2026S1,games_with_gold,0,573,0.0,FULL_COLLECTION,absent for completed games
+2026 Spring,KPL2026S1,games_with_damage,0,573,0.0,FULL_COLLECTION,absent for completed games
+2026 Spring,KPL2026S1,games_with_complete_bp,0,573,0.0,FULL_COLLECTION,bans absent in every tested endpoint
+2026 Spring,KPL2026S1,games_with_ordered_bp,0,573,0.0,FULL_COLLECTION,complete ordered BP absent
+2026 Spring,KPL2026S1,games_with_ordered_picks_only,306,573,53.4,FULL_COLLECTION,pick order index (bp_picks_*.order) via getSeasonHeroComboMatches; no bans
+2026 Spring,KPL2026S1,games_with_game_vod,573,573,100.0,FULL_COLLECTION,round_details.vid
+2026 Spring,KPL2026S1,series_with_substitution_information,136,136,100.0,FULL_COLLECTION,per-game lineups for every game of the series (substitutions observable)
+2026 Spring,KPL2026S1,series_with_substitution_observed,16,136,11.76,FULL_COLLECTION,a team's 5-player set differs between games of the series
+2026 Summer,KPL2026S2,series_total,136,136,100.0,FULL_COLLECTION,validated canonical temporal dataset (completed)
+2026 Summer,KPL2026S2,series_with_stable_ids,136,136,100.0,FULL_COLLECTION,scheduleid is the source series ID (getScheduleList); getScheduleDetail accepted it for every counted series
+2026 Summer,KPL2026S2,series_with_game_records,136,136,100.0,FULL_COLLECTION,round_details count equals validated score_a+score_b
+2026 Summer,KPL2026S2,games_total,562,562,100.0,FULL_COLLECTION,sum of validated series scores
+2026 Summer,KPL2026S2,games_with_game_ids,329,562,58.54,FULL_COLLECTION,"source battle_id only via getSeasonHeroComboMatches for site-listed hero combos; (scheduleid, round) composite key covers every game with records"
+2026 Summer,KPL2026S2,games_with_composite_key_scheduleid_round,562,562,100.0,FULL_COLLECTION,not a source game ID; source positional key
+2026 Summer,KPL2026S2,games_with_winner,562,562,100.0,FULL_COLLECTION,round_details.win_team
+2026 Summer,KPL2026S2,games_with_blue_red_side,0,562,0.0,FULL_COLLECTION,no per-game side field in any tested endpoint; side exists only as team-season aggregates (getTeamsIntro)
+2026 Summer,KPL2026S2,games_with_complete_10_player_lineup,562,562,100.0,FULL_COLLECTION,"10 players, 5 per team, team from series roster"
+2026 Summer,KPL2026S2,games_with_player_ids,562,562,100.0,FULL_COLLECTION,all 10 playerid non-empty
+2026 Summer,KPL2026S2,games_with_roles,535,562,95.2,FULL_COLLECTION,each team positions exactly {1..5}
+2026 Summer,KPL2026S2,games_with_hero_assignments,562,562,100.0,FULL_COLLECTION,10 hero_id > 0 mapped to playerid
+2026 Summer,KPL2026S2,games_with_kda,0,562,0.0,FULL_COLLECTION,no per-player per-game K/D/A in any tested endpoint (season aggregates only)
+2026 Summer,KPL2026S2,games_with_team_kills,329,562,58.54,FULL_COLLECTION,team kill totals only via getSeasonHeroComboMatches
+2026 Summer,KPL2026S2,games_with_duration,329,562,58.54,FULL_COLLECTION,via getSeasonHeroComboMatches
+2026 Summer,KPL2026S2,games_with_gold,0,562,0.0,FULL_COLLECTION,absent for completed games
+2026 Summer,KPL2026S2,games_with_damage,0,562,0.0,FULL_COLLECTION,absent for completed games
+2026 Summer,KPL2026S2,games_with_complete_bp,0,562,0.0,FULL_COLLECTION,bans absent in every tested endpoint
+2026 Summer,KPL2026S2,games_with_ordered_bp,0,562,0.0,FULL_COLLECTION,complete ordered BP absent
+2026 Summer,KPL2026S2,games_with_ordered_picks_only,329,562,58.54,FULL_COLLECTION,pick order index (bp_picks_*.order) via getSeasonHeroComboMatches; no bans
+2026 Summer,KPL2026S2,games_with_game_vod,562,562,100.0,FULL_COLLECTION,round_details.vid
+2026 Summer,KPL2026S2,series_with_substitution_information,136,136,100.0,FULL_COLLECTION,per-game lineups for every game of the series (substitutions observable)
+2026 Summer,KPL2026S2,series_with_substitution_observed,15,136,11.03,FULL_COLLECTION,a team's 5-player set differs between games of the series

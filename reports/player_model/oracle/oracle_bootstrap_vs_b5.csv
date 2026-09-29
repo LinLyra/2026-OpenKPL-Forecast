@@ -1,0 +1,4 @@
+model_id,reference,n_series,bootstrap_samples,mean_delta_log_loss,delta_log_loss_ci_low,delta_log_loss_ci_high,frac_samples_beats_ref_log_loss,mean_delta_brier,delta_brier_ci_low,delta_brier_ci_high,frac_samples_beats_ref_brier,method,label
+O1,B5,1194,2000,0.03632981434973411,0.018760338495845887,0.05378388392619409,0.0,0.014872579251978121,0.0075645829312121935,0.021858397374940414,0.0,"paired, series-level, stratified by validation season",ORACLE / NON-PROSPECTIVE
+O2,B5,1194,2000,0.004453559939173089,-0.006358702102349013,0.015094001136545493,0.2105,0.0015952692307422713,-0.0030864457892782397,0.006185930537911574,0.2585,"paired, series-level, stratified by validation season",ORACLE / NON-PROSPECTIVE
+O3,B5,1194,2000,0.0048327961964703785,-0.0027619837693657412,0.012200973619101625,0.105,0.0025187732507354,-0.0008086129948186771,0.005738511842241636,0.0675,"paired, series-level, stratified by validation season",ORACLE / NON-PROSPECTIVE

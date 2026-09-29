@@ -1,0 +1,31 @@
+variable_set,term,coef,cluster_se,z,p_value_normal,n_games,n_series_clusters,analysis,reference,n_rows,n_clusters,bootstrap_samples,mean_delta_log_loss,delta_log_loss_ci_low,delta_log_loss_ci_high,frac_beats_ref_log_loss,mean_delta_brier,delta_brier_ci_low,delta_brier_ci_high,cluster,strata,decision
+game_number,intercept,0.001937238577195035,0.0323357755654368,0.05991006998656061,0.9522272596135893,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+game_number,logit_pre,0.9177533892591522,0.07526918884928142,12.192949110915173,3.3892989026435477e-34,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+game_number,gn_c,0.022410870867085014,0.020561185485854932,1.0899600551973316,0.27573074019395527,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+game_number,gn_x_logit,-0.009807176900733728,0.04748799247127255,-0.20651908809719627,0.8363854559579682,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+score_diff,intercept,-0.0018649182207936,0.030539406428284305,-0.06106596161824519,0.9513066772326936,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+score_diff,logit_pre,0.8720451523122681,0.07162917771723241,12.17444036220554,4.253011674873348e-34,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+score_diff,score_diff,0.1078720108464412,0.028913284087770292,3.7308806055714987,0.0001908116412245296,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+match_point_diff (= -elimination_diff),intercept,-0.002772607531697286,0.031304807051976746,-0.08856810799356801,0.9294251545820542,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+match_point_diff (= -elimination_diff),logit_pre,0.8939544153690717,0.07254630364622813,12.322535683257389,6.850582653970414e-35,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+match_point_diff (= -elimination_diff),match_point_diff,0.1475986773588207,0.05431711487547068,2.717351201314919,0.006580673801881844,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+decider_x_strength,intercept,-0.00432615528888677,0.032140901832976194,-0.1345996858261203,0.8929283900217666,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+decider_x_strength,logit_pre,0.9163689554070954,0.07558734059282207,12.123312557633701,7.948045119281874e-34,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+decider_x_strength,decider_x_logit,0.06285597685554228,0.26131599383662385,0.24053627921006693,0.8099145419132705,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+previous_game_winner,intercept,-0.0040240452897853125,0.0318406658274166,-0.12638068913497355,0.8994305874177267,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+previous_game_winner,logit_pre,0.9121894208643493,0.07347672103259119,12.414672402974276,2.175755975497928e-35,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+previous_game_winner,prev_winner,0.03360067605995925,0.03515152732708501,0.9558809706134506,0.3391323740532737,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+ALL,intercept,0.005447103857836758,0.031054515856638945,0.1754045654095186,0.8607617535224162,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+ALL,logit_pre,0.8437035304837249,0.08155865324387628,10.344745737290276,4.420882437517733e-25,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+ALL,gn_c,0.024564264836584564,0.02126006203698304,1.155418304699849,0.24791916958357502,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+ALL,gn_x_logit,-0.041151986245527954,0.05705737633825602,-0.7212386703791747,0.4707626832602576,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+ALL,score_diff,0.19821552843199805,0.057586402894986684,3.4420543473336855,0.0005773142504466531,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+ALL,match_point_diff,-0.07865099086456609,0.0888804776869255,-0.8849073824918902,0.3762065859979308,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+ALL,decider_x_logit,0.1724742552463617,0.30325623899200066,0.568740995468559,0.5695319224340599,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+ALL,prev_winner,-0.10055559934718511,0.04689111862454585,-2.1444487207124934,0.03199695004025871,5005.0,1192.0,in-sample association (descriptive),,,,,,,,,,,,,,
+game_number,,,,,,,,out-of-time: delta game log loss vs strength-only logistic (negative = variable helps),BASE,5005.0,1192.0,2000.0,0.0006385715360423534,-1.3204521338686972e-05,0.0013313457582268386,0.0285,0.0003229706421934371,2.106272812095722e-05,0.0006342207276298697,series_id,season,DISCARD
+score_diff,,,,,,,,out-of-time: delta game log loss vs strength-only logistic (negative = variable helps),BASE,5005.0,1192.0,2000.0,-0.0013481852701462693,-0.0030547693996349086,0.0003501926710386722,0.9375,-0.0006426245751065416,-0.0014640376935403938,0.00017778625865507523,series_id,season,DISCARD
+match_point_diff (= -elimination_diff),,,,,,,,out-of-time: delta game log loss vs strength-only logistic (negative = variable helps),BASE,5005.0,1192.0,2000.0,-0.00041951059271412886,-0.001559695663443916,0.0008471184359527739,0.7505,-0.0001848048758618283,-0.0007152357547441691,0.00041795189995903005,series_id,season,DISCARD
+decider_x_strength,,,,,,,,out-of-time: delta game log loss vs strength-only logistic (negative = variable helps),BASE,5005.0,1192.0,2000.0,0.0003639000036427431,-8.082744757488055e-05,0.0008259208444149567,0.0545,0.00016654094893347,-3.746900907421103e-05,0.00038563060180855257,series_id,season,DISCARD
+previous_game_winner,,,,,,,,out-of-time: delta game log loss vs strength-only logistic (negative = variable helps),BASE,5005.0,1192.0,2000.0,0.0007013577473783423,-0.0007433894560781924,0.0022087590554901813,0.1765,0.0003365535122111995,-0.00038832723593577607,0.001082526400949391,series_id,season,DISCARD
+ALL,,,,,,,,out-of-time: delta game log loss vs strength-only logistic (negative = variable helps),BASE,5005.0,1192.0,2000.0,0.0010624859816155895,-0.0010752819787991834,0.0031935266355837748,0.1725,0.000525469838817044,-0.0005059310203638859,0.0015407546657475435,series_id,season,DISCARD

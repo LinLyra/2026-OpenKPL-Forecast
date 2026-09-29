@@ -1,0 +1,45 @@
+{
+  "series_rows": 1284,
+  "unique_series_ids": 1284,
+  "duplicate_series_ids": 0,
+  "status_counts": {
+    "1": 44,
+    "3": 1,
+    "4": 1239
+  },
+  "label_flag_counts": {
+    "COMPLETED": 1239,
+    "NOT_FINISHED": 44,
+    "STATUS_SCORE_CONFLICT": 1
+  },
+  "completed_labeled": 1239,
+  "status_score_conflict_series": [
+    "KPL2026S1M4W1D1"
+  ],
+  "missing_start_time": 0,
+  "epoch_fallback_start_time": 0,
+  "min_start_time": "2022-02-09 15:00:00",
+  "max_start_time": "2026-03-01 20:00:00",
+  "min_labeled_start_time": "2022-02-09 15:00:00",
+  "max_labeled_start_time": "2026-02-01 20:00:00",
+  "labeled_series_sharing_start_time": 0,
+  "update_time_min": "2026-02-04 07:40:12",
+  "update_time_max": "2026-02-04 07:40:30",
+  "labeled_after_crawl_time": 0,
+  "seasons": {
+    "KPL2022S1": 136,
+    "KPL2022S2": 136,
+    "KPL2023S1": 136,
+    "KPL2023S2": 136,
+    "KPL2024S1": 136,
+    "KPL2024S2": 136,
+    "KPL2024S3": 53,
+    "KPL2025S1": 136,
+    "KPL2025S2": 136,
+    "KPL2025S3": 53,
+    "KPL2026S1": 90
+  },
+  "unique_teams": 35,
+  "start_time_timezone": "unrecorded_crawler_local",
+  "id_overlap_with_draft_corpus": 0
+}

@@ -1,0 +1,112 @@
+{
+  "snapshot": "/Users/lynnlong/Library/Mobile Documents/com~apple~CloudDocs/dev/OpenKPL-Analytics/data/raw/snapshots/2026-09-28",
+  "snapshot_retrieved_at": "2026-09-28T12:23:42Z",
+  "staging_rows": 1466,
+  "staging_seasons": [
+    "KPL2022S1",
+    "KPL2022S2",
+    "KPL2023S1",
+    "KPL2023S2",
+    "KPL2024S1",
+    "KPL2024S2",
+    "KPL2024S3",
+    "KPL2025S1",
+    "KPL2025S2",
+    "KPL2025S3",
+    "KPL2026S1",
+    "KPL2026S2"
+  ],
+  "canonicalization_audit": {
+    "total_series": 1466,
+    "completed_series": 1466,
+    "resolved_series": 1466,
+    "unresolved_series": 0,
+    "conflicted_series": 0,
+    "excluded_series": 0,
+    "label_eligible_series": 1466,
+    "completed_but_excluded_series": 0,
+    "canonical_team_count": 28
+  },
+  "checks": {
+    "no_self_play_after_canonicalization": true,
+    "no_duplicate_series_id": true,
+    "no_label_from_status_not_4": true,
+    "winner_is_one_of_two_canonical_teams": true,
+    "no_simultaneous_alias_ambiguity": true,
+    "raw_names_preserved": true,
+    "no_duplicate_source_series_id": true,
+    "no_completed_result_after_retrieval_time": true,
+    "no_label_at_or_after_prospective_holdout_start": true
+  },
+  "decision": "READY_TO_MERGE",
+  "endpoint_works": true,
+  "merge_allowed": true,
+  "merge_blockers": [],
+  "coverage_status_2026": [
+    {
+      "season": "KPL2026S1",
+      "stage_id": "cgs1",
+      "coverage_status": "COMPLETE"
+    },
+    {
+      "season": "KPL2026S1",
+      "stage_id": "cgs2",
+      "coverage_status": "COMPLETE"
+    },
+    {
+      "season": "KPL2026S1",
+      "stage_id": "cgs3",
+      "coverage_status": "COMPLETE"
+    },
+    {
+      "season": "KPL2026S1",
+      "stage_id": "jhs",
+      "coverage_status": "COMPLETE"
+    },
+    {
+      "season": "KPL2026S1",
+      "stage_id": "js",
+      "coverage_status": "COMPLETE"
+    },
+    {
+      "season": "KPL2026S1",
+      "stage_id": "kws",
+      "coverage_status": "UNKNOWN"
+    },
+    {
+      "season": "KPL2026S2",
+      "stage_id": "cgs1",
+      "coverage_status": "COMPLETE"
+    },
+    {
+      "season": "KPL2026S2",
+      "stage_id": "cgs2",
+      "coverage_status": "COMPLETE"
+    },
+    {
+      "season": "KPL2026S2",
+      "stage_id": "cgs3",
+      "coverage_status": "COMPLETE"
+    },
+    {
+      "season": "KPL2026S2",
+      "stage_id": "jhs",
+      "coverage_status": "COMPLETE"
+    },
+    {
+      "season": "KPL2026S2",
+      "stage_id": "js",
+      "coverage_status": "COMPLETE"
+    },
+    {
+      "season": "KPL2026S2",
+      "stage_id": "kws",
+      "coverage_status": "UNKNOWN"
+    }
+  ],
+  "diff_counts": {
+    "EXACT_EXISTING": 1239,
+    "NEW_SERIES": 182,
+    "RESULT_UPDATED": 45
+  }
+}

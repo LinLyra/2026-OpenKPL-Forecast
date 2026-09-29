@@ -1,0 +1,901 @@
+{
+  "snapshot_date": "2026-09-28",
+  "retrieved_at": "2026-09-28T12:23:42Z",
+  "completed_at": "2026-09-28T12:25:33Z",
+  "source_name": "kplow (kplshop-op.timi-esports.qq.com), original PythonMajor-assignment source",
+  "endpoint": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList (primary); discovery: getSeasonAndStageAndTeamList, getScheduleProgress, getKVConfig",
+  "requests": [
+    {
+      "request_index": 0,
+      "name": "season_list",
+      "endpoint": "getSeasonAndStageAndTeamList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getSeasonAndStageAndTeamList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:23:42.313166Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/000_season_list.json",
+      "response_bytes": 6579,
+      "sha256": "f9e2c5740ffc2fcc092d490afe9aadde40b58a36270f3fc3aac33ce6afc8a198"
+    },
+    {
+      "request_index": 1,
+      "name": "kv_config",
+      "endpoint": "getKVConfig",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getKVConfig",
+      "http_method": "POST",
+      "query_parameters": {
+        "configids": [
+          "kpl_jhs_match",
+          "kpl_js_match",
+          "kpl_season_select_list"
+        ]
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:23:46.978788Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/001_kv_config.json",
+      "response_bytes": 3186,
+      "sha256": "01e2f6976428267d86bc1e6c5ccb308bbf9bbd6c2a22fe109a0e53b428a62a71"
+    },
+    {
+      "request_index": 2,
+      "name": "schedule_KPL2026S2",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2026S2",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:23:49.418124Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/002_schedule_KPL2026S2.json",
+      "response_bytes": 88581,
+      "sha256": "69c88eef3c672f42f99d628b9da66ab70088de2caa19cb2cf0e95de017e58353"
+    },
+    {
+      "request_index": 3,
+      "name": "schedule_KPL2026S1",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2026S1",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:23:54.536560Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/003_schedule_KPL2026S1.json",
+      "response_bytes": 86686,
+      "sha256": "657caeb086ce138be97065b21704853be70d1059f6927f47d1bb52b42c80d05a"
+    },
+    {
+      "request_index": 4,
+      "name": "schedule_KPL2025S3",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2025S3",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:23:58.027909Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/004_schedule_KPL2025S3.json",
+      "response_bytes": 32486,
+      "sha256": "c3172382b6d0caa68fc1e46a971b4c68ad4e0d273868d71988702fa8af2987b1"
+    },
+    {
+      "request_index": 5,
+      "name": "schedule_KPL2025S2",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2025S2",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:01.493494Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/005_schedule_KPL2025S2.json",
+      "response_bytes": 86304,
+      "sha256": "ad7ec4d365db75566d094695b7cc4f9be309d3e082f8b6d4edddd22a4a916ad6"
+    },
+    {
+      "request_index": 6,
+      "name": "schedule_KPL2025S1",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2025S1",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:05.193467Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/006_schedule_KPL2025S1.json",
+      "response_bytes": 84547,
+      "sha256": "7676c69807b1048d5a139adb2be4aeaeada514b9184457b2f672066fc7d8d7da"
+    },
+    {
+      "request_index": 7,
+      "name": "schedule_KPL2024S3",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2024S3",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:08.826883Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/007_schedule_KPL2024S3.json",
+      "response_bytes": 32712,
+      "sha256": "cd120fff6fa744788b096582448c66dc15c4a4952f05dcca818fcfc664988271"
+    },
+    {
+      "request_index": 8,
+      "name": "schedule_KPL2024S2",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2024S2",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:12.545103Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/008_schedule_KPL2024S2.json",
+      "response_bytes": 84627,
+      "sha256": "01a3e7011a8eed9ea4bc11a4cbc81b9b06198471227b23ec39b2aa43d0b4f144"
+    },
+    {
+      "request_index": 9,
+      "name": "schedule_KPL2024S1",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2024S1",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:15.605126Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/009_schedule_KPL2024S1.json",
+      "response_bytes": 84631,
+      "sha256": "5d861ec036265f9d13b4af57398a8bca9c40403a6886e9bd8ef4f4736fd4f300"
+    },
+    {
+      "request_index": 10,
+      "name": "schedule_KPL2023S2",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2023S2",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:20.052432Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/010_schedule_KPL2023S2.json",
+      "response_bytes": 84644,
+      "sha256": "e1f5d5d313f7d47ba126592c78ac6edf0969e4169cad08b25996fb2c6d472964"
+    },
+    {
+      "request_index": 11,
+      "name": "schedule_KPL2023S1",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2023S1",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:23.247117Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/011_schedule_KPL2023S1.json",
+      "response_bytes": 84711,
+      "sha256": "e6b858efa17cb739f6bfb526d669d1fa0d00f3863546adb90f425f9bdcc4e485"
+    },
+    {
+      "request_index": 12,
+      "name": "schedule_KPL2022S2",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2022S2",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:27.718698Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/012_schedule_KPL2022S2.json",
+      "response_bytes": 84687,
+      "sha256": "ac87a31ff46f6ce501a1cb3f3f6c6feac1491a1bf8b05eb5a8dd7f2b9fe98667"
+    },
+    {
+      "request_index": 13,
+      "name": "schedule_KPL2022S1",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2022S1",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:31.206183Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/013_schedule_KPL2022S1.json",
+      "response_bytes": 84536,
+      "sha256": "aea72496cce9d54dc3c91f7c405b49556c2302ecd9e3114a2001961aa71956f9"
+    },
+    {
+      "request_index": 14,
+      "name": "schedule_KPL2021S2",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2021S2",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:34.788116Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/014_schedule_KPL2021S2.json",
+      "response_bytes": 88859,
+      "sha256": "7e41359790d8604fed9650c1f2484f2bd2de86a30b255a96ff85af109f1aad40"
+    },
+    {
+      "request_index": 15,
+      "name": "schedule_KPL2021S1",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2021S1",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:38.329833Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/015_schedule_KPL2021S1.json",
+      "response_bytes": 120788,
+      "sha256": "2b66db42e350acba78d75c5213051427a1e6da0f70d1270dba2684b9786391b5"
+    },
+    {
+      "request_index": 16,
+      "name": "schedule_KPL2020S2",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2020S2",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:41.885648Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/016_schedule_KPL2020S2.json",
+      "response_bytes": 87988,
+      "sha256": "ae525f5dd89a5e24c1968f98e18dda73ccccfa38cd209bacb8b3816cedfa48ea"
+    },
+    {
+      "request_index": 17,
+      "name": "schedule_KPL2020S1",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2020S1",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:45.407441Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/017_schedule_KPL2020S1.json",
+      "response_bytes": 75309,
+      "sha256": "12d95cbb0ed679f1d62ae88aec8d0b3afde4aed77f00f082d57acde7407fb523"
+    },
+    {
+      "request_index": 18,
+      "name": "schedule_KPL2019S2",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2019S2",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:48.522249Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/018_schedule_KPL2019S2.json",
+      "response_bytes": 75015,
+      "sha256": "ece050955bb16be2c5072edf2cf0d4aaa582735c50ce6a5c8506d41f1ef4a0ad"
+    },
+    {
+      "request_index": 19,
+      "name": "schedule_KPL2019S1",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2019S1",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:51.612843Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/019_schedule_KPL2019S1.json",
+      "response_bytes": 83778,
+      "sha256": "f4cd7c66339d3864bebc4275f46e2ef1b4199737e2d51943d5641729e48a6f60"
+    },
+    {
+      "request_index": 20,
+      "name": "schedule_KPL2018QJS",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2018QJS",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:54.756007Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/020_schedule_KPL2018QJS.json",
+      "response_bytes": 103736,
+      "sha256": "7f1bbb59e7e6b99deb88ca59c28018e2ac1226ed48e1690dbff846ed1b5c13f0"
+    },
+    {
+      "request_index": 21,
+      "name": "schedule_KPL2018CJS",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2018CJS",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:24:58.268671Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/021_schedule_KPL2018CJS.json",
+      "response_bytes": 77814,
+      "sha256": "e33cd4006b1467caacd129749a2470b08924a3f8828b845609d6bf226ec279ac"
+    },
+    {
+      "request_index": 22,
+      "name": "schedule_KPL2017QJS",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2017QJS",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:25:01.415376Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/022_schedule_KPL2017QJS.json",
+      "response_bytes": 72839,
+      "sha256": "e4f1d23860c2530f7a3133e793fdb1c1e62a99a14724d4394cfea2ed19a763a7"
+    },
+    {
+      "request_index": 23,
+      "name": "schedule_KPL2017CJS",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2017CJS",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:25:04.529727Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/023_schedule_KPL2017CJS.json",
+      "response_bytes": 96272,
+      "sha256": "796b50b4592940fd67734e3638a28bbdc9aeea312d45ef14782e77caa8945354"
+    },
+    {
+      "request_index": 24,
+      "name": "schedule_KPL2016QJS",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2016QJS",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:25:08.002570Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/024_schedule_KPL2016QJS.json",
+      "response_bytes": 50800,
+      "sha256": "847cc5ede6aaf6c69800b2e113431bcaa1c212ed40a18e350bc923015993d8cf"
+    },
+    {
+      "request_index": 25,
+      "name": "stages_teams_KPL2026S2",
+      "endpoint": "getSeasonAndStageAndTeamList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getSeasonAndStageAndTeamList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2026S2"
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:25:11.040274Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/025_stages_teams_KPL2026S2.json",
+      "response_bytes": 3094,
+      "sha256": "6dcaff4c31f38d43e1429e1e17b559d52f42b304adbebba3284c634adc4604a6"
+    },
+    {
+      "request_index": 26,
+      "name": "progress_KPL2026S2",
+      "endpoint": "getScheduleProgress",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleProgress",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2026S2"
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:25:13.411002Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/026_progress_KPL2026S2.json",
+      "response_bytes": 9676,
+      "sha256": "7863d773226fd2eeb0a6e34e6912fbb31650a57072283770b8af37d7d250c5df"
+    },
+    {
+      "request_index": 27,
+      "name": "stages_teams_KPL2026S1",
+      "endpoint": "getSeasonAndStageAndTeamList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getSeasonAndStageAndTeamList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2026S1"
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:25:15.809738Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/027_stages_teams_KPL2026S1.json",
+      "response_bytes": 3149,
+      "sha256": "0d41e5b28e5592082fb6e86070130920955fd0ac92ace4bcc1d66ffd5330ff5d"
+    },
+    {
+      "request_index": 28,
+      "name": "progress_KPL2026S1",
+      "endpoint": "getScheduleProgress",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleProgress",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2026S1"
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:25:18.209371Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/028_progress_KPL2026S1.json",
+      "response_bytes": 9827,
+      "sha256": "ee93428b300352cbdb5e5f6314bfda246d587af4970583e3bb9e7316caa25eeb"
+    },
+    {
+      "request_index": 29,
+      "name": "schedule_KPL2026S3",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2026S3",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:25:20.949330Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/029_schedule_KPL2026S3.json",
+      "response_bytes": 44,
+      "sha256": "04d11d1c25da7abc2bf09ad337983adc7601681c459c2ef681ab7cee629513a8"
+    },
+    {
+      "request_index": 30,
+      "name": "schedule_KPL2022S3",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2022S3",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:25:23.330336Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/030_schedule_KPL2022S3.json",
+      "response_bytes": 44,
+      "sha256": "04d11d1c25da7abc2bf09ad337983adc7601681c459c2ef681ab7cee629513a8"
+    },
+    {
+      "request_index": 31,
+      "name": "schedule_KPL2023S3",
+      "endpoint": "getScheduleList",
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "http_method": "POST",
+      "query_parameters": {
+        "seasonid": "KPL2023S3",
+        "stageid": "",
+        "team_id": ""
+      },
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://kpl.qq.com/",
+        "Origin": "https://kpl.qq.com",
+        "Content-Type": "application/json"
+      },
+      "retrieved_at": "2026-09-28T12:25:30.904031Z",
+      "http_status": 200,
+      "error": null,
+      "response_content_type": "application/json",
+      "response_file": "original_api/031_schedule_KPL2023S3.json",
+      "response_bytes": 44,
+      "sha256": "04d11d1c25da7abc2bf09ad337983adc7601681c459c2ef681ab7cee629513a8"
+    }
+  ],
+  "response_files": [
+    "original_api/000_season_list.json",
+    "original_api/001_kv_config.json",
+    "original_api/002_schedule_KPL2026S2.json",
+    "original_api/003_schedule_KPL2026S1.json",
+    "original_api/004_schedule_KPL2025S3.json",
+    "original_api/005_schedule_KPL2025S2.json",
+    "original_api/006_schedule_KPL2025S1.json",
+    "original_api/007_schedule_KPL2024S3.json",
+    "original_api/008_schedule_KPL2024S2.json",
+    "original_api/009_schedule_KPL2024S1.json",
+    "original_api/010_schedule_KPL2023S2.json",
+    "original_api/011_schedule_KPL2023S1.json",
+    "original_api/012_schedule_KPL2022S2.json",
+    "original_api/013_schedule_KPL2022S1.json",
+    "original_api/014_schedule_KPL2021S2.json",
+    "original_api/015_schedule_KPL2021S1.json",
+    "original_api/016_schedule_KPL2020S2.json",
+    "original_api/017_schedule_KPL2020S1.json",
+    "original_api/018_schedule_KPL2019S2.json",
+    "original_api/019_schedule_KPL2019S1.json",
+    "original_api/020_schedule_KPL2018QJS.json",
+    "original_api/021_schedule_KPL2018CJS.json",
+    "original_api/022_schedule_KPL2017QJS.json",
+    "original_api/023_schedule_KPL2017CJS.json",
+    "original_api/024_schedule_KPL2016QJS.json",
+    "original_api/025_stages_teams_KPL2026S2.json",
+    "original_api/026_progress_KPL2026S2.json",
+    "original_api/027_stages_teams_KPL2026S1.json",
+    "original_api/028_progress_KPL2026S1.json",
+    "original_api/029_schedule_KPL2026S3.json",
+    "original_api/030_schedule_KPL2022S3.json",
+    "original_api/031_schedule_KPL2023S3.json"
+  ],
+  "sha256": {
+    "original_api/000_season_list.json": "f9e2c5740ffc2fcc092d490afe9aadde40b58a36270f3fc3aac33ce6afc8a198",
+    "original_api/001_kv_config.json": "01e2f6976428267d86bc1e6c5ccb308bbf9bbd6c2a22fe109a0e53b428a62a71",
+    "original_api/002_schedule_KPL2026S2.json": "69c88eef3c672f42f99d628b9da66ab70088de2caa19cb2cf0e95de017e58353",
+    "original_api/003_schedule_KPL2026S1.json": "657caeb086ce138be97065b21704853be70d1059f6927f47d1bb52b42c80d05a",
+    "original_api/004_schedule_KPL2025S3.json": "c3172382b6d0caa68fc1e46a971b4c68ad4e0d273868d71988702fa8af2987b1",
+    "original_api/005_schedule_KPL2025S2.json": "ad7ec4d365db75566d094695b7cc4f9be309d3e082f8b6d4edddd22a4a916ad6",
+    "original_api/006_schedule_KPL2025S1.json": "7676c69807b1048d5a139adb2be4aeaeada514b9184457b2f672066fc7d8d7da",
+    "original_api/007_schedule_KPL2024S3.json": "cd120fff6fa744788b096582448c66dc15c4a4952f05dcca818fcfc664988271",
+    "original_api/008_schedule_KPL2024S2.json": "01a3e7011a8eed9ea4bc11a4cbc81b9b06198471227b23ec39b2aa43d0b4f144",
+    "original_api/009_schedule_KPL2024S1.json": "5d861ec036265f9d13b4af57398a8bca9c40403a6886e9bd8ef4f4736fd4f300",
+    "original_api/010_schedule_KPL2023S2.json": "e1f5d5d313f7d47ba126592c78ac6edf0969e4169cad08b25996fb2c6d472964",
+    "original_api/011_schedule_KPL2023S1.json": "e6b858efa17cb739f6bfb526d669d1fa0d00f3863546adb90f425f9bdcc4e485",
+    "original_api/012_schedule_KPL2022S2.json": "ac87a31ff46f6ce501a1cb3f3f6c6feac1491a1bf8b05eb5a8dd7f2b9fe98667",
+    "original_api/013_schedule_KPL2022S1.json": "aea72496cce9d54dc3c91f7c405b49556c2302ecd9e3114a2001961aa71956f9",
+    "original_api/014_schedule_KPL2021S2.json": "7e41359790d8604fed9650c1f2484f2bd2de86a30b255a96ff85af109f1aad40",
+    "original_api/015_schedule_KPL2021S1.json": "2b66db42e350acba78d75c5213051427a1e6da0f70d1270dba2684b9786391b5",
+    "original_api/016_schedule_KPL2020S2.json": "ae525f5dd89a5e24c1968f98e18dda73ccccfa38cd209bacb8b3816cedfa48ea",
+    "original_api/017_schedule_KPL2020S1.json": "12d95cbb0ed679f1d62ae88aec8d0b3afde4aed77f00f082d57acde7407fb523",
+    "original_api/018_schedule_KPL2019S2.json": "ece050955bb16be2c5072edf2cf0d4aaa582735c50ce6a5c8506d41f1ef4a0ad",
+    "original_api/019_schedule_KPL2019S1.json": "f4cd7c66339d3864bebc4275f46e2ef1b4199737e2d51943d5641729e48a6f60",
+    "original_api/020_schedule_KPL2018QJS.json": "7f1bbb59e7e6b99deb88ca59c28018e2ac1226ed48e1690dbff846ed1b5c13f0",
+    "original_api/021_schedule_KPL2018CJS.json": "e33cd4006b1467caacd129749a2470b08924a3f8828b845609d6bf226ec279ac",
+    "original_api/022_schedule_KPL2017QJS.json": "e4f1d23860c2530f7a3133e793fdb1c1e62a99a14724d4394cfea2ed19a763a7",
+    "original_api/023_schedule_KPL2017CJS.json": "796b50b4592940fd67734e3638a28bbdc9aeea312d45ef14782e77caa8945354",
+    "original_api/024_schedule_KPL2016QJS.json": "847cc5ede6aaf6c69800b2e113431bcaa1c212ed40a18e350bc923015993d8cf",
+    "original_api/025_stages_teams_KPL2026S2.json": "6dcaff4c31f38d43e1429e1e17b559d52f42b304adbebba3284c634adc4604a6",
+    "original_api/026_progress_KPL2026S2.json": "7863d773226fd2eeb0a6e34e6912fbb31650a57072283770b8af37d7d250c5df",
+    "original_api/027_stages_teams_KPL2026S1.json": "0d41e5b28e5592082fb6e86070130920955fd0ac92ace4bcc1d66ffd5330ff5d",
+    "original_api/028_progress_KPL2026S1.json": "ee93428b300352cbdb5e5f6314bfda246d587af4970583e3bb9e7316caa25eeb",
+    "original_api/029_schedule_KPL2026S3.json": "04d11d1c25da7abc2bf09ad337983adc7601681c459c2ef681ab7cee629513a8",
+    "original_api/030_schedule_KPL2022S3.json": "04d11d1c25da7abc2bf09ad337983adc7601681c459c2ef681ab7cee629513a8",
+    "original_api/031_schedule_KPL2023S3.json": "04d11d1c25da7abc2bf09ad337983adc7601681c459c2ef681ab7cee629513a8"
+  },
+  "code_version": "0.3.0",
+  "git_commit_if_available": null,
+  "discovered_seasons": [
+    "KPL2026S2",
+    "KPL2026S1",
+    "KPL2025S3",
+    "KPL2025S2",
+    "KPL2025S1",
+    "KPL2024S3",
+    "KPL2024S2",
+    "KPL2024S1",
+    "KPL2023S2",
+    "KPL2023S1",
+    "KPL2022S2",
+    "KPL2022S1",
+    "KPL2021S2",
+    "KPL2021S1",
+    "KPL2020S2",
+    "KPL2020S1",
+    "KPL2019S2",
+    "KPL2019S1",
+    "KPL2018QJS",
+    "KPL2018CJS",
+    "KPL2017QJS",
+    "KPL2017CJS",
+    "KPL2016QJS"
+  ],
+  "probed_absent_seasons": [
+    "KPL2026S3",
+    "KPL2022S3",
+    "KPL2023S3"
+  ]
+}

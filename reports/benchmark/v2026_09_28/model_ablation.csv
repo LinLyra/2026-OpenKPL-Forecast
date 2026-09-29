@@ -1,0 +1,7 @@
+﻿model,features_or_mechanism_added,log_loss,delta_log_loss_vs_previous,brier,delta_brier_vs_previous,notes
+B0,Constant P(team_a)=0.5,0.6931471805599453,,0.25,,reference rung
+B1,"Team history: expanding Beta(5,5)-smoothed win rate, combined by log5",0.646385649488753,-0.0467615310711923,0.22761553093283138,-0.022384469067168622,"vs B0: log loss improved, Brier improved"
+B2,"Sequential Elo dynamics on canonical IDs (K=24, scale=400, untuned)",0.630944663957497,-0.015440985531255946,0.22033689437661796,-0.007278636556213414,"vs B1: log loss improved, Brier improved"
+B3,Nested temporal tuning of K and scale,0.6285800620114413,-0.0023646019460557,0.21866848587734516,-0.0016684084992727999,"vs B2: log loss improved, Brier improved"
+B4,"Inactivity regression to 1500 with tuned half-life (K tuned jointly, scale 400)",0.6277573580579835,-0.0008227039534578484,0.21828688403302396,-0.0003816018443212055,"vs B3: log loss improved, Brier improved; vs B3 (its actual base): d_log_loss=-0.00082, d_brier=-0.00038"
+B5,"Season-start regression to 1500 with tuned rho (K tuned jointly, scale 400; no decay)",0.6255890353995668,-0.0021683226584167103,0.2176617701905843,-0.0006251138424396563,"vs B4: log loss improved, Brier improved; vs B3 (its actual base): d_log_loss=-0.00299, d_brier=-0.00101"

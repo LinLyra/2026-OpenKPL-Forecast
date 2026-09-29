@@ -1,0 +1,22 @@
+RETRIEVED: 2026-09-29 (agent WebSearch/WebFetch; verbatim excerpts)
+
+[1] https://news.qq.com/rain/a/20260920A07SP000 — 虎扑官方账号, published 2026-09-20 14:04
+Title: 年总赛程赛制公布：10月2日TTG对阵DYG揭幕，总奖金池7000万
+(body repeats the official format text verbatim, including "赛事日历及擂台赛赛程详见长图")
+
+[2] https://news.17173.com/content/09222026/112052565.shtml — 17173, published 2026-09-22 11:20 (source: KPL 公众号)
+(repeats the official format text verbatim)
+
+[3] https://www.globalgameguide.com/article/kpl-annual-finals-guide (secondary guide; publication date not stated; text says "As of September 28, 2026")
+- "Oct 2, 14:00 — Guangzhou TTG vs Shenzhen DYG; 17:00 — Suzhou KSG vs Jinan RW Knight; 20:00 — Chengdu AG Super Play vs Nanjing Hero"
+- "Oct 2–6: 3 BO5 matches daily (14:00, 17:00, 20:00); Oct 9–12, Oct 14–17: 2 BO5 matches daily (17:00, 20:00)"
+- "Oct 18: Team Selection Ceremony ... the ceremony where high-seed Play-In teams choose their opponents"
+- "Oct 22: Knockout Draw Ceremony"
+- "Seed Protection: Master Group ranks 1 and 2 have seed slots and won't meet in the first round!"
+- "Master Group Mandatory Rotation Rule [Seeding Stage Only!]: In every BO5, all 7 roster players must appear in at least one game; if the series reaches match point and rotation isn't complete, substitutes are forced in."
+NOTE: the guide says Oct 7 is a 3-match day but its day list ("Oct 2–6") omits Oct 7; the Wikipedia transcription has 3 matches on Oct 7 (36 total). Unresolved minor inconsistency in a secondary source; does not affect pairings.
+
+[4] https://www.sanguanbi.com/news/230824.html — published 2026-06-17 (qualification points rule)
+"当队伍年度总决赛晋级积分相同时，则优先对比两支队伍夏季赛排名 ... 特殊情况下将以加赛形式决出排名。"  (applies to ANNUAL POINTS grouping, NOT to Stage 1 standings)
+
+SEARCHED BUT NOT FOUND (as of retrieval): any official Stage 1 (擂台赛) ranking points / tiebreak procedure; any official text for knockout seed-slot positions, draw pots, or same-group restrictions; any official statement on selection pool restrictions beyond "高顺位队伍依次挑选对手".

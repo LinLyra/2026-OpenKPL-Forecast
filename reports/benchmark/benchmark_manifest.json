@@ -1,0 +1,44 @@
+{
+  "benchmark_version": "0.3.0-phaseB",
+  "generated_at": "2026-09-28T11:27:42Z",
+  "source_dataset": "PythonMajor-assignment/data/kpl_data.db",
+  "source_dataset_hash": "8f9631274e2b9189f7d52a93d162ca0a3c6c55554d3de32a8683beaf303e29ca",
+  "canonical_series_hash": "d06ca4db26d80cc69d5cce03c8963bce7b572bd792fde2f9349b0a404f8eef47",
+  "identity_registry_hash": "e844c53d88fef222436160a19586374d5970459fc243269ab4c7f02ecb832ccb",
+  "membership_table_hash": "c0c8266cdfd86612b678b2129b1b2c1a7de219d15c2a9e8f3c612c99fe3227ff",
+  "model_freeze_date": "2026-09-28",
+  "development_start": "2022-02-09 15:00:00",
+  "development_end": "2026-02-01 20:00:00",
+  "development_rule": "is_label_eligible AND start_time < prospective_holdout_start",
+  "prospective_holdout_start": "2026-09-28 00:00:00",
+  "prospective_holdout_rule": "every series with start_time >= prospective_holdout_start (includes the 2026 KPL Annual Finals); never used for fitting, tuning, selection or metrics",
+  "prospective_holdout_labeled_rows_present": 0,
+  "included_seasons": [
+    "KPL2022S2",
+    "KPL2023S1",
+    "KPL2023S2",
+    "KPL2024S1",
+    "KPL2024S2",
+    "KPL2024S3",
+    "KPL2025S1",
+    "KPL2025S2",
+    "KPL2025S3",
+    "KPL2026S1"
+  ],
+  "training_only_seasons": [
+    "KPL2022S1"
+  ],
+  "excluded_seasons": [],
+  "known_source_gaps": [
+    "No series before 2022-02-09 in source: 2020-2021 seasons are not covered.",
+    "KPL2022S3 (annual finals) is not in the source.",
+    "KPL2023S3 (annual finals) is not in the source.",
+    "No series after 2026-03-01 in source; any later competition is not covered (its existence is not asserted here).",
+    "KPL2026S1: 45 of 90 scheduled series have labels; 45 unplayed/unfinished at crawl time are not labels (flags: NOT_FINISHED, STATUS_SCORE_CONFLICT)."
+  ],
+  "timezone_status": "UNVERIFIED. start_time is naive, converted by the crawler with datetime.fromtimestamp in an unrecorded local time zone. Ordering is valid if the offset is constant (DST in the crawler zone could shift some times by 1h). INFERENCE only: series start at 14:00-20:00 and the one in-progress series (14:00 start, 2-0) was crawled at update_time 07:40, consistent with start_time in China Standard Time and update_time in UTC.",
+  "git_commit_if_available": null,
+  "n_development_series": 1239,
+  "n_oos_predictions_per_model": 1103,
+  "log_loss_epsilon": 1e-06
+}

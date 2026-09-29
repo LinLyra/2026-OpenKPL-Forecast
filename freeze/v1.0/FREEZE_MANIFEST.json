@@ -1,0 +1,121 @@
+{
+  "freeze_id": "v1.0-prospective-freeze-2026-09-29",
+  "created_at": "2026-09-29T12:17:23+08:00",
+  "timezone": "Asia/Shanghai",
+  "information_cutoff": "2026-09-28T00:00:00+08:00 (exclusive)",
+  "first_scheduled_match": "2026-10-02 (Asia/Shanghai), 广州TTG vs 深圳DYG",
+  "forecast_status": "PROVISIONAL_PROSPECTIVE_FREEZE",
+  "provisional_scope": "unpublished tournament procedural details only; model, ratings and probabilities are final",
+  "model_version": "openkpl-v1.0 frozen raw B5 SeasonResetElo (k=48, rho=0.9, scale=400); no BO7/roster/draft/state adjustment",
+  "data_version": "v2026_09_28 canonical_series (1466 development series, last 2026-09-12)",
+  "git_commit": null,
+  "git_commit_procedure": "two-step: step 1 content commit with git_commit=null; step 2 metadata commit sets git_commit to the step-1 SHA and records manifest_step1_sha256; annotated tag on the step-2 commit",
+  "strength_file": "data/processed/tournament/frozen_team_strength_2026.parquet",
+  "strength_sha256": "49cacffc24c1eca84f78e4c1772e38b4a7be0d9ddca09bbdca78d85d69907dc7",
+  "prediction_ledger": "reports/tournament/PREDICTION_LEDGER_2026.csv",
+  "prediction_ledger_sha256": "8579b0e41d5e2ff0b38651939ec9f1b525f7e20047d3cd6e42eb8077febb3699",
+  "prediction_ledger_content_sha256_excluding_generated_at": "dfe42a35d4b9b458928f9ae2c61d3c1a0deacbfcf2ba5a3f7760d4fc47a90638",
+  "prediction_ledger_note": "ledger git_commit column reads 'N/A (workspace is not a git repository)'; frozen as written, not edited",
+  "primary_forecast": "freeze/v1.0/PRIMARY_FORECAST.csv",
+  "primary_forecast_sha256": "65268e2f14ad0676d41f63f861f30148f5f03ef851c2a40788852029ca3dd733",
+  "primary_forecast_source": "byte copy of reports/tournament/team_forecast_2026.csv",
+  "candidate_manifest_sha256": "2562c72ddbc57bb13fd2a50e44fcb46c10e188fe2a253752dc10711af296d83c",
+  "rule_provenance_registry_sha256": "a0ddca4be00931181138e1efffbe31696f7737c5cb4bb4906b4a77fe4b6d7761",
+  "rule_materiality_sha256": "09e8c15fae67f134e902fe379bb48bd829f39804c0ccb3dbdd71555594ca37b5",
+  "post_tournament_evaluation_plan_sha256": "e8c5a6b682e4deadee8900f6147253587dd1e34a4e62fb49a4b4aae844177524",
+  "test_count": 170,
+  "test_status": "PASS (170/170, 0 skipped, 0 failures)",
+  "pre_freeze_checks": {
+    "lock_check": "[] (pass)",
+    "candidate_manifest_files_matching": "33/33",
+    "annual_finals_outcome_rows": 0,
+    "post_cutoff_competitive_rows": 0,
+    "primary_probability_transform": "bo5_lambda=1.0, bo7_lambda=1.0 (raw B5)",
+    "bo7_correction_in_primary": false,
+    "roster_adjustment_in_primary": false,
+    "draft_adjustment_in_primary": false
+  },
+  "unresolved_rules": [
+    {
+      "rule_name": "Stage 1 tiebreak",
+      "verification_status": "UNKNOWN_2026 (HISTORICAL_RULE_PROXY 2024/2025: points -> 净胜分 -> BO1 加赛)",
+      "max_delta_championship": 0.00099,
+      "max_delta_final": 0.002596,
+      "max_delta_knockout": 0.019378,
+      "scenarios": [
+        "TIEBREAK_T2_WINS_LOT",
+        "TIEBREAK_T3_WINS_GAMEDIFF_STRENGTH"
+      ],
+      "classification": "IMMATERIAL"
+    },
+    {
+      "rule_name": "Breakthrough pool / selection detail",
+      "verification_status": "PRINCIPLE VERIFIED_OFFICIAL_2026 (高顺位队伍依次挑选对手); selectors/pool UNKNOWN_2026 (HISTORICAL_RULE_PROXY 2025: M5,M6,E2 choose from E3-E5)",
+      "max_delta_championship": 0.003448,
+      "max_delta_final": 0.007279,
+      "max_delta_knockout": 0.158333,
+      "scenarios": [
+        "BT_PROTECTED_M5_M6_E2_ADVERSARIAL",
+        "BT_PROTECTED_M5_M6_E2_OPTIMAL",
+        "BT_PROTECTED_M5_M6_E2_RANDOM",
+        "POOL_ANY_ADVERSARIAL",
+        "POOL_ANY_RANDOM_LEGAL",
+        "POOL_SELECTION_POOL_ANY"
+      ],
+      "selection_behaviour_not_a_rule": {
+        "max_delta_championship": 0.003308,
+        "max_delta_final": 0.004978,
+        "max_delta_knockout": 0.177208,
+        "scenarios": [
+          "SELECTION_ADVERSARIAL",
+          "SELECTION_RANDOM_LEGAL"
+        ]
+      },
+      "classification": "IMMATERIAL"
+    },
+    {
+      "rule_name": "Seed-slot meaning",
+      "verification_status": "EXISTENCE VERIFIED_OFFICIAL_2026 (种子签位 for M1/M2); meaning UNKNOWN_2026; no historical proxy (2024/2025 had no seeds)",
+      "max_delta_championship": 0.003659,
+      "max_delta_final": 0.006048,
+      "max_delta_knockout": 0.0,
+      "scenarios": [
+        "DRAW_K2_SEEDS_NOT_PAIRED",
+        "DRAW_K3_SEEDS_VS_BREAKTHROUGH"
+      ],
+      "classification": "IMMATERIAL"
+    },
+    {
+      "rule_name": "Lower-bracket wiring",
+      "verification_status": "UNKNOWN_2026 (HISTORICAL_RULE_PROXY: realized 2024/2025 brackets identical to engine)",
+      "max_delta_championship": 0.000772,
+      "max_delta_final": 0.000818,
+      "max_delta_knockout": 0.0,
+      "scenarios": [
+        "WIRING_ALT_SAMEHALF_LB1_CROSSED_LB2"
+      ],
+      "classification": "IMMATERIAL"
+    }
+  ],
+  "file_sha256": {
+    "freeze/v1.0/PRIMARY_FORECAST.csv": "65268e2f14ad0676d41f63f861f30148f5f03ef851c2a40788852029ca3dd733",
+    "freeze/v1.0/FREEZE_RECORD.md": "33b3ea0705403a138066023caf1841ba4eddacb7322c255da727d508fb028077",
+    "freeze/v1.0/PUBLIC_FORECAST.md": "6b92d26414dc88b78975d68a81d7505119e5c9d38d10ba5838fce4e065c32770",
+    "freeze/v1.0/RULE_UPDATE_POLICY.md": "013afff60c0fac93dfd1a2ad1a256ea7d0f073afcc4e5843c10ee254fb7d1c72",
+    "reports/tournament/team_forecast_2026.csv": "65268e2f14ad0676d41f63f861f30148f5f03ef851c2a40788852029ca3dd733",
+    "reports/tournament/POST_TOURNAMENT_EVALUATION_PLAN.md": "e8c5a6b682e4deadee8900f6147253587dd1e34a4e62fb49a4b4aae844177524",
+    "reports/tournament/RULE_PROVENANCE_AUDIT.md": "cd4cb64141ccdb0bee4a43ac18ba9fc86632014ac68d31ea6d3f9a29076a6922",
+    "reports/tournament/v10_experiment_lock.json": "054d5331988aeaa27d33ab6d4bf1a16a2f165853ce733d0ffe2c7bacfda78d20",
+    "config/2026_annual_finals_rules.yaml": "8e28f8d86b048adabd459c93fcbc189ce2f1a370657167fa842aa90afe7d9e1a",
+    "data/processed/tournament/pairwise_bo5_probabilities.parquet": "7d6a3fc01c258f39ead5461149ad24cfe9565d8ef3fa301045cd992dcad24324",
+    "data/processed/tournament/pairwise_bo7_probabilities.parquet": "21a369d5d43803105450e198ae6510cd3c88f269e428fbb73d7b068effd5d8ad",
+    "data/processed/tournament/annual_finals_2026_teams.parquet": "dc7ed8e697e127fdec968fe76635dec42a0b4ca0e9c5881cc9605723193fc75e",
+    "data/processed/temporal/v2026_09_28/canonical_series.parquet": "cdc8862ea1a3378c629358191d83de6587a22c616e681fcf9981ce936b83e235",
+    "src/openkpl/tournament/engine.py": "3eb9ed30af75bde51c4a9559b4710c3f72aa7d8e3eda96fc782cb0b2ea39e2d6",
+    "src/openkpl/tournament/run.py": "c7ce27f064d44fbb6297fd7af41870d84f5747f8523c431aed64bfe49f44ad1e",
+    "src/openkpl/tournament/strength.py": "59a4bcd22f711230119c7d820b0a2c455612880006dc2bbf4d90496447733f72",
+    "src/openkpl/modeling/temporal/season_reset.py": "f3e768fc1a10d402675074fd9bf3e58446b7649b5e7b91003c2a4460b3b277e4",
+    "src/openkpl/modeling/temporal/elo.py": "95444bad7df69b9144c10b1b6ad4bf7de74a1d17c3d2303c23167052cdfc51c3",
+    "src/openkpl/modeling/temporal/base.py": "a757c832bfd1f53a9793b835d57ba82bf4b079a1796373472f2978ff53442833"
+  }
+}

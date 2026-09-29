@@ -1,0 +1,28 @@
+validation_season,model_id,n_features,n_fitted_parameters,train_rows,validation_rows,hyperparameters
+KPL2023S1,D0,0,0,373,560,raw B5_game probability (no fitting)
+KPL2023S1,D0R,1,2,373,560,control: logistic recalibration of D0
+KPL2023S1,D1,4,5,373,560,"C=1.0; K=10, min_n=0"
+KPL2023S1,D2,6,7,373,560,"C=1.0; K=10, min_n=0"
+KPL2023S1,D3,8,9,373,560,"C=1.0; K=10, min_n=0"
+KPL2023S1,D4,9,10,373,560,"C=1.0; K=10, min_n=0"
+KPL2023S1,D1R,4,5,373,560,C=1.0; recency half-life=inf
+KPL2023S1,D5,10,11,373,560,C=1.0 (no inner season (single training season): a-priori default)
+KPL2023S1,D6,10,595,373,560,"{'max_iter': 100, 'max_depth': 3} (no inner season (single training season): a-priori default)"
+KPL2023S2,D0,0,0,933,555,raw B5_game probability (no fitting)
+KPL2023S2,D0R,1,2,933,555,control: logistic recalibration of D0
+KPL2023S2,D1,4,5,933,555,"C=1.0; K=2, min_n=5"
+KPL2023S2,D2,6,7,933,555,"C=1.0; K=2, min_n=5"
+KPL2023S2,D3,8,9,933,555,"C=1.0; K=2, min_n=5"
+KPL2023S2,D4,9,10,933,555,"C=1.0; K=2, min_n=5"
+KPL2023S2,D1R,4,5,933,555,C=1.0; recency half-life=60.0
+KPL2023S2,D5,10,11,933,555,"C=0.3 (inner: fit 1 season(s), validate KPL2023S1)"
+KPL2023S2,D6,10,199,933,555,"{'max_iter': 50, 'max_depth': 2} (inner: fit 1 season(s), validate KPL2023S1)"
+KPL2024S1,D0,0,0,1488,311,raw B5_game probability (no fitting)
+KPL2024S1,D0R,1,2,1488,311,control: logistic recalibration of D0
+KPL2024S1,D1,4,5,1488,311,"C=1.0; K=2, min_n=0"
+KPL2024S1,D2,6,7,1488,311,"C=1.0; K=2, min_n=0"
+KPL2024S1,D3,8,9,1488,311,"C=1.0; K=2, min_n=0"
+KPL2024S1,D4,9,10,1488,311,"C=1.0; K=2, min_n=0"
+KPL2024S1,D1R,4,5,1488,311,C=1.0; recency half-life=inf
+KPL2024S1,D5,10,11,1488,311,"C=1.0 (inner: fit 2 season(s), validate KPL2023S2)"
+KPL2024S1,D6,10,370,1488,311,"{'max_iter': 50, 'max_depth': 3} (inner: fit 2 season(s), validate KPL2023S2)"

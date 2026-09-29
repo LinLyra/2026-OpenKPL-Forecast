@@ -1,0 +1,8 @@
+{
+  "endpoint": "https://kplshop-op.timi-esports.qq.com/kplow",
+  "retrieved_at": "2026-09-29 (agent probe, read-only)",
+  "getSeasonAndStageAndTeamList(seasonid='')": "KPL2026S2 season_name='2026年KPL年度总决赛', season_time_desc='10月2日至11月14日', is_cur_season=1",
+  "getScheduleList(KPL2026S2)": "136 rows; stages cgs1/cgs2/cgs3/jhs/kws/js only (2026 Summer); 0 rows on/after 2026-09-20; no Annual Finals schedule",
+  "getScheduleList(KPL2026S3)": "msg='season not found'",
+  "conclusion": "The official data API had not published any Annual Finals schedule or result at retrieval; no competitive outcome information exists."
+}

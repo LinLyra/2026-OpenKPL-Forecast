@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-09-29T00:57:29Z",
+  "prior_locks": {
+    "reports/roster_audit/baseline_lock.json": "3f6c4c5067d36046591bfaca9c659dfcb6070a7835b470c47d375ff7689083f0",
+    "reports/roster_collection/phase_b_lock.json": "573c18cf5007a0e76c401861074551016ca81fcaa7deb48e49cacc5d9b10307d",
+    "reports/player_model/v05_experiment_lock.json": "2feaceffe4c20809b9012dcd504d182a9b8b7585f24ca1ca00205c304dc412b4",
+    "reports/game_draft_model/v06_experiment_lock.json": "66943b1d841594182e63e7365ce8b5204476919a5b4e706f06ec355ad8025320"
+  },
+  "groups": {
+    "v06_reports": {
+      "reports/game_draft_model/draft_bootstrap_deltas.csv": "60532bebd763bda74b6450bdd9681922ad97b8cd304d6378aac8be3adbd0ae97",
+      "reports/game_draft_model/draft_feature_ablation.csv": "16586028f2615318d0509c7805be3969c1d78d05d68a805224bee037d004e73d",
+      "reports/game_draft_model/draft_information_by_team.csv": "b7bd6d06e4b34d1096767b4c78e4294e5277b6487601bf6745eefdcc402e69c7",
+      "reports/game_draft_model/draft_information_gain.csv": "691bf8c8aace8eb072003e8f57651b67913ceeefd42c3801f932f6e7ad5bc0ef",
+      "reports/game_draft_model/draft_model_by_season.csv": "43d1c1306cca6d73d3160ec7d688dd61a7376494cc4af014e062afc87e44a057",
+      "reports/game_draft_model/draft_model_complexity.csv": "f0b79588c9ee958c6a1c14fd3b6f4c62f9ff3957f8ec7f121b4038611482433a",
+      "reports/game_draft_model/draft_model_metrics.csv": "e79724cd39890085b78b1b213adeff84b67f34709b783362d53db0924c16171a",
+      "reports/game_draft_model/fold_selections_draft.csv": "25e1c9acdcfd65b9c0c2ca4eaebc0830b77d129b464ee7b83fd7842dea72aec4",
+      "reports/game_draft_model/fold_selections_game.csv": "283aba2cb774f0cf7819674ab22404698e93a4a8c1ddd672d5662ce002096484",
+      "reports/game_draft_model/game_bootstrap_deltas.csv": "6e3a3440a448d0a4db59163629c3362d71c6ee8df57ee8a30a81a72fae6ffb10",
+      "reports/game_draft_model/game_eligibility_by_season.csv": "5f499138a758c5f824953c68c8664d6a5fe53679e9f409affa976348fe64a9bc",
+      "reports/game_draft_model/game_model_by_season.csv": "1391bfe4f6d763891cdfa4e2edec343a3832ce5b4c6b6dee34b3983742fc0953",
+      "reports/game_draft_model/game_model_metrics.csv": "fc5060341597aa933bc7a64262a3fdea0a2c50d2584fcdc9ba8017d11a5003ae",
+      "reports/game_draft_model/run_summary.json": "072219ab79153a65819f949aa5211d998a152c521e40c21dd303c1399145c3e6",
+      "reports/game_draft_model/sequential_draft_metrics.csv": "7c37a1e11348763ba7c42ee9490639ad366eaa54e0343d61d446a1aaf5e5d5d4",
+      "reports/game_draft_model/series_format_interaction.csv": "c513ddeb4e0da5b597f5d6211dbd46f697e2a446b63a533f2ebfe8c8f90e9bed",
+      "reports/game_draft_model/series_probability_by_format.csv": "1feaab46c855e3e2a838d34666d4bc34c407d131faf17cab528b0dbb88c406da",
+      "reports/game_draft_model/series_probability_by_season.csv": "90ee8a7cd721d6607b1c5e597d70caa177312b0f289c1e666d1167fe53748f13",
+      "reports/game_draft_model/series_probability_metrics.csv": "a68b68f00db2841398fb0914545e38a0939c8e2c618f1f18c279cf1eac80ce01",
+      "reports/game_draft_model/series_state_analysis.csv": "c161ce6ffb0438c583bbbe10539ac249103099c3e59b1f57ae3a300bc030c4b5",
+      "reports/game_draft_model/v06_game_draft_benchmark.md": "56bc9233d77274a9c8329f0aac81a8ef82abe579dcafcd6ed69a45f8b7c26bfa"
+    },
+    "v06_data": {
+      "data/processed/modeling/game_strength_predictions.parquet": "be69e53566564a4a21c2736161cef1b38c16a21d4a3e7ead5f3048b62ec9993e",
+      "data/processed/modeling/series_strength_predictions_v06.parquet": "acdcffe2dfe2cee3965a9c86fca3f72f995090016331af79ae06a0f308dcd716",
+      "data/processed/modeling/draft_model_features.parquet": "128a87286c84d61ef261713c4458a8aa40d1e8a54e2fc86ce3999a2b1f585736",
+      "data/processed/modeling/draft_predictions.parquet": "80d40e02cf4e164cd36c3181246d0085b6c0e2571922a42436adb168ad390122",
+      "data/processed/modeling/sequential_draft_predictions.parquet": "bed06118e6b9e3fdf112bda3e0cd0fcdbbe476480f8718cd94b3975c779a91c7"
+    },
+    "v06_source_code": {
+      "src/openkpl/game_draft_model/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/openkpl/game_draft_model/draft.py": "5f64f2b0c77a26f29dc6f8fb4e826a187af3aff5ac73261b4614a685ff29c5c2",
+      "src/openkpl/game_draft_model/elo.py": "ea3ab57fa9c5ca315fc9cc75817417b45fab345551524623144a635d16d92f20",
+      "src/openkpl/game_draft_model/experiment_a.py": "45681a8a6597644de3d5a16ef4483da5154aefaa3791bc23dca7c2f20fd95e60",
+      "src/openkpl/game_draft_model/experiment_b.py": "cc83e5611076c29943fbd43f768f37696d2eae8f1f5fd525af10ef41ea974167",
+      "src/openkpl/game_draft_model/figures.py": "33c143047f6198432e5538251ba633c8b69016b5ca1ca16c78f46e760a960b38",
+      "src/openkpl/game_draft_model/games.py": "0380aa57211a0276b2f7a15d654551b572a58023b4a3829011e63a3aca6edf82",
+      "src/openkpl/game_draft_model/lock.py": "83f5f346b2cdf542e59d751ff7355cfdabe61cae9c3a523d312d7ce815702aa0",
+      "src/openkpl/game_draft_model/run.py": "42c5cd671facd936e6c729c363acf9c3de2ad61b5f34904940daabd6f0fd4fd3",
+      "src/openkpl/game_draft_model/series_math.py": "801aba6c37539fa09d460873cec8984b492da5739814812e7b270bf156d88a5e"
+    },
+    "promotion_rule": {
+      "reports/bo7_audit/PROMOTION_RULE.md": "7aa328234a5f50cb6f4ad6e4f7e4eee4596136538ff773b3fa341ce384dc07b9"
+    }
+  }
+}

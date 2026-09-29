@@ -1,0 +1,12 @@
+{
+  "file": "data/processed/tournament/frozen_team_strength_2026.parquet",
+  "sha256": "49cacffc24c1eca84f78e4c1772e38b4a7be0d9ddca09bbdca78d85d69907dc7",
+  "information_cutoff": "2026-09-28 00:00:00 Asia/Shanghai (exclusive)",
+  "b5_params": {
+    "k": 48.0,
+    "rho": 0.9,
+    "scale": 400.0
+  },
+  "reproduces_v031_B5_F11_max_abs_diff": 0.0,
+  "reproduction_rows": 136
+}

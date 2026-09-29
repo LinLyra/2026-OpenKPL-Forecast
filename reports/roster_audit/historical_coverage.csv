@@ -1,0 +1,105 @@
+season,year,layer,classification,n_with_layer,n_tested,basis,notes
+KPL2022S1,2022,series,FULL,12,12,SAMPLE_12_OF_136,getScheduleDetail round count == validated score
+KPL2022S1,2022,games,FULL,48,48,SAMPLE_12_OF_136,round_details rows
+KPL2022S1,2022,game_winner,NONE,0,48,SAMPLE_12_OF_136,round_details.win_team
+KPL2022S1,2022,players,NONE,0,48,SAMPLE_12_OF_136,round_details.players non-empty
+KPL2022S1,2022,roles,NONE,0,48,SAMPLE_12_OF_136,positions {1..5} per team; 0 means unlabeled
+KPL2022S1,2022,heroes,NONE,0,48,SAMPLE_12_OF_136,10 hero_id per game
+KPL2022S1,2022,BP,NONE,0,0,SAMPLE_12_OF_136,ordered picks only via hero-combo endpoint; value = number of site-listed combos
+KPL2022S1,2022,boxscore,NONE,0,48,SAMPLE_12_OF_136,no per-game boxscore; season aggregate rows in getSeasonPlayerPerf = 0
+KPL2022S2,2022,series,FULL,12,12,SAMPLE_12_OF_136,getScheduleDetail round count == validated score
+KPL2022S2,2022,games,FULL,45,45,SAMPLE_12_OF_136,round_details rows
+KPL2022S2,2022,game_winner,PARTIAL,28,45,SAMPLE_12_OF_136,round_details.win_team
+KPL2022S2,2022,players,FULL,45,45,SAMPLE_12_OF_136,round_details.players non-empty
+KPL2022S2,2022,roles,NONE,0,45,SAMPLE_12_OF_136,positions {1..5} per team; 0 means unlabeled
+KPL2022S2,2022,heroes,FULL,45,45,SAMPLE_12_OF_136,10 hero_id per game
+KPL2022S2,2022,BP,NONE,0,0,SAMPLE_12_OF_136,ordered picks only via hero-combo endpoint; value = number of site-listed combos
+KPL2022S2,2022,boxscore,NONE,0,45,SAMPLE_12_OF_136,no per-game boxscore; season aggregate rows in getSeasonPlayerPerf = 0
+KPL2023S1,2023,series,FULL,136,136,FULL_COLLECTION,getScheduleDetail round count == validated score
+KPL2023S1,2023,games,FULL,579,579,FULL_COLLECTION,round_details rows
+KPL2023S1,2023,game_winner,PARTIAL,570,579,FULL_COLLECTION,round_details.win_team
+KPL2023S1,2023,players,FULL,579,579,FULL_COLLECTION,round_details.players non-empty
+KPL2023S1,2023,roles,NONE,0,579,FULL_COLLECTION,positions {1..5} per team; 0 means unlabeled
+KPL2023S1,2023,heroes,FULL,579,579,FULL_COLLECTION,10 hero_id per game
+KPL2023S1,2023,BP,NONE,0,0,FULL_COLLECTION,ordered picks only via hero-combo endpoint; value = number of site-listed combos
+KPL2023S1,2023,boxscore,NONE,0,579,FULL_COLLECTION,no per-game boxscore; season aggregate rows in getSeasonPlayerPerf = 125
+KPL2023S2,2023,series,FULL,136,136,FULL_COLLECTION,getScheduleDetail round count == validated score
+KPL2023S2,2023,games,FULL,561,561,FULL_COLLECTION,round_details rows
+KPL2023S2,2023,game_winner,FULL,561,561,FULL_COLLECTION,round_details.win_team
+KPL2023S2,2023,players,FULL,561,561,FULL_COLLECTION,round_details.players non-empty
+KPL2023S2,2023,roles,NONE,0,561,FULL_COLLECTION,positions {1..5} per team; 0 means unlabeled
+KPL2023S2,2023,heroes,FULL,561,561,FULL_COLLECTION,10 hero_id per game
+KPL2023S2,2023,BP,NONE,0,0,FULL_COLLECTION,ordered picks only via hero-combo endpoint; value = number of site-listed combos
+KPL2023S2,2023,boxscore,NONE,0,561,FULL_COLLECTION,no per-game boxscore; season aggregate rows in getSeasonPlayerPerf = 134
+KPL2024S1,2024,series,FULL,12,12,SAMPLE_12_OF_136,getScheduleDetail round count == validated score
+KPL2024S1,2024,games,FULL,50,50,SAMPLE_12_OF_136,round_details rows
+KPL2024S1,2024,game_winner,PARTIAL,49,50,SAMPLE_12_OF_136,round_details.win_team
+KPL2024S1,2024,players,FULL,50,50,SAMPLE_12_OF_136,round_details.players non-empty
+KPL2024S1,2024,roles,NONE,0,50,SAMPLE_12_OF_136,positions {1..5} per team; 0 means unlabeled
+KPL2024S1,2024,heroes,FULL,50,50,SAMPLE_12_OF_136,10 hero_id per game
+KPL2024S1,2024,BP,NONE,0,0,SAMPLE_12_OF_136,ordered picks only via hero-combo endpoint; value = number of site-listed combos
+KPL2024S1,2024,boxscore,NONE,0,50,SAMPLE_12_OF_136,no per-game boxscore; season aggregate rows in getSeasonPlayerPerf = 120
+KPL2024S2,2024,series,FULL,12,12,SAMPLE_12_OF_136,getScheduleDetail round count == validated score
+KPL2024S2,2024,games,FULL,51,51,SAMPLE_12_OF_136,round_details rows
+KPL2024S2,2024,game_winner,FULL,51,51,SAMPLE_12_OF_136,round_details.win_team
+KPL2024S2,2024,players,FULL,51,51,SAMPLE_12_OF_136,round_details.players non-empty
+KPL2024S2,2024,roles,NONE,0,51,SAMPLE_12_OF_136,positions {1..5} per team; 0 means unlabeled
+KPL2024S2,2024,heroes,FULL,51,51,SAMPLE_12_OF_136,10 hero_id per game
+KPL2024S2,2024,BP,NONE,0,0,SAMPLE_12_OF_136,ordered picks only via hero-combo endpoint; value = number of site-listed combos
+KPL2024S2,2024,boxscore,NONE,0,51,SAMPLE_12_OF_136,no per-game boxscore; season aggregate rows in getSeasonPlayerPerf = 114
+KPL2024S3,2024,series,FULL,12,12,SAMPLE_12_OF_53,getScheduleDetail round count == validated score
+KPL2024S3,2024,games,FULL,56,56,SAMPLE_12_OF_53,round_details rows
+KPL2024S3,2024,game_winner,FULL,56,56,SAMPLE_12_OF_53,round_details.win_team
+KPL2024S3,2024,players,FULL,56,56,SAMPLE_12_OF_53,round_details.players non-empty
+KPL2024S3,2024,roles,NONE,0,56,SAMPLE_12_OF_53,positions {1..5} per team; 0 means unlabeled
+KPL2024S3,2024,heroes,FULL,56,56,SAMPLE_12_OF_53,10 hero_id per game
+KPL2024S3,2024,BP,NONE,0,0,SAMPLE_12_OF_53,ordered picks only via hero-combo endpoint; value = number of site-listed combos
+KPL2024S3,2024,boxscore,NONE,0,56,SAMPLE_12_OF_53,no per-game boxscore; season aggregate rows in getSeasonPlayerPerf = 78
+KPL2025S1,2025,series,FULL,12,12,SAMPLE_12_OF_136,getScheduleDetail round count == validated score
+KPL2025S1,2025,games,FULL,56,56,SAMPLE_12_OF_136,round_details rows
+KPL2025S1,2025,game_winner,FULL,56,56,SAMPLE_12_OF_136,round_details.win_team
+KPL2025S1,2025,players,FULL,56,56,SAMPLE_12_OF_136,round_details.players non-empty
+KPL2025S1,2025,roles,NONE,0,56,SAMPLE_12_OF_136,positions {1..5} per team; 0 means unlabeled
+KPL2025S1,2025,heroes,FULL,56,56,SAMPLE_12_OF_136,10 hero_id per game
+KPL2025S1,2025,BP,NONE,0,0,SAMPLE_12_OF_136,ordered picks only via hero-combo endpoint; value = number of site-listed combos
+KPL2025S1,2025,boxscore,NONE,0,56,SAMPLE_12_OF_136,no per-game boxscore; season aggregate rows in getSeasonPlayerPerf = 123
+KPL2025S2,2025,series,FULL,12,12,SAMPLE_12_OF_136,getScheduleDetail round count == validated score
+KPL2025S2,2025,games,FULL,47,47,SAMPLE_12_OF_136,round_details rows
+KPL2025S2,2025,game_winner,FULL,47,47,SAMPLE_12_OF_136,round_details.win_team
+KPL2025S2,2025,players,FULL,47,47,SAMPLE_12_OF_136,round_details.players non-empty
+KPL2025S2,2025,roles,NONE,0,47,SAMPLE_12_OF_136,positions {1..5} per team; 0 means unlabeled
+KPL2025S2,2025,heroes,FULL,47,47,SAMPLE_12_OF_136,10 hero_id per game
+KPL2025S2,2025,BP,NONE,0,0,SAMPLE_12_OF_136,ordered picks only via hero-combo endpoint; value = number of site-listed combos
+KPL2025S2,2025,boxscore,NONE,0,47,SAMPLE_12_OF_136,no per-game boxscore; season aggregate rows in getSeasonPlayerPerf = 113
+KPL2025S3,2025,series,FULL,12,12,SAMPLE_12_OF_53,getScheduleDetail round count == validated score
+KPL2025S3,2025,games,FULL,51,51,SAMPLE_12_OF_53,round_details rows
+KPL2025S3,2025,game_winner,FULL,51,51,SAMPLE_12_OF_53,round_details.win_team
+KPL2025S3,2025,players,FULL,51,51,SAMPLE_12_OF_53,round_details.players non-empty
+KPL2025S3,2025,roles,PARTIAL,6,51,SAMPLE_12_OF_53,positions {1..5} per team; 0 means unlabeled
+KPL2025S3,2025,heroes,FULL,51,51,SAMPLE_12_OF_53,10 hero_id per game
+KPL2025S3,2025,BP,NONE,0,0,SAMPLE_12_OF_53,ordered picks only via hero-combo endpoint; value = number of site-listed combos
+KPL2025S3,2025,boxscore,NONE,0,51,SAMPLE_12_OF_53,no per-game boxscore; season aggregate rows in getSeasonPlayerPerf = 74
+KPL2026S1,2026,series,FULL,136,136,FULL_COLLECTION,getScheduleDetail round count == validated score
+KPL2026S1,2026,games,FULL,573,573,FULL_COLLECTION,round_details rows
+KPL2026S1,2026,game_winner,FULL,573,573,FULL_COLLECTION,round_details.win_team
+KPL2026S1,2026,players,FULL,573,573,FULL_COLLECTION,round_details.players non-empty
+KPL2026S1,2026,roles,FULL,573,573,FULL_COLLECTION,positions {1..5} per team; 0 means unlabeled
+KPL2026S1,2026,heroes,FULL,573,573,FULL_COLLECTION,10 hero_id per game
+KPL2026S1,2026,BP,PARTIAL,15,15,FULL_COLLECTION,ordered picks only via hero-combo endpoint; value = number of site-listed combos
+KPL2026S1,2026,boxscore,NONE,0,573,FULL_COLLECTION,no per-game boxscore; season aggregate rows in getSeasonPlayerPerf = 114
+KPL2026S2,2026,series,FULL,136,136,FULL_COLLECTION,getScheduleDetail round count == validated score
+KPL2026S2,2026,games,FULL,562,562,FULL_COLLECTION,round_details rows
+KPL2026S2,2026,game_winner,FULL,562,562,FULL_COLLECTION,round_details.win_team
+KPL2026S2,2026,players,FULL,562,562,FULL_COLLECTION,round_details.players non-empty
+KPL2026S2,2026,roles,PARTIAL,535,562,FULL_COLLECTION,positions {1..5} per team; 0 means unlabeled
+KPL2026S2,2026,heroes,FULL,562,562,FULL_COLLECTION,10 hero_id per game
+KPL2026S2,2026,BP,PARTIAL,18,18,FULL_COLLECTION,ordered picks only via hero-combo endpoint; value = number of site-listed combos
+KPL2026S2,2026,boxscore,NONE,0,562,FULL_COLLECTION,no per-game boxscore; season aggregate rows in getSeasonPlayerPerf = 120
+EARLIEST_AVAILABLE,2022,series,KPL2022S1,,,derived from rows above,earliest season with FULL or PARTIAL (within tested series)
+EARLIEST_AVAILABLE,2022,games,KPL2022S1,,,derived from rows above,earliest season with FULL or PARTIAL (within tested series)
+EARLIEST_AVAILABLE,2022,game_winner,KPL2022S2,,,derived from rows above,earliest season with FULL or PARTIAL (within tested series)
+EARLIEST_AVAILABLE,2022,players,KPL2022S2,,,derived from rows above,earliest season with FULL or PARTIAL (within tested series)
+EARLIEST_AVAILABLE,2025,roles,KPL2025S3,,,derived from rows above,earliest season with FULL or PARTIAL (within tested series)
+EARLIEST_AVAILABLE,2022,heroes,KPL2022S2,,,derived from rows above,earliest season with FULL or PARTIAL (within tested series)
+EARLIEST_AVAILABLE,2026,BP,KPL2026S1,,,derived from rows above,earliest season with FULL or PARTIAL (within tested series)
+EARLIEST_AVAILABLE,,boxscore,NONE,,,derived from rows above,earliest season with FULL or PARTIAL (within tested series)

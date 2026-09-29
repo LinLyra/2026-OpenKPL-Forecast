@@ -1,0 +1,11 @@
+project:
+  name: OpenKPL-Analytics
+  timezone: Asia/Shanghai
+paths:
+  external: data/raw/external
+  processed: data/processed
+  audit: reports/audit
+model:
+  elo_k: 24
+  elo_initial: 1500
+  random_state: 42

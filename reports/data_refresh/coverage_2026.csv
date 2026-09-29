@@ -1,0 +1,14 @@
+﻿season,stage_id,stage,expected_or_discovered_series,retrieved_series,completed_series,scheduled_series,missing_series,earliest_date,latest_date,unique_teams,coverage_status,evidence,current_series,current_completed_series
+KPL2026S1,cgs1,常规赛第一轮,45,45,45,0,0,2026-01-14 14:00:00,2026-02-01 20:00:00,18,COMPLETE,source standings: 3 groups of 6/6/6 teams -> 45 round-robin series; standings wins total 45,45,45
+KPL2026S1,cgs2,常规赛第二轮,45,45,45,0,0,2026-02-04 14:00:00,2026-03-01 20:00:00,18,COMPLETE,source standings: 3 groups of 6/6/6 teams -> 45 round-robin series; standings wins total 45,45,0
+KPL2026S1,cgs3,常规赛第三轮,30,30,30,0,0,2026-03-07 14:00:00,2026-03-22 20:00:00,12,COMPLETE,source standings: 2 groups of 6/6 teams -> 30 round-robin series; standings wins total 30,0,0
+KPL2026S1,jhs,季后赛,11,11,11,0,0,2026-03-26 18:30:00,2026-04-05 18:30:00,10,COMPLETE,source bracket config kpl_jhs_match declares 11 playoff schedule IDs; retrieved IDs match exactly,0,0
+KPL2026S1,js,决赛,1,1,1,0,0,2026-04-11 17:00:00,2026-04-11 17:00:00,2,COMPLETE,source kpl_js_match declares 1 final schedule ID(s); retrieved match,0,0
+KPL2026S1,kws,卡位赛,,4,4,0,,2026-03-03 14:00:00,2026-03-04 19:00:00,8,UNKNOWN,no structural expected count in source (stage not in standings or bracket config),0,0
+KPL2026S2,cgs1,常规赛第一轮,45,45,45,0,0,2026-06-17 14:00:00,2026-07-05 20:00:00,18,COMPLETE,source standings: 3 groups of 6/6/6 teams -> 45 round-robin series; standings wins total 45,0,0
+KPL2026S2,cgs2,常规赛第二轮,45,45,45,0,0,2026-07-09 14:00:00,2026-07-26 20:00:00,18,COMPLETE,source standings: 3 groups of 6/6/6 teams -> 45 round-robin series; standings wins total 45,0,0
+KPL2026S2,cgs3,常规赛第三轮,30,30,30,0,0,2026-07-30 14:00:00,2026-08-23 20:00:00,12,COMPLETE,source standings: 2 groups of 6/6 teams -> 30 round-robin series; standings wins total 30,0,0
+KPL2026S2,jhs,季后赛,11,11,11,0,0,2026-08-27 18:30:00,2026-09-06 18:30:00,10,COMPLETE,source bracket config kpl_jhs_match declares 11 playoff schedule IDs; retrieved IDs match exactly,0,0
+KPL2026S2,js,决赛,1,1,1,0,0,2026-09-12 18:00:00,2026-09-12 18:00:00,2,COMPLETE,source kpl_js_match declares 1 final schedule ID(s); retrieved match,0,0
+KPL2026S2,kws,(empty in source),,4,4,0,,2026-07-27 14:00:00,2026-07-28 19:00:00,8,UNKNOWN,no structural expected count in source (stage not in standings or bracket config),0,0
+2026_ANNUAL_FINALS,ALL,ALL,,0,0,0,,,,0,UNKNOWN,no schedule published in source (KPL2026S3: 'season not found'); season-list metadata only: KPL2026S2: '2026年KPL年度总决赛' 10月2日至11月14日,0,0

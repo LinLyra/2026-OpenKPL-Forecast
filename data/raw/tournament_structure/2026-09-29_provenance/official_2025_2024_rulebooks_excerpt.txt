@@ -1,0 +1,39 @@
+RETRIEVED: 2026-09-29 (agent WebSearch/WebFetch; verbatim excerpts). HISTORICAL — NOT 2026 RULES.
+
+[A] 2025年王者荣耀KPL年度总决赛赛事规则（2025年9月版本）
+URL: https://pvp.qq.com/gicp/news/651/784525.html   TIER 1 (王者荣耀官方网站, 作者：王者荣耀电竞, 发布时间：2025-09-18)
+4.1(C) "赛制：BO5组外单循环，胜者积1分，败者不积分。"
+4.2(C) "对阵：擂台赛的大师组第5、6名和精英组第2名根据排名顺位由高到低依次在精英组第3、4、5名中选择对手。"
+4.3(C) "对阵：随机抽签决定对阵。"   4.3(D) "赛制：BO7双败淘汰。"
+4.4(E) "选边权：胜者组的冠军拥有首局选边权，每局比赛的败方拥有下局比赛的选边权。"
+4.5.1 "(A) 如出现队伍积分相同，则依据队伍净胜分来决定排名。(B) 如队伍净胜分相同，则排名相同的队伍进行加赛。若循环赛中若干支队伍排名相同，则最终的排名均由加赛决出，且最终的排名不会再以循环赛中的积分排名作参考"
+
+[B] 【2025年KPL年度总决赛 擂台赛加赛及突围赛对阵选择仪式说明】 KPL联盟赛事委员会 2025年10月11日 (来源：微博)
+URL: https://bbs.hupu.com/635121317.html   TIER 3 host quoting a Tier 1 official notice verbatim
+"根据赛事规则，当出现影响后续赛程对阵的同分情况时将进行加赛。" "1) 两队同排名 进行1场BO1（常规BP，下同）"
+"擂台赛最终结算排名中，“大师组”第五名、“大师组”第六名、“精英组”第二名的队伍将派选手代表登台依次从“精英组”第三至五名中选择出突围赛对阵对手，直至完成三组对阵。"
+
+[C] 2025 official format announcements (Tier 1 content via Tencent News mirror)
+https://news.qq.com/rain/a/20250530A075R100 (2025-05-30): "突围赛：高顺位队伍依次选择对手进行BO7（全局BP+巅峰对决）的对决" ; "淘汰赛：通过抽签决定对阵，不设种子池"
+https://news.qq.com/rain/a/20250928A0496L00 (2025-09-28): "6支战队中由高顺位的3支队伍依次选择对手" ; "首轮比赛对阵通过随机抽签决定，不设种子池。"
+
+[D] 2024年王者荣耀KPL年度总决赛赛事规则（2024年9月版本）
+URL: https://www.wangyoushe.com/info/Ej73m   TIER 3 host reproducing the official rulebook (official original: https://pvp.qq.com/web201605/newsDetail.shtml?tid=632744, JS-rendered, text not retrievable)
+4.1(C) "赛制：BO5组外单循环，胜者积1分，败者不积分。"
+4.2(C) "对阵：由种子抽签决定对阵，擂台赛积分排名顺位高的队伍拥有种子优势，即大师组第5、6名和精英组第2名不会在该轮交手。"
+4.3(C) "对阵：随机抽签决定对阵。"
+4.5.1 "(A) 如出现队伍积分相同，则依据队伍净胜分来决定排名。(B) 如队伍净胜分相同，则排名相同的队伍进行加赛。"
+
+[E] Realized historical brackets (Wikipedia, TIER 3; past tournaments, not 2026 outcomes)
+2024: https://zh.wikipedia.org/zh-hans/王者荣耀职业联赛2024年年度总决赛 ; 2025: https://zh.wikipedia.org/zh-hans/王者荣耀职业联赛2025年年度总决赛
+Both years: 败者组第一轮 L1(QF1负者) vs L3(QF3负者), L2(QF2负者) vs L4(QF4负者); 第二轮 W(L1-L3) vs 胜者组半决赛1负者, W(L2-L4) vs 半决赛2负者; 败者组决赛 = 胜者组决赛负者 vs 败者组半决赛胜者; 决赛 = 胜者组冠军 vs 败者组冠军.
+2024 精英组 standings: WB/DRG/LGD all 3-3, ordered by 净胜局 +4/+3/0 (净胜分 = game differential in practice).
+2024 突围赛 pairings: D5-J5, D6-J4, J2-J3 (M5, M6, E2 never met each other).
+
+[F] 2026 KPL league rulebook (王者荣耀职业联赛（KPL）2026 赛事规则, https://pvp.qq.com/gicp/news/651/792782.html, 2026-01-14, TIER 1) — league (not Annual Finals):
+4.4.1 "(A) 如出现队伍积分相同，则依据队伍净胜分来决定排名。(B) 如队伍净胜分相同，则根据所涉队伍间的胜负关系决定排名。"
+
+[G] 【2026年王者荣耀KPL年度总决赛租借规则】 KPL联盟赛事委员会 2026年9月9日 (quoted by 24直播网 https://www.jqxsd.cn/news/227316.html, TIER 3 host quoting Tier 1)
+"本次年度总决赛擂台赛阶段将继续采用“大师轮换”规则"
+
+SEARCHED, NOT FOUND (2026-09-29): a 2026 Annual Finals rulebook (no "2026年王者荣耀KPL年度总决赛赛事规则" page; https://pvp.qq.com/cp/kpl2026/index.html returns 404); any 2026 statement of the Stage 1 tiebreak, of breakthrough selector/pool detail, or of the meaning of 种子签位 / draw pots / restrictions.

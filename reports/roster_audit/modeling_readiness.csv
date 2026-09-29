@@ -1,0 +1,15 @@
+feature,data_available,historical_depth,deterministic_identity,temporal_linkage,leakage_risk,quality,ready_now,blocking_issue
+Team Strength,YES,YES,YES,YES,NO,YES,YES,none (validated v0.3 backbone; B0-B5 exist)
+Player Rating,PARTIAL,PARTIAL,YES,YES,PARTIAL,PARTIAL,NO,no per-game player boxscore; only win/loss per game lineup; full per-game lineups collected only for 2023 and 2026 (other seasons sampled); roles unlabeled before 2025S3
+Roster Continuity,YES,PARTIAL,YES,YES,PARTIAL,YES,NO,persistent playerid verified; needs full 2022S2-2025 lineup collection; registered rosters only for 2026 and retrieved after the fact
+Starting Lineup Strength,PARTIAL,PARTIAL,YES,YES,PARTIAL,PARTIAL,NO,no official starter flag (round-1 lineup is derived); depends on Player Rating
+Bench Depth,PARTIAL,NO,YES,PARTIAL,YES,PARTIAL,NO,registered rosters only for 2026S1/S2 and snapshotted post-season; unplayed players have no performance evidence
+Rotation Cost,PARTIAL,PARTIAL,YES,YES,NO,PARTIAL,NO,lineup changes observable (2026: 16/15 series; 2023: 40/35) but reasons unknown; small sample
+Player-Hero Proficiency,YES,PARTIAL,YES,YES,NO,YES,NO,player-hero-game-result rows exist 2022S2-2026 but full collection only for 2023 and 2026
+Hero Meta Strength,YES,PARTIAL,YES,YES,NO,YES,NO,hero-game-result rows exist; no patch key so meta windows must be time-based; full collection pending for 2022S2 and 2024-2025
+Hero Synergy,YES,PARTIAL,YES,YES,NO,YES,NO,team hero sets per game available; same collection gap
+Hero Counter,YES,PARTIAL,YES,YES,NO,PARTIAL,NO,no side per game; opponent hero sets available; same collection gap
+Sequential BP,PARTIAL,PARTIAL,PARTIAL,PARTIAL,NO,PARTIAL,NO,kplow: picks+order for 53-59% of 2026 games only and no bans; WZRY: ordered BP for 1194 uniquely linked rows (2022S2-2024S1) but draft order not cross-verifiable
+Global BP / Hero Depletion,PARTIAL,PARTIAL,YES,YES,NO,PARTIAL,NO,picked heroes per game known for full series; bans absent; the round-7 duplicate-hero games (18) suggest special decider rules not documented in the source
+Patch Adaptation,NO,NO,NO,NO,n/a,NO,NO,patch/version ABSENT in every source
+Game-State Win Probability,NO,NO,NO,NO,n/a,NO,NO,no in-game timeline (gold/objectives/kills over time) for completed games; live endpoints only during live games

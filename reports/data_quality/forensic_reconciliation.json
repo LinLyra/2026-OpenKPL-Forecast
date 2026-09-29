@@ -1,0 +1,146 @@
+[
+  {
+    "metric": "draft_games",
+    "forensic_audit": 5586,
+    "etl": 5586,
+    "match": true
+  },
+  {
+    "metric": "draft_events",
+    "forensic_audit": 100531,
+    "etl": 100531,
+    "match": true
+  },
+  {
+    "metric": "ban_events",
+    "forensic_audit": 44674,
+    "etl": 44674,
+    "match": true
+  },
+  {
+    "metric": "pick_events",
+    "forensic_audit": 55857,
+    "etl": 55857,
+    "match": true
+  },
+  {
+    "metric": "lineup_slots",
+    "forensic_audit": 55860,
+    "etl": 55860,
+    "match": true
+  },
+  {
+    "metric": "standard_18_games",
+    "forensic_audit": 5579,
+    "etl": 5579,
+    "match": true
+  },
+  {
+    "metric": "nonstandard_bp_games",
+    "forensic_audit": 7,
+    "etl": 7,
+    "match": true
+  },
+  {
+    "metric": "clean_five_role_games",
+    "forensic_audit": 3007,
+    "etl": 3007,
+    "match": true
+  },
+  {
+    "metric": "nonstandard_role_games",
+    "forensic_audit": 2579,
+    "etl": 2579,
+    "match": true
+  },
+  {
+    "metric": "missing_hero_events",
+    "forensic_audit": 23,
+    "etl": 23,
+    "match": true
+  },
+  {
+    "metric": "missing_hero_ban_events",
+    "forensic_audit": 23,
+    "etl": 23,
+    "match": true
+  },
+  {
+    "metric": "unique_drafted_heroes",
+    "forensic_audit": 118,
+    "etl": 118,
+    "match": true
+  },
+  {
+    "metric": "unique_lineup_heroes",
+    "forensic_audit": 117,
+    "etl": 117,
+    "match": true
+  },
+  {
+    "metric": "unknown_position_slots",
+    "forensic_audit": 286,
+    "etl": 286,
+    "match": true
+  },
+  {
+    "metric": "blank_position_slots",
+    "forensic_audit": 22,
+    "etl": 22,
+    "match": true
+  },
+  {
+    "metric": "games_with_unknown_position",
+    "forensic_audit": 144,
+    "etl": 144,
+    "match": true
+  },
+  {
+    "metric": "games_with_blank_position",
+    "forensic_audit": 18,
+    "etl": 18,
+    "match": true
+  },
+  {
+    "metric": "pick_lineup_mismatch_games",
+    "forensic_audit": 2,
+    "etl": 2,
+    "match": true
+  },
+  {
+    "metric": "first_actor_is_team1_games",
+    "forensic_audit": 5586,
+    "etl": 5586,
+    "match": true
+  },
+  {
+    "metric": "team1_wins",
+    "forensic_audit": 2815,
+    "etl": 2815,
+    "match": true
+  },
+  {
+    "metric": "team2_wins",
+    "forensic_audit": 2771,
+    "etl": 2771,
+    "match": true
+  },
+  {
+    "metric": "winner_missing",
+    "forensic_audit": 0,
+    "etl": 0,
+    "match": true
+  },
+  {
+    "metric": "duplicate_source_rows",
+    "forensic_audit": 0,
+    "etl": 0,
+    "match": true
+  },
+  {
+    "metric": "unique_teams",
+    "forensic_audit": 45,
+    "etl": 45,
+    "match": true
+  }
+]

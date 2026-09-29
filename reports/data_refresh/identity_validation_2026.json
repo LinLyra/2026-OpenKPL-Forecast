@@ -1,0 +1,171 @@
+{
+  "registry_rows": 37,
+  "registry_problems": [],
+  "unreviewed_rows": 0,
+  "canonical_ids_in_registry": 28,
+  "SYG_mapping": [
+    {
+      "canonical_team_id": "TEAM_SYG",
+      "canonical_name": "SYGaming",
+      "identity_type": "EXACT",
+      "continuity_status": "SAME_COMPETITIVE_ENTITY",
+      "confidence": "HIGH",
+      "evidence_type": "EXTERNALLY_VERIFIED",
+      "review_status": "VERIFIED"
+    }
+  ],
+  "TEAM_SYG_observed_names_in_registry": [
+    "SYG"
+  ],
+  "WST_mapping": [
+    {
+      "canonical_team_id": "TEAM_WST",
+      "canonical_name": "WST",
+      "identity_type": "EXACT",
+      "continuity_status": "SAME_COMPETITIVE_ENTITY",
+      "confidence": "HIGH",
+      "evidence_type": "EXTERNALLY_VERIFIED",
+      "review_status": "VERIFIED"
+    }
+  ],
+  "TEAM_WST_observed_names_in_registry": [
+    "WST"
+  ],
+  "distinct_assertions": {
+    "TEAM_SYG!=TEAM_WST": true,
+    "TEAM_SYG!=TEAM_TCG": true,
+    "TEAM_SYG!=TEAM_QINGJIU": true,
+    "TEAM_WST!=TEAM_TCG": true,
+    "TEAM_WST!=TEAM_QINGJIU": true
+  },
+  "canonicalization_audit": {
+    "total_series": 1466,
+    "completed_series": 1466,
+    "resolved_series": 1466,
+    "unresolved_series": 0,
+    "conflicted_series": 0,
+    "excluded_series": 0,
+    "label_eligible_series": 1466,
+    "completed_but_excluded_series": 0,
+    "canonical_team_count": 28
+  },
+  "checks": {
+    "no_self_play_after_canonicalization": true,
+    "no_duplicate_series_id": true,
+    "no_label_from_status_not_4": true,
+    "winner_is_one_of_two_canonical_teams": true,
+    "no_simultaneous_alias_ambiguity": true,
+    "raw_names_preserved": true
+  },
+  "SYG_resolves_to": [
+    "TEAM_SYG"
+  ],
+  "TEAM_SYG_raw_names_in_data": [
+    "SYG"
+  ],
+  "TEAM_SYG_seasons": [
+    "KPL2026S2"
+  ],
+  "TEAM_SYG_series": 15,
+  "WST_resolves_to": [
+    "TEAM_WST"
+  ],
+  "TEAM_WST_raw_names_in_data": [
+    "WST"
+  ],
+  "TEAM_WST_seasons": [
+    "KPL2026S2"
+  ],
+  "TEAM_WST_series": 11,
+  "SYG_vs_WST_series": 0,
+  "self_play": 0,
+  "membership_2026S2_SYG_WST": [
+    {
+      "season": "KPL2026S2",
+      "canonical_team_id": "TEAM_SYG",
+      "canonical_name": "SYGaming",
+      "observed_name": "SYG",
+      "slot_type": "TEMPORARY",
+      "entry_type": "QUALIFIER",
+      "predecessor_team_id": "",
+      "continuity_type": "NEW_ENTRY",
+      "qualification_method": "",
+      "evidence_status": "EXTERNALLY_VERIFIED",
+      "notes": "Independent organization; one of the two temporary-seat entrants of 2026 KPL Summer. entry_type QUALIFIER per reviewer instruction; the qualification route itself is not recorded. Not an alias or continuation of any KPL team."
+    },
+    {
+      "season": "KPL2026S2",
+      "canonical_team_id": "TEAM_WST",
+      "canonical_name": "WST",
+      "observed_name": "WST",
+      "slot_type": "TEMPORARY",
+      "entry_type": "UNKNOWN",
+      "predecessor_team_id": "",
+      "continuity_type": "NEW_ENTRY",
+      "qualification_method": "",
+      "evidence_status": "EXTERNALLY_VERIFIED",
+      "notes": "Independent organization; one of the two temporary-seat entrants of 2026 KPL Summer. Won KGL Spring 2026 (4-3 vs SYG) before KPL Summer, but the evidence does not state that the KGL title was the entry route, so entry_type stays UNKNOWN (KGL_DIRECT not asserted). Not an alias or continuation of any KPL team."
+    }
+  ],
+  "membership_2026S2_TCG_QINGJIU_present": [],
+  "slot_continuity_rows": [
+    {
+      "season": "KPL2024S2",
+      "canonical_team_id": "TEAM_JDG",
+      "predecessor_team_id": "TEAM_VG"
+    }
+  ],
+  "identity_audit_on_refreshed_series": {
+    "unique_observed_team_names": 37,
+    "identity_conflicts": 4,
+    "candidate_pairs_that_played_each_other": 3,
+    "mid_season_candidate_changes": 0,
+    "unreviewed_registry_rows": 0,
+    "registry_rows_with_canonical_id": 37
+  },
+  "overlap_rows_involving_SYG_WST": [
+    {
+      "old_name": "苏州KSG",
+      "new_name": "SYG",
+      "identity_conflict_flag": false,
+      "conflict_reasons": ""
+    },
+    {
+      "old_name": "无锡TCG",
+      "new_name": "WST",
+      "identity_conflict_flag": false,
+      "conflict_reasons": ""
+    },
+    {
+      "old_name": "无锡TCG",
+      "new_name": "SYG",
+      "identity_conflict_flag": false,
+      "conflict_reasons": ""
+    },
+    {
+      "old_name": "桐乡情久",
+      "new_name": "SYG",
+      "identity_conflict_flag": false,
+      "conflict_reasons": ""
+    },
+    {
+      "old_name": "苏州KSG",
+      "new_name": "WST",
+      "identity_conflict_flag": false,
+      "conflict_reasons": ""
+    },
+    {
+      "old_name": "桐乡情久",
+      "new_name": "WST",
+      "identity_conflict_flag": false,
+      "conflict_reasons": ""
+    },
+    {
+      "old_name": "KSG",
+      "new_name": "SYG",
+      "identity_conflict_flag": true,
+      "conflict_reasons": "PLAYED_EACH_OTHER|SAME_DAY_PRESENCE|DATE_RANGES_OVERLAP"
+    }
+  ],
+  "registry_appended_by_audit": false
+}

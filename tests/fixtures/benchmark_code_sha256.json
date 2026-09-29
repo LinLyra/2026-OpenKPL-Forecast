@@ -1,0 +1,21 @@
+{
+  "note": "SHA256 of the v0.3 Phase B benchmark code (files last modified 2026-09-28 21:21-21:26, before v0.3.1). Must not change during a data refresh.",
+  "files": {
+    "src/openkpl/evaluation/benchmark.py": "c2c47218ccfa3ec12638c8f498de53d7075e1c29b30019334ccce93b6bbee383",
+    "src/openkpl/evaluation/benchmark_report.py": "7c950c4a8e5cabda3ba8a21ecd26188fbcebb931e2ddeb7d09935717895a6d9a",
+    "src/openkpl/evaluation/calibration.py": "e0799d8b842f28b346efb0dea7f17cad3fcf9616f87400d45e8b828b6d77ba16",
+    "src/openkpl/evaluation/figures.py": "aecc29eb6f7c9ab617619c6625bb164c37c39a92265a42a0d27c8d80431097e3",
+    "src/openkpl/evaluation/freeze.py": "6eacdf51995f96f7e06c4cecfa6f8f64043d8fbd76e27c6b61d74b68dd5b72b3",
+    "src/openkpl/evaluation/metrics.py": "1fc352980cfc2d93ac3078b2b9ec516e70582bc4879122fa5591c75a66756320",
+    "src/openkpl/evaluation/temporal_cv.py": "233d1a33f5f2f85a2bea0ad77a6b58d0f4c9ca93071e214671c22335904437b3",
+    "src/openkpl/identity/membership.py": "e56280446fc58756f8b02e5cff48c4a72062c08e13b10bece138b6bb7cc9c789",
+    "src/openkpl/modeling/temporal/__init__.py": "b7cb72af991bd92beb611c9c555556fc64798d0e65e178c7a753d29c343e4a77",
+    "src/openkpl/modeling/temporal/base.py": "a757c832bfd1f53a9793b835d57ba82bf4b079a1796373472f2978ff53442833",
+    "src/openkpl/modeling/temporal/coinflip.py": "83efda828553c2442875c189b2d2d699bc0d110dafe4f7c65c07dadc58f66cfc",
+    "src/openkpl/modeling/temporal/decay.py": "a8f27badfb5077c11c6cd35d180a03f6a713e793b996f321f91b7a0f1e8186fa",
+    "src/openkpl/modeling/temporal/elo.py": "95444bad7df69b9144c10b1b6ad4bf7de74a1d17c3d2303c23167052cdfc51c3",
+    "src/openkpl/modeling/temporal/season_reset.py": "f3e768fc1a10d402675074fd9bf3e58446b7649b5e7b91003c2a4460b3b277e4",
+    "src/openkpl/modeling/temporal/winrate.py": "aa48da6c420497c1a279a03b1b62991ff324141eab18a42846e9fb2a3007695d",
+    "src/openkpl/transform/canonical.py": "e7d08be890e12940f8a7f3ce8ffc93182864522196cbab7870a376886c59ebed"
+  }
+}

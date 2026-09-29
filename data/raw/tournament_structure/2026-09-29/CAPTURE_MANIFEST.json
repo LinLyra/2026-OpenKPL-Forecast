@@ -1,0 +1,11 @@
+{
+  "captured_at_utc": "2026-09-29T01:41:03Z",
+  "note": "Write-once captures of tournament STRUCTURE sources. All were RETRIEVED after the information cutoff (POST_CUTOFF_STRUCTURE_INFORMATION) but every official item was PUBLISHED before it (2026-09-20/21/22). None contains any Annual Finals competitive outcome.",
+  "files": {
+    "kpl_api_probe_20260929.json": "eb5ff4f7ec9076b77681b64fe34214c0f236e0332633cce16fea2c1ba37bd9f2",
+    "official_kpl_format_post_20260920.txt": "c3d73b2ef92b8b896c8196cd222ca09a32c23a5031d37c9e9bad97b04557b25d",
+    "official_kpl_participants_post_20260921.txt": "50ca0caf99c0f90c99f870b3e255bdbc4a298f84846e66a9ed0d7b142a576e89",
+    "secondary_sources_excerpt.txt": "365592fc1c83ca4798b8fd28238e7179e769c2a51ff77c1804a5bdc460c67fc1",
+    "wikipedia_2026_annual_finals_excerpt.txt": "f45e6e17a69e7820c8ad6fcd078b826edb53e4ab68b449866720c67ca2087cf0"
+  }
+}

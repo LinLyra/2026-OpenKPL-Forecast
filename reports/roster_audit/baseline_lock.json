@@ -1,0 +1,396 @@
+{
+  "created_at": "2026-09-29T01:40:22",
+  "state": {
+    "completed_series": 1466,
+    "latest_completed_start_time": "2026-09-12 18:00:00",
+    "KPL2026S1_completed": 136,
+    "KPL2026S2_completed": 136,
+    "KPL2026_annual_finals_completed": 0
+  },
+  "artifacts": [
+    {
+      "artifact": "series.parquet",
+      "path": "data/processed/temporal/v2026_09_28/series.parquet",
+      "sha256": "8861da126169d6cb30e49d0e02f90223242d22a2e20b72adef19fcee0f5e378a",
+      "row_count_if_applicable": 1466,
+      "modified_time": "2026-09-29T00:54:32",
+      "notes": "v0.3.1 merged series (all statuses)"
+    },
+    {
+      "artifact": "canonical_series.parquet",
+      "path": "data/processed/temporal/v2026_09_28/canonical_series.parquet",
+      "sha256": "cdc8862ea1a3378c629358191d83de6587a22c616e681fcf9981ce936b83e235",
+      "row_count_if_applicable": 1466,
+      "modified_time": "2026-09-29T00:54:32",
+      "notes": "v0.3.1 canonical series (validated temporal dataset)"
+    },
+    {
+      "artifact": "team_season_membership.csv",
+      "path": "data/processed/temporal/v2026_09_28/team_season_membership.csv",
+      "sha256": "f59109b673c037ac01780af42a31e7f0a8ca9b739d70b8bc4d098aedb792f01c",
+      "row_count_if_applicable": 204,
+      "modified_time": "2026-09-29T00:54:32",
+      "notes": "v0.3.1 team-season membership"
+    },
+    {
+      "artifact": "MERGE_RECORD.json",
+      "path": "data/processed/temporal/v2026_09_28/MERGE_RECORD.json",
+      "sha256": "4d5ed815fee12553ee28cbf43560121ecf233448684a77c44c787d71934c3318",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-29T00:54:32",
+      "notes": "v0.3.1 merge record"
+    },
+    {
+      "artifact": "series.parquet",
+      "path": "data/processed/temporal/series.parquet",
+      "sha256": "c059371f4551871f2531e3d1121851899d9e82dd0e4382adee2f4bf5f7f61df5",
+      "row_count_if_applicable": 1284,
+      "modified_time": "2026-09-28T19:02:26",
+      "notes": "v0.3 Phase B series"
+    },
+    {
+      "artifact": "canonical_series.parquet",
+      "path": "data/processed/temporal/canonical_series.parquet",
+      "sha256": "d06ca4db26d80cc69d5cce03c8963bce7b572bd792fde2f9349b0a404f8eef47",
+      "row_count_if_applicable": 1284,
+      "modified_time": "2026-09-28T21:26:12",
+      "notes": "v0.3 Phase B canonical series"
+    },
+    {
+      "artifact": "team_identity_registry.csv",
+      "path": "data/dimensions/team_identity_registry.csv",
+      "sha256": "176477747ad796a1e6329cdeb2d085ac64f2b249b5f386c1bf18a0a5f057d448",
+      "row_count_if_applicable": 37,
+      "modified_time": "2026-09-29T00:53:15",
+      "notes": "team identity registry"
+    },
+    {
+      "artifact": "team_season_membership.csv",
+      "path": "data/dimensions/team_season_membership.csv",
+      "sha256": "c0c8266cdfd86612b678b2129b1b2c1a7de219d15c2a9e8f3c612c99fe3227ff",
+      "row_count_if_applicable": 186,
+      "modified_time": "2026-09-28T21:26:12",
+      "notes": "v0.3 membership"
+    },
+    {
+      "artifact": "temporal_predictions.parquet",
+      "path": "reports/benchmark/temporal_predictions.parquet",
+      "sha256": "55c161f1be08b73b2692529d6d65ba6f09b05c0252d3f367b9ba8887dc68f375",
+      "row_count_if_applicable": 6618,
+      "modified_time": "2026-09-28T21:27:42",
+      "notes": "v0.3 Phase B predictions"
+    },
+    {
+      "artifact": "temporal_metrics.csv",
+      "path": "reports/benchmark/temporal_metrics.csv",
+      "sha256": "4c24166a1aa6efbf2155657b273cd28c2b80fccf31fb59b12eea1e3928272370",
+      "row_count_if_applicable": 6,
+      "modified_time": "2026-09-28T21:27:42",
+      "notes": "v0.3 Phase B metrics"
+    },
+    {
+      "artifact": "hyperparameters.json",
+      "path": "reports/benchmark/hyperparameters.json",
+      "sha256": "e6bf9feba8007dbe68e2f1c1c5c6617b60a61fca28b6ac74410bee00a4d18948",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T21:27:42",
+      "notes": "v0.3 Phase B hyperparameters"
+    },
+    {
+      "artifact": "temporal_predictions.parquet",
+      "path": "reports/benchmark/v2026_09_28/temporal_predictions.parquet",
+      "sha256": "b6c770612e8d911bd4ecfe82bc1e1790c5f103a4af7c7797053f85ee27595961",
+      "row_count_if_applicable": 7980,
+      "modified_time": "2026-09-29T00:55:22",
+      "notes": "v0.3.1 refreshed predictions"
+    },
+    {
+      "artifact": "temporal_metrics.csv",
+      "path": "reports/benchmark/v2026_09_28/temporal_metrics.csv",
+      "sha256": "cdf8a02e3c557373829d9f78c484794216cfa859c6c5b0acd326eb3212093370",
+      "row_count_if_applicable": 6,
+      "modified_time": "2026-09-29T00:55:22",
+      "notes": "v0.3.1 refreshed metrics"
+    },
+    {
+      "artifact": "hyperparameters.json",
+      "path": "reports/benchmark/v2026_09_28/hyperparameters.json",
+      "sha256": "01124d67aebdc3b47e3774ca1d03e1b80a9e7b6bf3dec508f396c5d917164003",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-29T00:55:22",
+      "notes": "v0.3.1 refreshed hyperparameters"
+    },
+    {
+      "artifact": "WZRY.csv",
+      "path": "data/raw/external/HoK-BP-LLM/王者荣耀KPL历年比赛数据/WZRY.csv",
+      "sha256": "4654834ea55a318cdb97caea4097ae763bf2e4bb308afedd6b67de757fd49e8f",
+      "row_count_if_applicable": 5586,
+      "modified_time": "2026-09-26T16:08:15",
+      "notes": "external WZRY dataset (read-only)"
+    },
+    {
+      "artifact": "SNAPSHOT_MANIFEST.json",
+      "path": "data/raw/snapshots/2026-09-28/SNAPSHOT_MANIFEST.json",
+      "sha256": "44182c2d8c4aeb39806743bde8d4757ebf6af41bfe1ae0db5f3976824cc3ba53",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:25:33",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "000_season_list.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/000_season_list.json",
+      "sha256": "f9e2c5740ffc2fcc092d490afe9aadde40b58a36270f3fc3aac33ce6afc8a198",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:23:45",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "001_kv_config.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/001_kv_config.json",
+      "sha256": "01e2f6976428267d86bc1e6c5ccb308bbf9bbd6c2a22fe109a0e53b428a62a71",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:23:48",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "002_schedule_KPL2026S2.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/002_schedule_KPL2026S2.json",
+      "sha256": "69c88eef3c672f42f99d628b9da66ab70088de2caa19cb2cf0e95de017e58353",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:23:53",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "003_schedule_KPL2026S1.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/003_schedule_KPL2026S1.json",
+      "sha256": "657caeb086ce138be97065b21704853be70d1059f6927f47d1bb52b42c80d05a",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:23:57",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "004_schedule_KPL2025S3.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/004_schedule_KPL2025S3.json",
+      "sha256": "c3172382b6d0caa68fc1e46a971b4c68ad4e0d273868d71988702fa8af2987b1",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:00",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "005_schedule_KPL2025S2.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/005_schedule_KPL2025S2.json",
+      "sha256": "ad7ec4d365db75566d094695b7cc4f9be309d3e082f8b6d4edddd22a4a916ad6",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:04",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "006_schedule_KPL2025S1.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/006_schedule_KPL2025S1.json",
+      "sha256": "7676c69807b1048d5a139adb2be4aeaeada514b9184457b2f672066fc7d8d7da",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:07",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "007_schedule_KPL2024S3.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/007_schedule_KPL2024S3.json",
+      "sha256": "cd120fff6fa744788b096582448c66dc15c4a4952f05dcca818fcfc664988271",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:11",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "008_schedule_KPL2024S2.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/008_schedule_KPL2024S2.json",
+      "sha256": "01a3e7011a8eed9ea4bc11a4cbc81b9b06198471227b23ec39b2aa43d0b4f144",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:14",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "009_schedule_KPL2024S1.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/009_schedule_KPL2024S1.json",
+      "sha256": "5d861ec036265f9d13b4af57398a8bca9c40403a6886e9bd8ef4f4736fd4f300",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:19",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "010_schedule_KPL2023S2.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/010_schedule_KPL2023S2.json",
+      "sha256": "e1f5d5d313f7d47ba126592c78ac6edf0969e4169cad08b25996fb2c6d472964",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:22",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "011_schedule_KPL2023S1.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/011_schedule_KPL2023S1.json",
+      "sha256": "e6b858efa17cb739f6bfb526d669d1fa0d00f3863546adb90f425f9bdcc4e485",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:26",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "012_schedule_KPL2022S2.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/012_schedule_KPL2022S2.json",
+      "sha256": "ac87a31ff46f6ce501a1cb3f3f6c6feac1491a1bf8b05eb5a8dd7f2b9fe98667",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:30",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "013_schedule_KPL2022S1.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/013_schedule_KPL2022S1.json",
+      "sha256": "aea72496cce9d54dc3c91f7c405b49556c2302ecd9e3114a2001961aa71956f9",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:33",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "014_schedule_KPL2021S2.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/014_schedule_KPL2021S2.json",
+      "sha256": "7e41359790d8604fed9650c1f2484f2bd2de86a30b255a96ff85af109f1aad40",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:37",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "015_schedule_KPL2021S1.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/015_schedule_KPL2021S1.json",
+      "sha256": "2b66db42e350acba78d75c5213051427a1e6da0f70d1270dba2684b9786391b5",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:40",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "016_schedule_KPL2020S2.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/016_schedule_KPL2020S2.json",
+      "sha256": "ae525f5dd89a5e24c1968f98e18dda73ccccfa38cd209bacb8b3816cedfa48ea",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:44",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "017_schedule_KPL2020S1.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/017_schedule_KPL2020S1.json",
+      "sha256": "12d95cbb0ed679f1d62ae88aec8d0b3afde4aed77f00f082d57acde7407fb523",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:47",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "018_schedule_KPL2019S2.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/018_schedule_KPL2019S2.json",
+      "sha256": "ece050955bb16be2c5072edf2cf0d4aaa582735c50ce6a5c8506d41f1ef4a0ad",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:50",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "019_schedule_KPL2019S1.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/019_schedule_KPL2019S1.json",
+      "sha256": "f4cd7c66339d3864bebc4275f46e2ef1b4199737e2d51943d5641729e48a6f60",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:53",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "020_schedule_KPL2018QJS.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/020_schedule_KPL2018QJS.json",
+      "sha256": "7f1bbb59e7e6b99deb88ca59c28018e2ac1226ed48e1690dbff846ed1b5c13f0",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:24:57",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "021_schedule_KPL2018CJS.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/021_schedule_KPL2018CJS.json",
+      "sha256": "e33cd4006b1467caacd129749a2470b08924a3f8828b845609d6bf226ec279ac",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:25:00",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "022_schedule_KPL2017QJS.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/022_schedule_KPL2017QJS.json",
+      "sha256": "e4f1d23860c2530f7a3133e793fdb1c1e62a99a14724d4394cfea2ed19a763a7",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:25:03",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "023_schedule_KPL2017CJS.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/023_schedule_KPL2017CJS.json",
+      "sha256": "796b50b4592940fd67734e3638a28bbdc9aeea312d45ef14782e77caa8945354",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:25:06",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "024_schedule_KPL2016QJS.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/024_schedule_KPL2016QJS.json",
+      "sha256": "847cc5ede6aaf6c69800b2e113431bcaa1c212ed40a18e350bc923015993d8cf",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:25:10",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "025_stages_teams_KPL2026S2.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/025_stages_teams_KPL2026S2.json",
+      "sha256": "6dcaff4c31f38d43e1429e1e17b559d52f42b304adbebba3284c634adc4604a6",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:25:12",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "026_progress_KPL2026S2.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/026_progress_KPL2026S2.json",
+      "sha256": "7863d773226fd2eeb0a6e34e6912fbb31650a57072283770b8af37d7d250c5df",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:25:14",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "027_stages_teams_KPL2026S1.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/027_stages_teams_KPL2026S1.json",
+      "sha256": "0d41e5b28e5592082fb6e86070130920955fd0ac92ace4bcc1d66ffd5330ff5d",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:25:17",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "028_progress_KPL2026S1.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/028_progress_KPL2026S1.json",
+      "sha256": "ee93428b300352cbdb5e5f6314bfda246d587af4970583e3bb9e7316caa25eeb",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:25:19",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "029_schedule_KPL2026S3.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/029_schedule_KPL2026S3.json",
+      "sha256": "04d11d1c25da7abc2bf09ad337983adc7601681c459c2ef681ab7cee629513a8",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:25:22",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "030_schedule_KPL2022S3.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/030_schedule_KPL2022S3.json",
+      "sha256": "04d11d1c25da7abc2bf09ad337983adc7601681c459c2ef681ab7cee629513a8",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:25:29",
+      "notes": "v0.3.1 raw snapshot"
+    },
+    {
+      "artifact": "031_schedule_KPL2023S3.json",
+      "path": "data/raw/snapshots/2026-09-28/original_api/031_schedule_KPL2023S3.json",
+      "sha256": "04d11d1c25da7abc2bf09ad337983adc7601681c459c2ef681ab7cee629513a8",
+      "row_count_if_applicable": null,
+      "modified_time": "2026-09-28T22:25:32",
+      "notes": "v0.3.1 raw snapshot"
+    }
+  ]
+}

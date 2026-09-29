@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-09-29T00:35:23Z",
+  "prior_locks": {
+    "reports/roster_audit/baseline_lock.json": "3f6c4c5067d36046591bfaca9c659dfcb6070a7835b470c47d375ff7689083f0",
+    "reports/roster_collection/phase_b_lock.json": "573c18cf5007a0e76c401861074551016ca81fcaa7deb48e49cacc5d9b10307d"
+  },
+  "groups": {
+    "data_inputs": {
+      "data/processed/temporal/v2026_09_28/canonical_series.parquet": "cdc8862ea1a3378c629358191d83de6587a22c616e681fcf9981ce936b83e235",
+      "data/processed/games/kpl_games.parquet": "c8f1402bb60b6e9ed761076f44600ae16511c615bc19a1dd3fb085a557e43df0",
+      "data/processed/games/player_game_appearances.parquet": "f0084fda59acca3a4b0d6b1e23c2a100e8ffb8665b7096b012d546fa3f16dca3",
+      "data/dimensions/player_identity_registry.csv": "24d70703fe8bfe3c1097edcf227200f8065dca13c41d40f2cdb4b4a80f2e05d0",
+      "data/dimensions/team_identity_registry.csv": "176477747ad796a1e6329cdeb2d085ac64f2b249b5f386c1bf18a0a5f057d448",
+      "data/raw/external/HoK-BP-LLM/王者荣耀KPL历年比赛数据/WZRY.csv": "4654834ea55a318cdb97caea4097ae763bf2e4bb308afedd6b67de757fd49e8f",
+      "data/processed/drafts/identified_draft_games.parquet": "98056b6a90d4f14cd42fa7ce0d66c7083540f2f3042babe3b8bbc767fd67b256",
+      "data/processed/drafts/draft_events_identified.parquet": "351774bb44f36f985664d2ee1785d47a37ad2129c081c4e7e531cda1e3c6dddf",
+      "data/processed/drafts/wzry_game_linkage.parquet": "eb713a2c6f71749eb05192417112b3ab0a3683cf3a1007fbb589957092436738"
+    },
+    "feature_inputs": {
+      "data/processed/features/player_hero_temporal.parquet": "bd9c8e8347e6251e01eede357c619ff17db2226dc0a87ee73ec7e74ba13241c2",
+      "data/processed/rosters/series_player_usage.parquet": "6adc603a0a28dfd35252b30782ca9fdd9013a3ba1b5e218ca3e4bdc4093f1053",
+      "data/processed/rosters/series_rotation_summary.parquet": "ddebe47ed20b695d85f581f223c09a2d558641a350eeb118cb16485dd56ab263"
+    },
+    "benchmark_predictions": {
+      "reports/benchmark/v2026_09_28/temporal_predictions.parquet": "b6c770612e8d911bd4ecfe82bc1e1790c5f103a4af7c7797053f85ee27595961"
+    },
+    "benchmark_metrics": {
+      "reports/benchmark/v2026_09_28/temporal_metrics.csv": "cdf8a02e3c557373829d9f78c484794216cfa859c6c5b0acd326eb3212093370",
+      "reports/benchmark/v2026_09_28/season_metrics.csv": "51d3e5e484d04b2ac8343dc36e200e68451f70101618ad81677d06f74260ea84",
+      "reports/benchmark/v2026_09_28/hyperparameters.json": "01124d67aebdc3b47e3774ca1d03e1b80a9e7b6bf3dec508f396c5d917164003",
+      "reports/benchmark/v2026_09_28/temporal_folds.csv": "d58b881969b3b8337561585341cb049f3c565cd50037aadd36b63efa1172b20f"
+    },
+    "modeling_source_code": {
+      "src/openkpl/evaluation/benchmark.py": "c2c47218ccfa3ec12638c8f498de53d7075e1c29b30019334ccce93b6bbee383",
+      "src/openkpl/evaluation/benchmark_report.py": "7c950c4a8e5cabda3ba8a21ecd26188fbcebb931e2ddeb7d09935717895a6d9a",
+      "src/openkpl/evaluation/calibration.py": "e0799d8b842f28b346efb0dea7f17cad3fcf9616f87400d45e8b828b6d77ba16",
+      "src/openkpl/evaluation/figures.py": "aecc29eb6f7c9ab617619c6625bb164c37c39a92265a42a0d27c8d80431097e3",
+      "src/openkpl/evaluation/freeze.py": "6eacdf51995f96f7e06c4cecfa6f8f64043d8fbd76e27c6b61d74b68dd5b72b3",
+      "src/openkpl/evaluation/metrics.py": "1fc352980cfc2d93ac3078b2b9ec516e70582bc4879122fa5591c75a66756320",
+      "src/openkpl/evaluation/temporal_cv.py": "233d1a33f5f2f85a2bea0ad77a6b58d0f4c9ca93071e214671c22335904437b3",
+      "src/openkpl/identity/membership.py": "e56280446fc58756f8b02e5cff48c4a72062c08e13b10bece138b6bb7cc9c789",
+      "src/openkpl/modeling/temporal/__init__.py": "b7cb72af991bd92beb611c9c555556fc64798d0e65e178c7a753d29c343e4a77",
+      "src/openkpl/modeling/temporal/base.py": "a757c832bfd1f53a9793b835d57ba82bf4b079a1796373472f2978ff53442833",
+      "src/openkpl/modeling/temporal/coinflip.py": "83efda828553c2442875c189b2d2d699bc0d110dafe4f7c65c07dadc58f66cfc",
+      "src/openkpl/modeling/temporal/decay.py": "a8f27badfb5077c11c6cd35d180a03f6a713e793b996f321f91b7a0f1e8186fa",
+      "src/openkpl/modeling/temporal/elo.py": "95444bad7df69b9144c10b1b6ad4bf7de74a1d17c3d2303c23167052cdfc51c3",
+      "src/openkpl/modeling/temporal/season_reset.py": "f3e768fc1a10d402675074fd9bf3e58446b7649b5e7b91003c2a4460b3b277e4",
+      "src/openkpl/modeling/temporal/winrate.py": "aa48da6c420497c1a279a03b1b62991ff324141eab18a42846e9fb2a3007695d",
+      "src/openkpl/transform/canonical.py": "e7d08be890e12940f8a7f3ce8ffc93182864522196cbab7870a376886c59ebed",
+      "src/openkpl/history/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/openkpl/history/collect_full.py": "30a0bf92a6a73cd84ee05e265c6571b398a96dfd19b5a976f9c87d58494b5e11",
+      "src/openkpl/history/drafts.py": "3bae2910f46d7b9d14397f1524f62312e42c7a707fb1faa6c5d18a6b033290aa",
+      "src/openkpl/history/lock.py": "f5c21adb6b1bf9ee3ae3f046a6ceb9444d9e839688b0b7136767264aced10a10",
+      "src/openkpl/history/players.py": "61e765b79664272f22e0700924a31849a39f4a75df5792ae30c8ab380a1883db",
+      "src/openkpl/history/report.py": "b3de2548e973d56a16a3f9f9fa913169d8e292bb47c0d1f23e46ef08a27a79ad",
+      "src/openkpl/history/run.py": "b24c2ad1c249c12e694876d9643ef2ed31c2d08de8275fd3c550a2965c91b857",
+      "src/openkpl/history/tables.py": "e8a54fd15214a9a1cce3215991c0f72fc4e517985096f462fed983c297ed1477",
+      "src/openkpl/history/wzry_full.py": "59560930c4786d4ff184d0e5296825d2fcb0d8b172d649f8089aed8833fe928a"
+    }
+  }
+}

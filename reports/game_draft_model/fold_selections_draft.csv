@@ -1,0 +1,13 @@
+validation_season,stage,selected,detail,train_rows,validation_rows
+KPL2023S1,D0 baseline,B5_game,B5_game train_ll=0.68021; Gstar_pre train_ll=0.68813; Gstar_live train_ll=0.68465,373,560
+KPL2023S1,"shrinkage (K, min_n)","K=10, min_n=0",no inner season (single training season): a-priori default; inner_ll=nan,373,560
+KPL2023S1,D1R recency half-life (days),inf,no inner season (single training season): a-priori default; inner_ll=nan,373,560
+KPL2023S1,sequential universe,standard 18-event drafts,"excluded non-standard: train 0, validation 1",373,559
+KPL2023S2,D0 baseline,B5_game,B5_game train_ll=0.67747; Gstar_pre train_ll=0.68453; Gstar_live train_ll=0.68453,933,555
+KPL2023S2,"shrinkage (K, min_n)","K=2, min_n=5","inner: fit 1 season(s), validate KPL2023S1; inner_ll=0.6751017698",933,555
+KPL2023S2,D1R recency half-life (days),60.0,"inner: fit 1 season(s), validate KPL2023S1; inner_ll=0.6774099698",933,555
+KPL2023S2,sequential universe,standard 18-event drafts,"excluded non-standard: train 1, validation 1",932,554
+KPL2024S1,D0 baseline,B5_game,B5_game train_ll=0.67434; Gstar_pre train_ll=0.67667; Gstar_live train_ll=0.67667,1488,311
+KPL2024S1,"shrinkage (K, min_n)","K=2, min_n=0","inner: fit 2 season(s), validate KPL2023S2; inner_ll=0.6681658579",1488,311
+KPL2024S1,D1R recency half-life (days),inf,"inner: fit 2 season(s), validate KPL2023S2; inner_ll=0.6659500914",1488,311
+KPL2024S1,sequential universe,standard 18-event drafts,"excluded non-standard: train 2, validation 0",1486,311
