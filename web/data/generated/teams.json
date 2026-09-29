@@ -1,0 +1,374 @@
+{
+  "source_file": [
+    "freeze/v1.0/PRIMARY_FORECAST.csv",
+    "reports/tournament/stage1_forecast.csv",
+    "reports/tournament/master_rotation_readiness.csv",
+    "config/2026_annual_finals_rules.yaml"
+  ],
+  "source_sha256": [
+    "65268e2f14ad0676d41f63f861f30148f5f03ef851c2a40788852029ca3dd733",
+    "059d3ea5c7aa91f84a271e507fbb411aed1b7dad092e37c8e580c7d4bae45d94",
+    "bf411beaec7b7c0d736fdbe86589a7028e085e00073e6036d6ca1a9b451724f7",
+    "8e28f8d86b048adabd459c93fcbc189ce2f1a370657167fa842aa90afe7d9e1a"
+  ],
+  "generated_at": "2026-09-29T06:33:05.465Z",
+  "generator": "web/scripts/build-web-data.mjs (read-only adapter; no recomputation)",
+  "data": {
+    "teams": [
+      {
+        "id": "wolves",
+        "canonical_team_id": "TEAM_WOLVES",
+        "official_name": "重庆狼队",
+        "group": "MASTER",
+        "seed": 1,
+        "frozen_b5_rating": 1817.8258519729611,
+        "expected_series_wins": 5.128368,
+        "expected_game_diff": 10.013002,
+        "p_group_rank": [
+          0.396375,
+          0.260525,
+          0.170465,
+          0.102503,
+          0.05341,
+          0.016722
+        ],
+        "historical_roster_usage_descriptive": [
+          {
+            "window": "2026 (S1+S2)",
+            "series_observed": 37,
+            "mean_players_used_per_series": 5,
+            "freq_series_at_least_6_players": 0,
+            "freq_series_at_least_7_players": 0,
+            "max_players_used_in_a_series": 5,
+            "label": "DESCRIPTIVE — NOT USED IN PRIMARY FORECAST",
+            "note": "Historical registered-roster usage only; the Annual Finals 7-player lists (with loans) are not used and players 6/7 in the Finals list may differ from the historical players 6/7. Player ratings are v0.5 PlayerElo P1 states (v0.5 rejected them as predictors)."
+          },
+          {
+            "window": "all history 2022S2-2026S2",
+            "series_observed": 190,
+            "mean_players_used_per_series": 5.2,
+            "freq_series_at_least_6_players": 0.09473684210526316,
+            "freq_series_at_least_7_players": 0.07368421052631578,
+            "max_players_used_in_a_series": 8,
+            "label": "DESCRIPTIVE — NOT USED IN PRIMARY FORECAST",
+            "note": "Historical registered-roster usage only; the Annual Finals 7-player lists (with loans) are not used and players 6/7 in the Finals list may differ from the historical players 6/7. Player ratings are v0.5 PlayerElo P1 states (v0.5 rejected them as predictors)."
+          }
+        ]
+      },
+      {
+        "id": "ttg",
+        "canonical_team_id": "TEAM_TTG",
+        "official_name": "广州TTG",
+        "group": "MASTER",
+        "seed": 4,
+        "frozen_b5_rating": 1771.106505733927,
+        "expected_series_wins": 4.914346,
+        "expected_game_diff": 8.889012,
+        "p_group_rank": [
+          0.280233,
+          0.261084,
+          0.202691,
+          0.14088,
+          0.084126,
+          0.030986
+        ],
+        "historical_roster_usage_descriptive": [
+          {
+            "window": "2026 (S1+S2)",
+            "series_observed": 38,
+            "mean_players_used_per_series": 5,
+            "freq_series_at_least_6_players": 0,
+            "freq_series_at_least_7_players": 0,
+            "max_players_used_in_a_series": 5,
+            "label": "DESCRIPTIVE — NOT USED IN PRIMARY FORECAST",
+            "note": "Historical registered-roster usage only; the Annual Finals 7-player lists (with loans) are not used and players 6/7 in the Finals list may differ from the historical players 6/7. Player ratings are v0.5 PlayerElo P1 states (v0.5 rejected them as predictors)."
+          },
+          {
+            "window": "all history 2022S2-2026S2",
+            "series_observed": 175,
+            "mean_players_used_per_series": 5.222857142857142,
+            "freq_series_at_least_6_players": 0.11428571428571428,
+            "freq_series_at_least_7_players": 0.07428571428571429,
+            "max_players_used_in_a_series": 8,
+            "label": "DESCRIPTIVE — NOT USED IN PRIMARY FORECAST",
+            "note": "Historical registered-roster usage only; the Annual Finals 7-player lists (with loans) are not used and players 6/7 in the Finals list may differ from the historical players 6/7. Player ratings are v0.5 PlayerElo P1 states (v0.5 rejected them as predictors)."
+          }
+        ]
+      },
+      {
+        "id": "jdg",
+        "canonical_team_id": "TEAM_JDG",
+        "official_name": "北京JDG",
+        "group": "MASTER",
+        "seed": 3,
+        "frozen_b5_rating": 1709.67041708398,
+        "expected_series_wins": 4.578037,
+        "expected_game_diff": 7.222094,
+        "p_group_rank": [
+          0.164719,
+          0.206773,
+          0.22324,
+          0.195472,
+          0.143626,
+          0.06617
+        ],
+        "historical_roster_usage_descriptive": [
+          {
+            "window": "2026 (S1+S2)",
+            "series_observed": 36,
+            "mean_players_used_per_series": 5,
+            "freq_series_at_least_6_players": 0,
+            "freq_series_at_least_7_players": 0,
+            "max_players_used_in_a_series": 5,
+            "label": "DESCRIPTIVE — NOT USED IN PRIMARY FORECAST",
+            "note": "Historical registered-roster usage only; the Annual Finals 7-player lists (with loans) are not used and players 6/7 in the Finals list may differ from the historical players 6/7. Player ratings are v0.5 PlayerElo P1 states (v0.5 rejected them as predictors)."
+          },
+          {
+            "window": "all history 2022S2-2026S2",
+            "series_observed": 81,
+            "mean_players_used_per_series": 5.012345679012346,
+            "freq_series_at_least_6_players": 0.012345679012345678,
+            "freq_series_at_least_7_players": 0,
+            "max_players_used_in_a_series": 6,
+            "label": "DESCRIPTIVE — NOT USED IN PRIMARY FORECAST",
+            "note": "Historical registered-roster usage only; the Annual Finals 7-player lists (with loans) are not used and players 6/7 in the Finals list may differ from the historical players 6/7. Player ratings are v0.5 PlayerElo P1 states (v0.5 rejected them as predictors)."
+          }
+        ]
+      },
+      {
+        "id": "ag",
+        "canonical_team_id": "TEAM_AG",
+        "official_name": "成都AG超玩会",
+        "group": "MASTER",
+        "seed": 2,
+        "frozen_b5_rating": 1644.150487031566,
+        "expected_series_wins": 4.150308,
+        "expected_game_diff": 5.200635,
+        "p_group_rank": [
+          0.083282,
+          0.133284,
+          0.1831,
+          0.22826,
+          0.232459,
+          0.139615
+        ],
+        "historical_roster_usage_descriptive": [
+          {
+            "window": "2026 (S1+S2)",
+            "series_observed": 36,
+            "mean_players_used_per_series": 5.055555555555555,
+            "freq_series_at_least_6_players": 0.027777777777777776,
+            "freq_series_at_least_7_players": 0.027777777777777776,
+            "max_players_used_in_a_series": 7,
+            "label": "DESCRIPTIVE — NOT USED IN PRIMARY FORECAST",
+            "note": "Historical registered-roster usage only; the Annual Finals 7-player lists (with loans) are not used and players 6/7 in the Finals list may differ from the historical players 6/7. Player ratings are v0.5 PlayerElo P1 states (v0.5 rejected them as predictors)."
+          },
+          {
+            "window": "all history 2022S2-2026S2",
+            "series_observed": 181,
+            "mean_players_used_per_series": 5.198895027624309,
+            "freq_series_at_least_6_players": 0.09392265193370165,
+            "freq_series_at_least_7_players": 0.0718232044198895,
+            "max_players_used_in_a_series": 8,
+            "label": "DESCRIPTIVE — NOT USED IN PRIMARY FORECAST",
+            "note": "Historical registered-roster usage only; the Annual Finals 7-player lists (with loans) are not used and players 6/7 in the Finals list may differ from the historical players 6/7. Player ratings are v0.5 PlayerElo P1 states (v0.5 rejected them as predictors)."
+          }
+        ]
+      },
+      {
+        "id": "wb",
+        "canonical_team_id": "TEAM_WB",
+        "official_name": "北京WB",
+        "group": "MASTER",
+        "seed": 6,
+        "frozen_b5_rating": 1622.3794677504693,
+        "expected_series_wins": 3.992986,
+        "expected_game_diff": 4.475841,
+        "p_group_rank": [
+          0.064324,
+          0.11058,
+          0.163887,
+          0.220754,
+          0.263504,
+          0.176951
+        ],
+        "historical_roster_usage_descriptive": [
+          {
+            "window": "2026 (S1+S2)",
+            "series_observed": 34,
+            "mean_players_used_per_series": 5.029411764705882,
+            "freq_series_at_least_6_players": 0.029411764705882353,
+            "freq_series_at_least_7_players": 0,
+            "max_players_used_in_a_series": 6,
+            "label": "DESCRIPTIVE — NOT USED IN PRIMARY FORECAST",
+            "note": "Historical registered-roster usage only; the Annual Finals 7-player lists (with loans) are not used and players 6/7 in the Finals list may differ from the historical players 6/7. Player ratings are v0.5 PlayerElo P1 states (v0.5 rejected them as predictors)."
+          },
+          {
+            "window": "all history 2022S2-2026S2",
+            "series_observed": 185,
+            "mean_players_used_per_series": 5.059459459459459,
+            "freq_series_at_least_6_players": 0.04864864864864865,
+            "freq_series_at_least_7_players": 0.043243243243243246,
+            "max_players_used_in_a_series": 7,
+            "label": "DESCRIPTIVE — NOT USED IN PRIMARY FORECAST",
+            "note": "Historical registered-roster usage only; the Annual Finals 7-player lists (with loans) are not used and players 6/7 in the Finals list may differ from the historical players 6/7. Player ratings are v0.5 PlayerElo P1 states (v0.5 rejected them as predictors)."
+          }
+        ]
+      },
+      {
+        "id": "tesa",
+        "canonical_team_id": "TEAM_TESA",
+        "official_name": "长沙TES.A",
+        "group": "ELITE",
+        "seed": 7,
+        "frozen_b5_rating": 1597.2578107588797,
+        "expected_series_wins": 2.36579,
+        "expected_game_diff": -2.849838,
+        "p_group_rank": [
+          0.343531,
+          0.245445,
+          0.172589,
+          0.120009,
+          0.078573,
+          0.039853
+        ],
+        "historical_roster_usage_descriptive": []
+      },
+      {
+        "id": "edgm",
+        "canonical_team_id": "TEAM_EDGM",
+        "official_name": "上海EDG.M",
+        "group": "ELITE",
+        "seed": 8,
+        "frozen_b5_rating": 1588.5117969093278,
+        "expected_series_wins": 2.299537,
+        "expected_game_diff": -3.154457,
+        "p_group_rank": [
+          0.316329,
+          0.245665,
+          0.179542,
+          0.128364,
+          0.085598,
+          0.044502
+        ],
+        "historical_roster_usage_descriptive": []
+      },
+      {
+        "id": "ksg",
+        "canonical_team_id": "TEAM_KSG",
+        "official_name": "KSG",
+        "group": "MASTER",
+        "seed": 5,
+        "frozen_b5_rating": 1498.4615747533824,
+        "expected_series_wins": 3.016086,
+        "expected_game_diff": 0.077888,
+        "p_group_rank": [
+          0.011067,
+          0.027754,
+          0.056617,
+          0.112131,
+          0.222875,
+          0.569556
+        ],
+        "historical_roster_usage_descriptive": [
+          {
+            "window": "2026 (S1+S2)",
+            "series_observed": 36,
+            "mean_players_used_per_series": 5.027777777777778,
+            "freq_series_at_least_6_players": 0.027777777777777776,
+            "freq_series_at_least_7_players": 0,
+            "max_players_used_in_a_series": 6,
+            "label": "DESCRIPTIVE — NOT USED IN PRIMARY FORECAST",
+            "note": "Historical registered-roster usage only; the Annual Finals 7-player lists (with loans) are not used and players 6/7 in the Finals list may differ from the historical players 6/7. Player ratings are v0.5 PlayerElo P1 states (v0.5 rejected them as predictors)."
+          },
+          {
+            "window": "all history 2022S2-2026S2",
+            "series_observed": 181,
+            "mean_players_used_per_series": 5.138121546961326,
+            "freq_series_at_least_6_players": 0.06077348066298342,
+            "freq_series_at_least_7_players": 0.04419889502762431,
+            "max_players_used_in_a_series": 8,
+            "label": "DESCRIPTIVE — NOT USED IN PRIMARY FORECAST",
+            "note": "Historical registered-roster usage only; the Annual Finals 7-player lists (with loans) are not used and players 6/7 in the Finals list may differ from the historical players 6/7. Player ratings are v0.5 PlayerElo P1 states (v0.5 rejected them as predictors)."
+          }
+        ]
+      },
+      {
+        "id": "rw",
+        "canonical_team_id": "TEAM_RW",
+        "official_name": "济南RW侠",
+        "group": "ELITE",
+        "seed": 11,
+        "frozen_b5_rating": 1501.0469041309566,
+        "expected_series_wins": 1.685311,
+        "expected_game_diff": -6.001449,
+        "p_group_rank": [
+          0.129912,
+          0.174869,
+          0.197902,
+          0.197274,
+          0.176984,
+          0.123059
+        ],
+        "historical_roster_usage_descriptive": []
+      },
+      {
+        "id": "lgd-nbw",
+        "canonical_team_id": "TEAM_LGD_NBW",
+        "official_name": "杭州LGD.NBW",
+        "group": "ELITE",
+        "seed": 9,
+        "frozen_b5_rating": 1478.0309871293518,
+        "expected_series_wins": 1.54167,
+        "expected_game_diff": -6.688432,
+        "p_group_rank": [
+          0.100843,
+          0.149327,
+          0.18675,
+          0.205423,
+          0.202815,
+          0.154842
+        ],
+        "historical_roster_usage_descriptive": []
+      },
+      {
+        "id": "hero",
+        "canonical_team_id": "TEAM_HERO",
+        "official_name": "南通Hero久竞",
+        "group": "ELITE",
+        "seed": 12,
+        "frozen_b5_rating": 1468.3893152003761,
+        "expected_series_wins": 1.482465,
+        "expected_game_diff": -6.971849,
+        "p_group_rank": [
+          0.090821,
+          0.139578,
+          0.179239,
+          0.206149,
+          0.21375,
+          0.170463
+        ],
+        "historical_roster_usage_descriptive": []
+      },
+      {
+        "id": "dyg",
+        "canonical_team_id": "TEAM_DYG",
+        "official_name": "深圳DYG",
+        "group": "ELITE",
+        "seed": 10,
+        "frozen_b5_rating": 1340.8085376693457,
+        "expected_series_wins": 0.845096,
+        "expected_game_diff": -10.212447,
+        "p_group_rank": [
+          0.018564,
+          0.045116,
+          0.083978,
+          0.142781,
+          0.24228,
+          0.467281
+        ],
+        "historical_roster_usage_descriptive": []
+      }
+    ]
+  }
+}

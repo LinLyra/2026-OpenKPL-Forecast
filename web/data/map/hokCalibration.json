@@ -1,0 +1,272 @@
+{
+  "source": "github.com/dayelianxisheng/HonorOfKings · configs/full_map_anchors.json, configs/*_detection.json",
+  "reference": {
+    "image": "/assets/map/hok-top.webp",
+    "width": 5300,
+    "height": 4800
+  },
+  "anchors": [
+    {
+      "id": "ordinary_camp_01",
+      "category": "MONSTER",
+      "x": 0.364906,
+      "y": 0.160833
+    },
+    {
+      "id": "ordinary_camp_02",
+      "category": "MONSTER",
+      "x": 0.608113,
+      "y": 0.218958
+    },
+    {
+      "id": "ordinary_camp_03",
+      "category": "MONSTER",
+      "x": 0.23717,
+      "y": 0.30375
+    },
+    {
+      "id": "ordinary_camp_04",
+      "category": "MONSTER",
+      "x": 0.521321,
+      "y": 0.320625
+    },
+    {
+      "id": "ordinary_camp_05",
+      "category": "MONSTER",
+      "x": 0.726981,
+      "y": 0.394792
+    },
+    {
+      "id": "ordinary_camp_06",
+      "category": "MONSTER",
+      "x": 0.214528,
+      "y": 0.447917
+    },
+    {
+      "id": "ordinary_camp_07",
+      "category": "MONSTER",
+      "x": 0.779811,
+      "y": 0.511042
+    },
+    {
+      "id": "ordinary_camp_08",
+      "category": "MONSTER",
+      "x": 0.269434,
+      "y": 0.563333
+    },
+    {
+      "id": "ordinary_camp_09",
+      "category": "MONSTER",
+      "x": 0.478679,
+      "y": 0.636667
+    },
+    {
+      "id": "ordinary_camp_10",
+      "category": "MONSTER",
+      "x": 0.754151,
+      "y": 0.65125
+    },
+    {
+      "id": "ordinary_camp_11",
+      "category": "MONSTER",
+      "x": 0.387736,
+      "y": 0.735417
+    },
+    {
+      "id": "ordinary_camp_12",
+      "category": "MONSTER",
+      "x": 0.625472,
+      "y": 0.798333
+    },
+    {
+      "id": "ordinary_camp_13",
+      "category": "MONSTER",
+      "x": 0.876038,
+      "y": 0.902083
+    },
+    {
+      "id": "buff_camp_01",
+      "category": "MONSTER",
+      "x": 0.467358,
+      "y": 0.22125
+    },
+    {
+      "id": "buff_camp_02",
+      "category": "MONSTER",
+      "x": 0.309623,
+      "y": 0.46125
+    },
+    {
+      "id": "buff_camp_03",
+      "category": "MONSTER",
+      "x": 0.685472,
+      "y": 0.496875
+    },
+    {
+      "id": "buff_camp_04",
+      "category": "MONSTER",
+      "x": 0.523774,
+      "y": 0.734167
+    },
+    {
+      "id": "space_spirit",
+      "category": "MONSTER",
+      "x": 0.109057,
+      "y": 0.053958
+    },
+    {
+      "id": "red_tower_01",
+      "category": "STRUCTURE",
+      "x": 0.341509,
+      "y": 0.058542
+    },
+    {
+      "id": "red_tower_02",
+      "category": "STRUCTURE",
+      "x": 0.517736,
+      "y": 0.072917
+    },
+    {
+      "id": "red_tower_03",
+      "category": "STRUCTURE",
+      "x": 0.696981,
+      "y": 0.07125
+    },
+    {
+      "id": "red_tower_04",
+      "category": "STRUCTURE",
+      "x": 0.751132,
+      "y": 0.197292
+    },
+    {
+      "id": "red_tower_05",
+      "category": "STRUCTURE",
+      "x": 0.864906,
+      "y": 0.253333
+    },
+    {
+      "id": "red_tower_06",
+      "category": "STRUCTURE",
+      "x": 0.64283,
+      "y": 0.292917
+    },
+    {
+      "id": "red_tower_07",
+      "category": "STRUCTURE",
+      "x": 0.585283,
+      "y": 0.405625
+    },
+    {
+      "id": "red_tower_08",
+      "category": "STRUCTURE",
+      "x": 0.873019,
+      "y": 0.419583
+    },
+    {
+      "id": "red_tower_09",
+      "category": "STRUCTURE",
+      "x": 0.868679,
+      "y": 0.688958
+    },
+    {
+      "id": "blue_tower_01",
+      "category": "STRUCTURE",
+      "x": 0.115472,
+      "y": 0.306458
+    },
+    {
+      "id": "blue_tower_02",
+      "category": "STRUCTURE",
+      "x": 0.120189,
+      "y": 0.536875
+    },
+    {
+      "id": "blue_tower_03",
+      "category": "STRUCTURE",
+      "x": 0.129245,
+      "y": 0.701875
+    },
+    {
+      "id": "blue_tower_04",
+      "category": "STRUCTURE",
+      "x": 0.241698,
+      "y": 0.759167
+    },
+    {
+      "id": "blue_tower_05",
+      "category": "STRUCTURE",
+      "x": 0.296792,
+      "y": 0.882083
+    },
+    {
+      "id": "blue_tower_06",
+      "category": "STRUCTURE",
+      "x": 0.478302,
+      "y": 0.8825
+    },
+    {
+      "id": "blue_tower_07",
+      "category": "STRUCTURE",
+      "x": 0.689811,
+      "y": 0.886667
+    },
+    {
+      "id": "blue_tower_08",
+      "category": "STRUCTURE",
+      "x": 0.409811,
+      "y": 0.55125
+    },
+    {
+      "id": "blue_tower_09",
+      "category": "STRUCTURE",
+      "x": 0.348679,
+      "y": 0.663125
+    },
+    {
+      "id": "red_crystal",
+      "category": "STRUCTURE",
+      "x": 0.823396,
+      "y": 0.113542
+    },
+    {
+      "id": "blue_crystal",
+      "category": "STRUCTURE",
+      "x": 0.166981,
+      "y": 0.842708
+    },
+    {
+      "id": "overlord",
+      "category": "OBJECTIVE",
+      "x": 0.362264,
+      "y": 0.288958
+    },
+    {
+      "id": "tyrant",
+      "category": "OBJECTIVE",
+      "x": 0.634906,
+      "y": 0.669167
+    }
+  ],
+  "minimapToReference": {
+    "matrix": [
+      [
+        0.8258240836,
+        0.01876733262,
+        0.08318196525
+      ],
+      [
+        0.01210438884,
+        0.923377021,
+        0.02267802607
+      ],
+      [
+        0.004241789815,
+        0.02923294048,
+        1
+      ]
+    ],
+    "anchorCount": 40,
+    "meanErrorPx": 37,
+    "p95ErrorPx": 111
+  }
+}

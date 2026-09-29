@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+/* KPL broadcast system: deep indigo night, gilded gold for prediction, blue / red for the two sides. */
+@theme {
+  --color-ink-950: #060912; /* page */
+  --color-ink-900: #0b1120; /* panel */
+  --color-ink-850: #0f1729; /* inset */
+  --color-ink-800: #152038; /* track / hover */
+  --color-ink-700: #1d2a47;
+  --color-line: rgba(214, 178, 106, 0.14);
+  --color-line-strong: rgba(214, 178, 106, 0.32);
+  --color-fg: #eef1f7;
+  --color-mute: #97a3bb;
+  --color-faint: #5f6b85;
+  --color-navy: #04070e;
+  --color-gold: #d9b36a;
+  --color-gold-soft: #f3dca4;
+  --color-gold-deep: #a97c3a;
+  --color-blue: #4a9bff;
+  --color-red: #ff5064;
+  --color-ok: #43d49a;
+
+  --font-sans: "Inter Variable", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  --font-display: "Inter Variable", "Noto Sans SC", "Helvetica Neue", Arial, sans-serif;
+  --font-script: "Caveat", cursive;
+
+  --text-mega: clamp(3.6rem, 8vw, 6.8rem);
+  --text-mega--line-height: 0.92;
+  --text-mega--letter-spacing: -0.04em;
+  --text-display: clamp(2.2rem, 4.6vw, 3.6rem);
+  --text-display--line-height: 1.05;
+  --text-display--letter-spacing: -0.03em;
+  --text-h1: clamp(1.7rem, 2.7vw, 2.15rem);
+  --text-h1--line-height: 1.18;
+  --text-h2: clamp(1.35rem, 2vw, 1.7rem);
+  --text-h2--line-height: 1.28;
+  --text-h3: 1.065rem;
+  --text-h3--line-height: 1.42;
+  --text-body: 0.925rem;
+  --text-body--line-height: 1.68;
+  --text-caption: 0.8rem;
+  --text-caption--line-height: 1.5;
+  --text-micro: 0.7rem;
+  --text-micro--line-height: 1.45;
+
+  --container-standard: 76rem;
+}
+
+@layer base {
+  html {
+    background: var(--color-ink-950);
+    color: var(--color-fg);
+    color-scheme: dark;
+  }
+  body {
+    overflow-x: clip;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    letter-spacing: -0.01em;
+    background:
+      radial-gradient(60rem 30rem at 85% -10%, rgba(74, 155, 255, 0.10), transparent 70%),
+      radial-gradient(50rem 28rem at 5% 0%, rgba(217, 179, 106, 0.10), transparent 70%),
+      var(--color-ink-950);
+    background-attachment: fixed;
+  }
+  h1, h2, h3 {
+    font-weight: 600;
+  }
+  ::selection {
+    background: rgba(217, 179, 106, 0.3);
+  }
+}
+
+@layer utilities {
+  .num {
+    font-family: var(--font-display);
+    font-feature-settings: "tnum" 1, "lnum" 1;
+  }
+  /* Gilded numerals for probabilities that matter. */
+  .gold-num {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-feature-settings: "tnum" 1, "lnum" 1;
+    background: linear-gradient(180deg, #fff1c8 0%, #e7c27a 45%, #b0823e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .kicker {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: var(--color-gold);
+  }
+  /* Panel with a gilded hairline, like in-game UI frames. */
+  .panel {
+    border: 1px solid var(--color-line);
+    background: linear-gradient(180deg, rgba(21, 32, 56, 0.56), rgba(11, 17, 32, 0.86));
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(3, 6, 14, 0.22);
+  }
+  .gold-rule {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(217, 179, 106, 0.6), transparent);
+  }
+}
+
+.replay-range {
+  appearance: none;
+  height: 4px;
+  border-radius: 9999px;
+  background: var(--color-ink-700);
+  cursor: pointer;
+}
+.replay-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: var(--color-gold);
+  border: 3px solid var(--color-ink-950);
+  box-shadow: 0 0 0 1px var(--color-gold);
+}
+.replay-range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: var(--color-gold);
+  border: 3px solid var(--color-ink-950);
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

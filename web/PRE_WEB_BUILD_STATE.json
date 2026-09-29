@@ -1,0 +1,21 @@
+{
+  "recorded_at": "2026-09-29T13:56:00+08:00",
+  "purpose": "Baseline before building the presentation website under web/. The website is read-only with respect to frozen research artifacts.",
+  "git_status_porcelain_line_count": 0,
+  "git_head": "24a3fbfceed2accf1c17267f16ce0eca491589ac",
+  "git_describe": "v1.0-prospective-freeze-2026-09-29-1-g24a3fbf",
+  "freeze_tag": "v1.0-prospective-freeze-2026-09-29",
+  "sha256": {
+    "freeze/v1.0/PRIMARY_FORECAST.csv": "65268e2f14ad0676d41f63f861f30148f5f03ef851c2a40788852029ca3dd733",
+    "freeze/v1.0/FREEZE_MANIFEST.json": "f91af03829b97b86a8a27ef469229c02897e46e886474d7072740bde656f2480"
+  },
+  "frozen_paths_not_to_modify": [
+    "freeze/v1.0/",
+    "reports/tournament/",
+    "data/processed/tournament/",
+    "data/processed/temporal/",
+    "src/openkpl/",
+    "config/2026_annual_finals_rules.yaml",
+    "reports/tournament/PREDICTION_LEDGER_2026.csv"
+  ]
+}

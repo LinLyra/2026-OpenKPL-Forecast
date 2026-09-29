@@ -1,0 +1,371 @@
+{
+  "source_file": [
+    "reports/benchmark/v2026_09_28/temporal_metrics.csv",
+    "reports/benchmark/v2026_09_28/temporal_folds.csv",
+    "reports/benchmark/v2026_09_28/season_metrics.csv",
+    "reports/benchmark/v2026_09_28/temporal_benchmark.md",
+    "reports/game_draft_model/v06_game_draft_benchmark.md",
+    "reports/bo7_audit/run_summary.json",
+    "reports/player_model/v05_player_roster_benchmark.md",
+    "freeze/v1.0/FREEZE_MANIFEST.json",
+    "freeze/v1.0/POST_FREEZE_VERIFICATION.json"
+  ],
+  "source_sha256": [
+    "cdf8a02e3c557373829d9f78c484794216cfa859c6c5b0acd326eb3212093370",
+    "d58b881969b3b8337561585341cb049f3c565cd50037aadd36b63efa1172b20f",
+    "51d3e5e484d04b2ac8343dc36e200e68451f70101618ad81677d06f74260ea84",
+    "4cad0b9f9db884c133d145fdec8bf1913bcabd33a8a5926a0a95c50ce5ca98a7",
+    "56bc9233d77274a9c8329f0aac81a8ef82abe579dcafcd6ed69a45f8b7c26bfa",
+    "7e8ed4e88339b690f5bf9756de1f690c833ce97917aa6302fd32dc56ff8cfc08",
+    "28a83f3bbf63e714ac9ee1d8263c41a4b488456bb805783ae049841025430f86",
+    "f91af03829b97b86a8a27ef469229c02897e46e886474d7072740bde656f2480",
+    "5381a920b9baf9ce22739a626572923ac342868992b89072e570dc2e765ed5fc"
+  ],
+  "generated_at": "2026-09-29T06:33:05.473Z",
+  "generator": "web/scripts/build-web-data.mjs (read-only adapter; no recomputation)",
+  "data": {
+    "benchmark": {
+      "data_version": "v2026_09_28",
+      "oos_series": 1330,
+      "models": [
+        {
+          "model_id": "B0",
+          "n": 1330,
+          "log_loss": 0.6931471805599453,
+          "brier": 0.25,
+          "accuracy": 0.5533834586466165,
+          "roc_auc": 0.5,
+          "calibration_slope": null,
+          "mechanism": "Constant P(team_a)=0.5"
+        },
+        {
+          "model_id": "B1",
+          "n": 1330,
+          "log_loss": 0.646385649488753,
+          "brier": 0.22761553093283138,
+          "accuracy": 0.6240601503759399,
+          "roc_auc": 0.6635535609720391,
+          "calibration_slope": 1.1357774692723732,
+          "mechanism": "Team history: expanding Beta(5,5)-smoothed win rate, combined by log5"
+        },
+        {
+          "model_id": "B2",
+          "n": 1330,
+          "log_loss": 0.630944663957497,
+          "brier": 0.22033689437661796,
+          "accuracy": 0.6451127819548872,
+          "roc_auc": 0.692667160737813,
+          "calibration_slope": 0.9914957112152868,
+          "mechanism": "Sequential Elo dynamics on canonical IDs (K=24, scale=400, untuned)"
+        },
+        {
+          "model_id": "B3",
+          "n": 1330,
+          "log_loss": 0.6285800620114413,
+          "brier": 0.21866848587734516,
+          "accuracy": 0.649624060150376,
+          "roc_auc": 0.6999364112135852,
+          "calibration_slope": 0.8362089169959673,
+          "mechanism": "Nested temporal tuning of K and scale"
+        },
+        {
+          "model_id": "B4",
+          "n": 1330,
+          "log_loss": 0.6277573580579835,
+          "brier": 0.21828688403302396,
+          "accuracy": 0.6526315789473685,
+          "roc_auc": 0.7011395659493486,
+          "calibration_slope": 0.8526544825596452,
+          "mechanism": "Inactivity regression to 1500 with tuned half-life (K tuned jointly, scale 400)"
+        },
+        {
+          "model_id": "B5",
+          "n": 1330,
+          "log_loss": 0.6255890353995668,
+          "brier": 0.2176617701905843,
+          "accuracy": 0.6518796992481203,
+          "roc_auc": 0.7018738105694629,
+          "calibration_slope": 0.910408588622524,
+          "mechanism": "Season-start regression to 1500 with tuned rho (K tuned jointly, scale 400; no decay)"
+        }
+      ],
+      "folds": [
+        {
+          "fold_id": "F01",
+          "train_seasons": [
+            "KPL2022S1"
+          ],
+          "validation_season": "KPL2022S2",
+          "train_start": "2022-02-09 15:00:00",
+          "train_end": "2022-05-08 18:00:00",
+          "validation_start": "2022-06-08 15:00:00",
+          "validation_end": "2022-09-03 17:00:00",
+          "n_train": 136,
+          "n_validation": 136,
+          "coverage_warning": "SINGLE_SEASON_TRAINING: inner tuning window has no season transition",
+          "b5_log_loss": 0.6498388987447083,
+          "b0_log_loss": 0.6931471805599453
+        },
+        {
+          "fold_id": "F02",
+          "train_seasons": [
+            "KPL2022S1",
+            "KPL2022S2"
+          ],
+          "validation_season": "KPL2023S1",
+          "train_start": "2022-02-09 15:00:00",
+          "train_end": "2022-09-03 17:00:00",
+          "validation_start": "2023-02-10 15:00:00",
+          "validation_end": "2023-05-13 18:00:00",
+          "n_train": 272,
+          "n_validation": 136,
+          "coverage_warning": "PRECEDING_ANNUAL_FINALS_NOT_IN_SOURCE: KPL2022S3 missing",
+          "b5_log_loss": 0.6561229286173964,
+          "b0_log_loss": 0.6931471805599453
+        },
+        {
+          "fold_id": "F03",
+          "train_seasons": [
+            "KPL2022S1",
+            "KPL2022S2",
+            "KPL2023S1"
+          ],
+          "validation_season": "KPL2023S2",
+          "train_start": "2022-02-09 15:00:00",
+          "train_end": "2023-05-13 18:00:00",
+          "validation_start": "2023-06-14 14:00:00",
+          "validation_end": "2023-09-10 17:00:00",
+          "n_train": 408,
+          "n_validation": 136,
+          "coverage_warning": null,
+          "b5_log_loss": 0.6370889852327987,
+          "b0_log_loss": 0.6931471805599453
+        },
+        {
+          "fold_id": "F04",
+          "train_seasons": [
+            "KPL2022S1",
+            "KPL2022S2",
+            "KPL2023S1",
+            "KPL2023S2"
+          ],
+          "validation_season": "KPL2024S1",
+          "train_start": "2022-02-09 15:00:00",
+          "train_end": "2023-09-10 17:00:00",
+          "validation_start": "2024-01-31 14:00:00",
+          "validation_end": "2024-05-18 17:00:00",
+          "n_train": 544,
+          "n_validation": 136,
+          "coverage_warning": "PRECEDING_ANNUAL_FINALS_NOT_IN_SOURCE: KPL2023S3 missing",
+          "b5_log_loss": 0.5972086106864954,
+          "b0_log_loss": 0.6931471805599453
+        },
+        {
+          "fold_id": "F05",
+          "train_seasons": [
+            "KPL2022S1",
+            "KPL2022S2",
+            "KPL2023S1",
+            "KPL2023S2",
+            "KPL2024S1"
+          ],
+          "validation_season": "KPL2024S2",
+          "train_start": "2022-02-09 15:00:00",
+          "train_end": "2024-05-18 17:00:00",
+          "validation_start": "2024-06-12 14:00:00",
+          "validation_end": "2024-09-15 18:00:00",
+          "n_train": 680,
+          "n_validation": 136,
+          "coverage_warning": null,
+          "b5_log_loss": 0.6398673599118124,
+          "b0_log_loss": 0.6931471805599453
+        },
+        {
+          "fold_id": "F06",
+          "train_seasons": [
+            "KPL2022S1",
+            "KPL2022S2",
+            "KPL2023S1",
+            "KPL2023S2",
+            "KPL2024S1",
+            "KPL2024S2"
+          ],
+          "validation_season": "KPL2024S3",
+          "train_start": "2022-02-09 15:00:00",
+          "train_end": "2024-09-15 18:00:00",
+          "validation_start": "2024-10-02 17:00:00",
+          "validation_end": "2024-11-16 17:30:00",
+          "n_train": 816,
+          "n_validation": 53,
+          "coverage_warning": "ANNUAL_FINALS_SUBSET: 12 of 18 teams, different format",
+          "b5_log_loss": 0.6041720170553416,
+          "b0_log_loss": 0.6931471805599454
+        },
+        {
+          "fold_id": "F07",
+          "train_seasons": [
+            "KPL2022S1",
+            "KPL2022S2",
+            "KPL2023S1",
+            "KPL2023S2",
+            "KPL2024S1",
+            "KPL2024S2",
+            "KPL2024S3"
+          ],
+          "validation_season": "KPL2025S1",
+          "train_start": "2022-02-09 15:00:00",
+          "train_end": "2024-11-16 17:30:00",
+          "validation_start": "2025-02-12 14:00:00",
+          "validation_end": "2025-05-10 18:00:00",
+          "n_train": 869,
+          "n_validation": 136,
+          "coverage_warning": null,
+          "b5_log_loss": 0.592696265249875,
+          "b0_log_loss": 0.6931471805599453
+        },
+        {
+          "fold_id": "F08",
+          "train_seasons": [
+            "KPL2022S1",
+            "KPL2022S2",
+            "KPL2023S1",
+            "KPL2023S2",
+            "KPL2024S1",
+            "KPL2024S2",
+            "KPL2024S3",
+            "KPL2025S1"
+          ],
+          "validation_season": "KPL2025S2",
+          "train_start": "2022-02-09 15:00:00",
+          "train_end": "2025-05-10 18:00:00",
+          "validation_start": "2025-06-05 14:00:00",
+          "validation_end": "2025-09-07 18:00:00",
+          "n_train": 1005,
+          "n_validation": 136,
+          "coverage_warning": null,
+          "b5_log_loss": 0.645109048073313,
+          "b0_log_loss": 0.6931471805599453
+        },
+        {
+          "fold_id": "F09",
+          "train_seasons": [
+            "KPL2022S1",
+            "KPL2022S2",
+            "KPL2023S1",
+            "KPL2023S2",
+            "KPL2024S1",
+            "KPL2024S2",
+            "KPL2024S3",
+            "KPL2025S1",
+            "KPL2025S2"
+          ],
+          "validation_season": "KPL2025S3",
+          "train_start": "2022-02-09 15:00:00",
+          "train_end": "2025-09-07 18:00:00",
+          "validation_start": "2025-09-28 14:00:00",
+          "validation_end": "2025-11-08 17:30:00",
+          "n_train": 1141,
+          "n_validation": 53,
+          "coverage_warning": "ANNUAL_FINALS_SUBSET: 12 of 18 teams, different format",
+          "b5_log_loss": 0.4953021377205111,
+          "b0_log_loss": 0.6931471805599454
+        },
+        {
+          "fold_id": "F10",
+          "train_seasons": [
+            "KPL2022S1",
+            "KPL2022S2",
+            "KPL2023S1",
+            "KPL2023S2",
+            "KPL2024S1",
+            "KPL2024S2",
+            "KPL2024S3",
+            "KPL2025S1",
+            "KPL2025S2",
+            "KPL2025S3"
+          ],
+          "validation_season": "KPL2026S1",
+          "train_start": "2022-02-09 15:00:00",
+          "train_end": "2025-11-08 17:30:00",
+          "validation_start": "2026-01-14 14:00:00",
+          "validation_end": "2026-04-11 17:00:00",
+          "n_train": 1194,
+          "n_validation": 136,
+          "coverage_warning": null,
+          "b5_log_loss": 0.627093019321001,
+          "b0_log_loss": 0.6931471805599453
+        },
+        {
+          "fold_id": "F11",
+          "train_seasons": [
+            "KPL2022S1",
+            "KPL2022S2",
+            "KPL2023S1",
+            "KPL2023S2",
+            "KPL2024S1",
+            "KPL2024S2",
+            "KPL2024S3",
+            "KPL2025S1",
+            "KPL2025S2",
+            "KPL2025S3",
+            "KPL2026S1"
+          ],
+          "validation_season": "KPL2026S2",
+          "train_start": "2022-02-09 15:00:00",
+          "train_end": "2026-04-11 17:00:00",
+          "validation_start": "2026-06-17 14:00:00",
+          "validation_end": "2026-09-12 18:00:00",
+          "n_train": 1330,
+          "n_validation": 136,
+          "coverage_warning": null,
+          "b5_log_loss": 0.6443961112089492,
+          "b0_log_loss": 0.6931471805599453
+        }
+      ]
+    },
+    "prospective": {
+      "annual_finals_outcome_rows": 0,
+      "post_cutoff_competitive_rows": 0,
+      "primary_probability_transform": "bo5_lambda=1.0, bo7_lambda=1.0 (raw B5)",
+      "bo7_correction_in_primary": false,
+      "roster_adjustment_in_primary": false,
+      "draft_adjustment_in_primary": false,
+      "n_simulations": 1000000
+    },
+    "game_draft_decisions": [
+      {
+        "layer": "Game-level team strength",
+        "decision": "KEEP_AS_RESEARCH_ONLY: G3 is a small, significant gain over vanilla game Elo, but ties B5 at series level"
+      },
+      {
+        "layer": "Series format model (BO5/BO7)",
+        "decision": "KEEP_AS_RESEARCH_ONLY: the exact mapping is correct and ties B5; the BO7 under-confidence is real in-sample, but its correction does not validate out of time"
+      },
+      {
+        "layer": "Series-state model",
+        "decision": "REJECT"
+      },
+      {
+        "layer": "Static draft model",
+        "decision": "KEEP_AS_RESEARCH_ONLY: D1 is borderline; richer models tie D0, D6 overfits; there is a late-fold trend but the data is too short"
+      },
+      {
+        "layer": "Sequential draft model",
+        "decision": "REJECT for now: no step gains information beyond noise"
+      }
+    ],
+    "bo7_audit_decision": "REJECT_BO7_CORRECTION",
+    "player_model_recommendation": "Keep B5 as the deployable reference; do not carry B6–B12 forward",
+    "freeze": {
+      "freeze_id": "v1.0-prospective-freeze-2026-09-29",
+      "information_cutoff": "2026-09-28T00:00:00+08:00 (exclusive)",
+      "freeze_date": "2026-09-29",
+      "first_match": "2026-10-02",
+      "tests": "170 / 170",
+      "tests_passed": 170,
+      "test_count": 170,
+      "git_tag": "v1.0-prospective-freeze-2026-09-29",
+      "primary": "RAW B5"
+    }
+  }
+}

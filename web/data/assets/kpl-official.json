@@ -1,0 +1,739 @@
+{
+  "source": "KPL 官网 https://kpl.qq.com (kplow/getTeamsList, kplow/getTeamsIntro)",
+  "season": "KPL2026S3",
+  "fetched_at": "2026-09-29T07:58:16.960Z",
+  "teams": {
+    "ag": {
+      "officialName": "成都AG超玩会",
+      "kplTeamId": "KPL2026S3_ag",
+      "slogan": "心怀荣耀，勇往直前",
+      "teamLogo": "/assets/kpl/ag/logo.png",
+      "teamLogoAlt": "/assets/kpl/ag/logo-alt.png",
+      "teamPhoto": "/assets/kpl/ag/photo.jpg",
+      "teamHeroImage": null,
+      "coachPortrait": null,
+      "players": [
+        {
+          "playerId": "60010519",
+          "name": "一诺",
+          "realName": "徐必成",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/ag/players/60010519.png"
+        },
+        {
+          "playerId": "60011738",
+          "name": "轩染",
+          "realName": "刘明",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/ag/players/60011738.png"
+        },
+        {
+          "playerId": "70010326",
+          "name": "长生",
+          "realName": "谢承峻",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/ag/players/70010326.png"
+        },
+        {
+          "playerId": "60011557",
+          "name": "钟意",
+          "realName": "陈家豪",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/ag/players/60011557.png"
+        },
+        {
+          "playerId": "60011921",
+          "name": "大帅",
+          "realName": "孟家俊",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/ag/players/60011921.png"
+        },
+        {
+          "playerId": "60012193",
+          "name": "染详",
+          "realName": "管泓宇",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/ag/players/60012193.png"
+        },
+        {
+          "playerId": "60011724",
+          "name": "小麦",
+          "realName": "彭超平",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/ag/players/60011724.png"
+        }
+      ]
+    },
+    "dyg": {
+      "officialName": "深圳DYG",
+      "kplTeamId": "KPL2026S3_jc",
+      "slogan": "巅峰之路，永无边界",
+      "teamLogo": "/assets/kpl/dyg/logo.png",
+      "teamLogoAlt": "/assets/kpl/dyg/logo-alt.png",
+      "teamPhoto": "/assets/kpl/dyg/photo.jpg",
+      "teamHeroImage": null,
+      "coachPortrait": null,
+      "players": [
+        {
+          "playerId": "60010760",
+          "name": "钎城",
+          "realName": "周诣涛",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/dyg/players/60010760.png"
+        },
+        {
+          "playerId": "60011909",
+          "name": "小轩",
+          "realName": "王胜",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/dyg/players/60011909.png"
+        },
+        {
+          "playerId": "60010954",
+          "name": "向鱼",
+          "realName": "蔡佑其",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/dyg/players/60010954.png"
+        },
+        {
+          "playerId": "60012295",
+          "name": "方羽",
+          "realName": "邓佳宇",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/dyg/players/60012295.png"
+        },
+        {
+          "playerId": "60011720",
+          "name": "小乐",
+          "realName": "黄家乐",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/dyg/players/60011720.png"
+        },
+        {
+          "playerId": "60012007",
+          "name": "落空",
+          "realName": "周熙瑞",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/dyg/players/60012007.png"
+        },
+        {
+          "playerId": "60010968",
+          "name": "小A",
+          "realName": "杨荣鑫",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/dyg/players/60010968.png"
+        }
+      ]
+    },
+    "edgm": {
+      "officialName": "上海EDG.M",
+      "kplTeamId": "KPL2026S3_edg.m",
+      "slogan": "为爱而聚，E起前进",
+      "teamLogo": "/assets/kpl/edgm/logo.png",
+      "teamLogoAlt": "/assets/kpl/edgm/logo-alt.png",
+      "teamPhoto": "/assets/kpl/edgm/photo.jpg",
+      "teamHeroImage": null,
+      "coachPortrait": null,
+      "players": [
+        {
+          "playerId": "60010941",
+          "name": "花卷",
+          "realName": "吴育涛",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/edgm/players/60010941.png"
+        },
+        {
+          "playerId": "60011902",
+          "name": "流星",
+          "realName": "李星",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/edgm/players/60011902.png"
+        },
+        {
+          "playerId": "60011487",
+          "name": "夏凌",
+          "realName": "张蜀徽",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/edgm/players/60011487.png"
+        },
+        {
+          "playerId": "60012174",
+          "name": "月秋",
+          "realName": "赵浩伟",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/edgm/players/60012174.png"
+        },
+        {
+          "playerId": "60011542",
+          "name": "风箫",
+          "realName": "于翔任",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/edgm/players/60011542.png"
+        },
+        {
+          "playerId": "60012114",
+          "name": "凌云",
+          "realName": "陈泓铭",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/edgm/players/60012114.png"
+        },
+        {
+          "playerId": "60012243",
+          "name": "小碎",
+          "realName": "李文浩",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/edgm/players/60012243.png"
+        }
+      ]
+    },
+    "hero": {
+      "officialName": "南通Hero久竞",
+      "kplTeamId": "KPL2026S3_hero",
+      "slogan": "英雄归来，向海新生",
+      "teamLogo": "/assets/kpl/hero/logo.png",
+      "teamLogoAlt": "/assets/kpl/hero/logo-alt.png",
+      "teamPhoto": "/assets/kpl/hero/photo.jpg",
+      "teamHeroImage": null,
+      "coachPortrait": null,
+      "players": [
+        {
+          "playerId": "70010413",
+          "name": "坦然",
+          "realName": "孙麟威",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/hero/players/70010413.png"
+        },
+        {
+          "playerId": "60011869",
+          "name": "落尘",
+          "realName": "张世杰",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/hero/players/60011869.png"
+        },
+        {
+          "playerId": "60012008",
+          "name": "玖熙",
+          "realName": "敖语思涵",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/hero/players/60012008.png"
+        },
+        {
+          "playerId": "60010827",
+          "name": "妖刀",
+          "realName": "钟乐天",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/hero/players/60010827.png"
+        },
+        {
+          "playerId": "60011424",
+          "name": "极光",
+          "realName": "周文强",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/hero/players/60011424.png"
+        },
+        {
+          "playerId": "60012119",
+          "name": "白清",
+          "realName": "吴轲蔚",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/hero/players/60012119.png"
+        },
+        {
+          "playerId": "60011809",
+          "name": "紫渊",
+          "realName": "侯维国",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/hero/players/60011809.png"
+        }
+      ]
+    },
+    "jdg": {
+      "officialName": "北京JDG",
+      "kplTeamId": "KPL2026S3_vg",
+      "slogan": "坚定所信，京刃破晓",
+      "teamLogo": "/assets/kpl/jdg/logo.png",
+      "teamLogoAlt": "/assets/kpl/jdg/logo-alt.png",
+      "teamPhoto": "/assets/kpl/jdg/photo.jpg",
+      "teamHeroImage": null,
+      "coachPortrait": null,
+      "players": [
+        {
+          "playerId": "60011055",
+          "name": "无畏",
+          "realName": "杨涛",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/jdg/players/60011055.png"
+        },
+        {
+          "playerId": "60010953",
+          "name": "清融",
+          "realName": "黄垚钦",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/jdg/players/60010953.png"
+        },
+        {
+          "playerId": "60011747",
+          "name": "无双",
+          "realName": "胡家荣",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/jdg/players/60011747.png"
+        },
+        {
+          "playerId": "60012230",
+          "name": "昊昊",
+          "realName": "黄政昊",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/jdg/players/60012230.png"
+        },
+        {
+          "playerId": "60012238",
+          "name": "光明",
+          "realName": "余睿桐",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/jdg/players/60012238.png"
+        },
+        {
+          "playerId": "60012195",
+          "name": "小寒",
+          "realName": "金书瀚",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/jdg/players/60012195.png"
+        },
+        {
+          "playerId": "60011991",
+          "name": "花缘",
+          "realName": "谭锦威",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/jdg/players/60011991.png"
+        }
+      ]
+    },
+    "ksg": {
+      "officialName": "KSG",
+      "kplTeamId": "KPL2026S3_ytg",
+      "slogan": "逆锋破阵，乘梦追光",
+      "teamLogo": "/assets/kpl/ksg/logo.png",
+      "teamLogoAlt": "/assets/kpl/ksg/logo-alt.png",
+      "teamPhoto": "/assets/kpl/ksg/photo.jpg",
+      "teamHeroImage": null,
+      "coachPortrait": null,
+      "players": [
+        {
+          "playerId": "60012237",
+          "name": "无言",
+          "realName": "赵昊宇",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/ksg/players/60012237.png"
+        },
+        {
+          "playerId": "60012117",
+          "name": "句号",
+          "realName": "何伟嘉",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/ksg/players/60012117.png"
+        },
+        {
+          "playerId": "60011554",
+          "name": "流浪",
+          "realName": "张恒",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/ksg/players/60011554.png"
+        },
+        {
+          "playerId": "60012236",
+          "name": "小屿",
+          "realName": "王思琪",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/ksg/players/60012236.png"
+        },
+        {
+          "playerId": "60011039",
+          "name": "梦岚",
+          "realName": "彭俊岚",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/ksg/players/60011039.png"
+        },
+        {
+          "playerId": "60011161",
+          "name": "晚星",
+          "realName": "王恒鸿",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/ksg/players/60011161.png"
+        },
+        {
+          "playerId": "60012170",
+          "name": "烈峰峰",
+          "realName": "张玉峰",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/ksg/players/60012170.png"
+        }
+      ]
+    },
+    "wolves": {
+      "officialName": "重庆狼队",
+      "kplTeamId": "KPL2026S3_qghappy",
+      "slogan": "生而无畏，战至终章",
+      "teamLogo": "/assets/kpl/wolves/logo.png",
+      "teamLogoAlt": "/assets/kpl/wolves/logo-alt.png",
+      "teamPhoto": "/assets/kpl/wolves/photo.jpg",
+      "teamHeroImage": null,
+      "coachPortrait": null,
+      "players": [
+        {
+          "playerId": "60010840",
+          "name": "清清",
+          "realName": "吴金翔",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/wolves/players/60010840.png"
+        },
+        {
+          "playerId": "60011891",
+          "name": "皖皖",
+          "realName": "杜远航",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/wolves/players/60011891.png"
+        },
+        {
+          "playerId": "60011430",
+          "name": "紫幻",
+          "realName": "黄广顺",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/wolves/players/60011430.png"
+        },
+        {
+          "playerId": "60011739",
+          "name": "道崽",
+          "realName": "杨凯博",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/wolves/players/60011739.png"
+        },
+        {
+          "playerId": "60011846",
+          "name": "信",
+          "realName": "苟宏鑫",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/wolves/players/60011846.png"
+        },
+        {
+          "playerId": "60010204",
+          "name": "Fly",
+          "realName": "彭云飞",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/wolves/players/60010204.png"
+        },
+        {
+          "playerId": "60012248",
+          "name": "小团",
+          "realName": "刘孝睿",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/wolves/players/60012248.png"
+        }
+      ]
+    },
+    "lgd-nbw": {
+      "officialName": "杭州LGD.NBW",
+      "kplTeamId": "KPL2026S3_lgd",
+      "slogan": "初心荣耀，百战成名",
+      "teamLogo": "/assets/kpl/lgd-nbw/logo.png",
+      "teamLogoAlt": "/assets/kpl/lgd-nbw/logo-alt.png",
+      "teamPhoto": "/assets/kpl/lgd-nbw/photo.jpg",
+      "teamHeroImage": null,
+      "coachPortrait": null,
+      "players": [
+        {
+          "playerId": "60010463",
+          "name": "九尾",
+          "realName": "许鑫蓁",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/lgd-nbw/players/60010463.png"
+        },
+        {
+          "playerId": "60011527",
+          "name": "小落",
+          "realName": "王科",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/lgd-nbw/players/60011527.png"
+        },
+        {
+          "playerId": "60011977",
+          "name": "米苏",
+          "realName": "姜腾瑞",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/lgd-nbw/players/60011977.png"
+        },
+        {
+          "playerId": "60012075",
+          "name": "断雨",
+          "realName": "张宇",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/lgd-nbw/players/60012075.png"
+        },
+        {
+          "playerId": "60011158",
+          "name": "小久",
+          "realName": "阳文明",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/lgd-nbw/players/60011158.png"
+        },
+        {
+          "playerId": "60011264",
+          "name": "小崽",
+          "realName": "夏肇汛",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/lgd-nbw/players/60011264.png"
+        },
+        {
+          "playerId": "60012131",
+          "name": "花花",
+          "realName": "丁璟灏",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/lgd-nbw/players/60012131.png"
+        }
+      ]
+    },
+    "rw": {
+      "officialName": "济南RW侠",
+      "kplTeamId": "KPL2026S3_rw",
+      "slogan": "心不妥协，行不受限",
+      "teamLogo": "/assets/kpl/rw/logo.png",
+      "teamLogoAlt": "/assets/kpl/rw/logo-alt.png",
+      "teamPhoto": "/assets/kpl/rw/photo.jpg",
+      "teamHeroImage": null,
+      "coachPortrait": null,
+      "players": [
+        {
+          "playerId": "60011676",
+          "name": "归期",
+          "realName": "双小钧",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/rw/players/60011676.png"
+        },
+        {
+          "playerId": "60010581",
+          "name": "今屿",
+          "realName": "徐翔宇",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/rw/players/60010581.png"
+        },
+        {
+          "playerId": "60011787",
+          "name": "挽墨",
+          "realName": "骆雪岩",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/rw/players/60011787.png"
+        },
+        {
+          "playerId": "60011737",
+          "name": "小俞",
+          "realName": "周宇",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/rw/players/60011737.png"
+        },
+        {
+          "playerId": "70010356",
+          "name": "梦溪",
+          "realName": "李文宝",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/rw/players/70010356.png"
+        },
+        {
+          "playerId": "60011250",
+          "name": "佩恩",
+          "realName": "文帅",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/rw/players/60011250.png"
+        },
+        {
+          "playerId": "60011468",
+          "name": "早点",
+          "realName": "沈若飞",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/rw/players/60011468.png"
+        }
+      ]
+    },
+    "tesa": {
+      "officialName": "长沙TES.A",
+      "kplTeamId": "KPL2026S3_topm",
+      "slogan": "搏至无憾",
+      "teamLogo": "/assets/kpl/tesa/logo.png",
+      "teamLogoAlt": "/assets/kpl/tesa/logo-alt.png",
+      "teamPhoto": "/assets/kpl/tesa/photo.jpg",
+      "teamHeroImage": null,
+      "coachPortrait": null,
+      "players": [
+        {
+          "playerId": "60011821",
+          "name": "无幻",
+          "realName": "朱俊",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/tesa/players/60011821.png"
+        },
+        {
+          "playerId": "60012175",
+          "name": "书源",
+          "realName": "寇书源",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/tesa/players/60012175.png"
+        },
+        {
+          "playerId": "60012288",
+          "name": "七",
+          "realName": "师子豪",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/tesa/players/60012288.png"
+        },
+        {
+          "playerId": "60012289",
+          "name": "筱雨",
+          "realName": "郑伟聪",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/tesa/players/60012289.png"
+        },
+        {
+          "playerId": "60011520",
+          "name": "蓝桉",
+          "realName": "李涿阳",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/tesa/players/60011520.png"
+        },
+        {
+          "playerId": "60011752",
+          "name": "亮宇",
+          "realName": "陈亮宇",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/tesa/players/60011752.png"
+        },
+        {
+          "playerId": "60011050",
+          "name": "帆帆",
+          "realName": "杨帆",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/tesa/players/60011050.png"
+        }
+      ]
+    },
+    "ttg": {
+      "officialName": "广州TTG",
+      "kplTeamId": "KPL2026S3_xq",
+      "slogan": "破浪乘风，粤上巅峰",
+      "teamLogo": "/assets/kpl/ttg/logo.png",
+      "teamLogoAlt": "/assets/kpl/ttg/logo-alt.png",
+      "teamPhoto": "/assets/kpl/ttg/photo.jpg",
+      "teamHeroImage": null,
+      "coachPortrait": null,
+      "players": [
+        {
+          "playerId": "60011931",
+          "name": "萝卜",
+          "realName": "陈佳鸿",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/ttg/players/60011931.png"
+        },
+        {
+          "playerId": "60011879",
+          "name": "小泽",
+          "realName": "沈宇泽",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/ttg/players/60011879.png"
+        },
+        {
+          "playerId": "60011049",
+          "name": "小胖",
+          "realName": "李达亨",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/ttg/players/60011049.png"
+        },
+        {
+          "playerId": "60011742",
+          "name": "鹤辞",
+          "realName": "江利杰",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/ttg/players/60011742.png"
+        },
+        {
+          "playerId": "60012138",
+          "name": "小雪",
+          "realName": "岳彩营",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/ttg/players/60012138.png"
+        },
+        {
+          "playerId": "60012294",
+          "name": "月月",
+          "realName": "章景豪",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/ttg/players/60012294.png"
+        },
+        {
+          "playerId": "60012244",
+          "name": "涵",
+          "realName": "黄涵熙",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/ttg/players/60012244.png"
+        }
+      ]
+    },
+    "wb": {
+      "officialName": "北京WB",
+      "kplTeamId": "KPL2026S3_ts",
+      "slogan": "荣耀加冕，追梦不休",
+      "teamLogo": "/assets/kpl/wb/logo.png",
+      "teamLogoAlt": "/assets/kpl/wb/logo-alt.png",
+      "teamPhoto": "/assets/kpl/wb/photo.jpg",
+      "teamHeroImage": null,
+      "coachPortrait": null,
+      "players": [
+        {
+          "playerId": "60010353",
+          "name": "暖阳",
+          "realName": "林恒",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/wb/players/60010353.png"
+        },
+        {
+          "playerId": "60011036",
+          "name": "梓墨",
+          "realName": "吴喆杰",
+          "position": "clash",
+          "playerPortrait": "/assets/kpl/wb/players/60011036.png"
+        },
+        {
+          "playerId": "60012116",
+          "name": "安凉",
+          "realName": "张雪龙",
+          "position": "jungle",
+          "playerPortrait": "/assets/kpl/wb/players/60012116.png"
+        },
+        {
+          "playerId": "60011929",
+          "name": "听悦",
+          "realName": "吴佐",
+          "position": "mid",
+          "playerPortrait": "/assets/kpl/wb/players/60011929.png"
+        },
+        {
+          "playerId": "60012155",
+          "name": "昭珏",
+          "realName": "屈万东",
+          "position": "farm",
+          "playerPortrait": "/assets/kpl/wb/players/60012155.png"
+        },
+        {
+          "playerId": "70010342",
+          "name": "一笙",
+          "realName": "李自威",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/wb/players/70010342.png"
+        },
+        {
+          "playerId": "60011807",
+          "name": "涛",
+          "realName": "应泽涛",
+          "position": "roam",
+          "playerPortrait": "/assets/kpl/wb/players/60011807.png"
+        }
+      ]
+    }
+  }
+}

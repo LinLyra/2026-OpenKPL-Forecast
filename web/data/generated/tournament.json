@@ -1,0 +1,698 @@
+{
+  "source_file": [
+    "config/2026_annual_finals_rules.yaml",
+    "reports/tournament/knockout_forecast.csv",
+    "reports/tournament/path_metrics.csv",
+    "reports/tournament/breakthrough_scenarios.csv",
+    "reports/tournament/stage1_forecast.csv",
+    "freeze/v1.0/FREEZE_MANIFEST.json",
+    "freeze/v1.0/PRIMARY_FORECAST.csv"
+  ],
+  "source_sha256": [
+    "8e28f8d86b048adabd459c93fcbc189ce2f1a370657167fa842aa90afe7d9e1a",
+    "50eaff1f1c5d816fcafa956754455973ddd3c8c71440ddbb98fe5b68b315c2c7",
+    "0a7a6c6b4b78df6f09ceae299bfadda3582acbf3ef0bce5392b2bc9255447302",
+    "70070fdf5f9e8539ed5f2c95b74a9a4ca4ad0a03013ec61eb2e9d2a490794a34",
+    "059d3ea5c7aa91f84a271e507fbb411aed1b7dad092e37c8e580c7d4bae45d94",
+    "f91af03829b97b86a8a27ef469229c02897e46e886474d7072740bde656f2480",
+    "65268e2f14ad0676d41f63f861f30148f5f03ef851c2a40788852029ca3dd733"
+  ],
+  "generated_at": "2026-09-29T06:33:05.471Z",
+  "generator": "web/scripts/build-web-data.mjs (read-only adapter; no recomputation)",
+  "data": {
+    "structure": {
+      "label": "ACTUAL TOURNAMENT STRUCTURE (official 2026 format; realized bracket unknown at freeze)",
+      "stages": [
+        {
+          "key": "stage1",
+          "dates": [
+            "2026-10-02",
+            "2026-10-18"
+          ],
+          "format": "BO5",
+          "teams": 12,
+          "rules": [
+            {
+              "id": "R02_STAGE_DATES",
+              "rule": "擂台赛 2026-10-02..10-18; 突围赛 10-20..10-22; 淘汰赛 10-27..11-08; 总决赛 11-14",
+              "verification_status": "VERIFIED_OFFICIAL",
+              "source": "OFFICIAL_FORMAT",
+              "source_date": "2026-09-20"
+            },
+            {
+              "id": "R03_STAGE1_FORMAT",
+              "rule": "Cross-group single round robin, BO5: every Master team plays every Elite team exactly once (36 series); no intra-group series; the two groups are ranked independently",
+              "verification_status": "VERIFIED_OFFICIAL",
+              "source": "OFFICIAL_FORMAT",
+              "source_date": "2026-09-20"
+            },
+            {
+              "id": "R05_STAGE1_ADVANCEMENT",
+              "rule": "Master #1-#4 and Elite #1 -> knockout; Master #5-#6 and Elite #2-#5 -> breakthrough; Elite #6 eliminated",
+              "verification_status": "VERIFIED_OFFICIAL",
+              "source": "OFFICIAL_FORMAT",
+              "source_date": "2026-09-20"
+            },
+            {
+              "id": "R07_MASTER_ROTATION",
+              "rule": "Every Master team must field all 7 registered players for at least one game in every stage-1 BO5; Elite teams exempt; not applicable after stage 1",
+              "verification_status": "VERIFIED_OFFICIAL",
+              "source": "OFFICIAL_FORMAT",
+              "source_date": "2026-09-20"
+            }
+          ]
+        },
+        {
+          "key": "breakthrough",
+          "dates": [
+            "2026-10-20",
+            "2026-10-22"
+          ],
+          "format": "BO7",
+          "teams": 6,
+          "rules": [
+            {
+              "id": "R08_BREAKTHROUGH_FORMAT",
+              "rule": "6 teams (Master #5, #6, Elite #2-#5); BO7 (global BP + 巅峰对决); single elimination; 3 winners advance",
+              "verification_status": "VERIFIED_OFFICIAL",
+              "source": "OFFICIAL_FORMAT",
+              "source_date": "2026-09-20"
+            },
+            {
+              "id": "R09_BREAKTHROUGH_SELECTION",
+              "rule": "Higher-positioned teams choose opponents in sequence (高顺位队伍依次挑选对手)",
+              "verification_status": "VERIFIED_OFFICIAL",
+              "source": "OFFICIAL_FORMAT",
+              "source_date": "2026-09-20"
+            },
+            {
+              "id": "R10_BREAKTHROUGH_SELECTION_DETAIL",
+              "rule": "Master #5 chooses first from Elite #2-#5; Master #6 chooses from the remaining three; the last two Elite teams play each other",
+              "verification_status": "SECONDARY_INTERPRETATION",
+              "source": "WIKIPEDIA",
+              "source_date": "2026-09-20/21 (cited)"
+            }
+          ]
+        },
+        {
+          "key": "knockout",
+          "dates": [
+            "2026-10-27",
+            "2026-11-08"
+          ],
+          "format": "BO7",
+          "teams": 8,
+          "rules": [
+            {
+              "id": "R11_KNOCKOUT_FORMAT",
+              "rule": "8 teams; BO7 (global BP + 巅峰对决) double elimination; the two surviving teams contest the final",
+              "verification_status": "VERIFIED_OFFICIAL",
+              "source": "OFFICIAL_FORMAT",
+              "source_date": "2026-09-20"
+            },
+            {
+              "id": "R12_KNOCKOUT_BRACKET_WIRING",
+              "rule": "As in knockout_bracket (UB QF1-4; UB SF W1-W2, W3-W4; LB R1 L1-L3, L2-L4; LB R2 W(LB1a)-L(SF1), W(LB1b)-L(SF2); UBF; LBSF; LBF L(UBF)-W(LBSF); final UBF winner vs LBF winner)",
+              "verification_status": "SECONDARY_TRANSCRIPTION",
+              "source": "WIKIPEDIA",
+              "source_date": "2026-09-20/21 (cited)"
+            },
+            {
+              "id": "R13_KNOCKOUT_DRAW",
+              "rule": "First-round pairings are decided by draw; Master #1 and #2 have seed slots",
+              "verification_status": "VERIFIED_OFFICIAL",
+              "source": "OFFICIAL_FORMAT",
+              "source_date": "2026-09-20"
+            }
+          ]
+        },
+        {
+          "key": "final",
+          "dates": [
+            "2026-11-14",
+            "2026-11-14"
+          ],
+          "format": "BO7",
+          "teams": 2,
+          "rules": [
+            {
+              "id": "R14_FINAL",
+              "rule": "Final 2026-11-14, BO7, UBF winner vs LBF winner; no carried advantage stated",
+              "verification_status": "SECONDARY_TRANSCRIPTION",
+              "source": "WIKIPEDIA",
+              "source_date": "2026-09-20/21 (cited)"
+            }
+          ]
+        }
+      ],
+      "stage1_venue": {
+        "value": "广州体育馆2号馆, 广州",
+        "verification_status": "VERIFIED_OFFICIAL_2026",
+        "source": "reports/tournament/rule_source_registry.csv (GATE_A_STAGE1_VENUE)"
+      },
+      "final_venue": {
+        "value": "五粮液文化体育中心综合体育馆, 成都",
+        "verification_status": "SECONDARY_TRANSCRIPTION",
+        "source": "config/2026_annual_finals_rules.yaml R14_FINAL notes"
+      },
+      "knockout_bracket": {
+        "QF1": {
+          "date": "2026-10-27",
+          "a": "s0",
+          "b": "s1"
+        },
+        "QF2": {
+          "date": "2026-10-28",
+          "a": "s2",
+          "b": "s3"
+        },
+        "QF3": {
+          "date": "2026-10-29",
+          "a": "s4",
+          "b": "s5"
+        },
+        "QF4": {
+          "date": "2026-10-30",
+          "a": "s6",
+          "b": "s7"
+        },
+        "LB1A": {
+          "date": "2026-10-31",
+          "a": "L_QF1",
+          "b": "L_QF3"
+        },
+        "LB1B": {
+          "date": "2026-11-01",
+          "a": "L_QF2",
+          "b": "L_QF4"
+        },
+        "SF1": {
+          "date": "2026-11-02",
+          "a": "W_QF1",
+          "b": "W_QF2"
+        },
+        "SF2": {
+          "date": "2026-11-03",
+          "a": "W_QF3",
+          "b": "W_QF4"
+        },
+        "LB2A": {
+          "date": "2026-11-04",
+          "a": "W_LB1A",
+          "b": "L_SF1"
+        },
+        "LB2B": {
+          "date": "2026-11-05",
+          "a": "W_LB1B",
+          "b": "L_SF2"
+        },
+        "UBF": {
+          "date": "2026-11-06",
+          "a": "W_SF1",
+          "b": "W_SF2"
+        },
+        "LBSF": {
+          "date": "2026-11-07",
+          "a": "W_LB2A",
+          "b": "W_LB2B"
+        },
+        "LBF": {
+          "date": "2026-11-08",
+          "a": "L_UBF",
+          "b": "W_LBSF"
+        },
+        "FINAL": {
+          "date": "2026-11-14",
+          "a": "W_UBF",
+          "b": "W_LBF"
+        }
+      }
+    },
+    "simulated": {
+      "label": "SIMULATED FUTURE PATHS (1,000,000 simulations of the official format; PRIMARY scenario)",
+      "primary_scenario": {
+        "stage1_tiebreak": "T1_WINS_GAMEDIFF_LOT",
+        "breakthrough_selection": "OPTIMAL_SELECTION",
+        "selection_pool": "ELITE_2_TO_5",
+        "knockout_draw": "K1_SEEDS_OPPOSITE_HALVES",
+        "probability_transform": "PRIMARY"
+      },
+      "teams": [
+        {
+          "id": "wolves",
+          "official_name": "重庆狼队",
+          "group": "MASTER",
+          "p_direct_knockout": 0.929868,
+          "p_breakthrough": 0.070132,
+          "p_stage1_elimination": 0,
+          "p_breakthrough_win": 0.063345,
+          "p_breakthrough_win_given_entry": 0.9032253464894769,
+          "p_knockout": 0.993213,
+          "p_upper_semifinal": 0.752704,
+          "p_upper_final": 0.547952,
+          "p_upper_final_win": 0.369323,
+          "p_drop_to_lower": 0.62389,
+          "p_lower_final": 0.392116,
+          "p_final": 0.645649,
+          "p_champion": 0.421862,
+          "p_champion_given_knockout": 0.4247447425678077,
+          "terminal": {
+            "STAGE1": 0,
+            "BREAKTHROUGH": 0.006787,
+            "LB_R1": 0.053686,
+            "LB_R2": 0.097072,
+            "LB_SF": 0.081016,
+            "LB_F": 0.11579,
+            "FINAL": 0.223787,
+            "CHAMPION": 0.421862
+          },
+          "expected_series": 10.328353,
+          "expected_bo7_series": 4.328353,
+          "champion_given_direct": 0.42527218917093607,
+          "champion_given_breakthrough": 0.3766468944276507,
+          "path_advantage_champion_direct_minus_breakthrough": 0.04862529474328536,
+          "p_eliminated_in_breakthrough_given_entry": 0.09677465351052306
+        },
+        {
+          "id": "ttg",
+          "official_name": "广州TTG",
+          "group": "MASTER",
+          "p_direct_knockout": 0.884888,
+          "p_breakthrough": 0.115112,
+          "p_stage1_elimination": 0,
+          "p_breakthrough_win": 0.10059,
+          "p_breakthrough_win_given_entry": 0.8738446035165751,
+          "p_knockout": 0.985478,
+          "p_upper_semifinal": 0.688499,
+          "p_upper_final": 0.451492,
+          "p_upper_final_win": 0.25906,
+          "p_drop_to_lower": 0.726418,
+          "p_lower_final": 0.402102,
+          "p_final": 0.513664,
+          "p_champion": 0.2767,
+          "p_champion_given_knockout": 0.28077745013079947,
+          "terminal": {
+            "STAGE1": 0,
+            "BREAKTHROUGH": 0.014522,
+            "LB_R1": 0.080113,
+            "LB_R2": 0.137247,
+            "LB_SF": 0.106956,
+            "LB_F": 0.147498,
+            "FINAL": 0.236964,
+            "CHAMPION": 0.2767
+          },
+          "expected_series": 10.223825,
+          "expected_bo7_series": 4.223825,
+          "champion_given_direct": 0.2817870736183562,
+          "champion_given_breakthrough": 0.2375946903884912,
+          "path_advantage_champion_direct_minus_breakthrough": 0.04419238322986499,
+          "p_eliminated_in_breakthrough_given_entry": 0.1261553964834249
+        },
+        {
+          "id": "jdg",
+          "official_name": "北京JDG",
+          "group": "MASTER",
+          "p_direct_knockout": 0.790204,
+          "p_breakthrough": 0.209796,
+          "p_stage1_elimination": 0,
+          "p_breakthrough_win": 0.173968,
+          "p_breakthrough_win_given_entry": 0.8292245800682568,
+          "p_knockout": 0.964172,
+          "p_upper_semifinal": 0.58541,
+          "p_upper_final": 0.31699,
+          "p_upper_final_win": 0.149474,
+          "p_drop_to_lower": 0.814698,
+          "p_lower_final": 0.347104,
+          "p_final": 0.325707,
+          "p_champion": 0.14223,
+          "p_champion_given_knockout": 0.14751517364121755,
+          "terminal": {
+            "STAGE1": 0,
+            "BREAKTHROUGH": 0.035828,
+            "LB_R1": 0.129568,
+            "LB_R2": 0.199686,
+            "LB_SF": 0.13834,
+            "LB_F": 0.170871,
+            "FINAL": 0.183477,
+            "CHAMPION": 0.14223
+          },
+          "expected_series": 9.963483,
+          "expected_bo7_series": 3.963483,
+          "champion_given_direct": 0.14864769097600114,
+          "champion_given_breakthrough": 0.11805754161185152,
+          "path_advantage_champion_direct_minus_breakthrough": 0.030590149364149624,
+          "p_eliminated_in_breakthrough_given_entry": 0.17077541993174317
+        },
+        {
+          "id": "ag",
+          "official_name": "成都AG超玩会",
+          "group": "MASTER",
+          "p_direct_knockout": 0.627926,
+          "p_breakthrough": 0.372074,
+          "p_stage1_elimination": 0,
+          "p_breakthrough_win": 0.285479,
+          "p_breakthrough_win_given_entry": 0.7672640388739874,
+          "p_knockout": 0.913405,
+          "p_upper_semifinal": 0.459411,
+          "p_upper_final": 0.197631,
+          "p_upper_final_win": 0.07531,
+          "p_drop_to_lower": 0.838095,
+          "p_lower_final": 0.240807,
+          "p_final": 0.172068,
+          "p_champion": 0.060626,
+          "p_champion_given_knockout": 0.06637362396746241,
+          "terminal": {
+            "STAGE1": 0,
+            "BREAKTHROUGH": 0.086595,
+            "LB_R1": 0.19629,
+            "LB_R2": 0.255503,
+            "LB_SF": 0.145495,
+            "LB_F": 0.144049,
+            "FINAL": 0.111442,
+            "CHAMPION": 0.060626
+          },
+          "expected_series": 9.592855,
+          "expected_bo7_series": 3.592855,
+          "champion_given_direct": 0.06726111038561869,
+          "champion_given_breakthrough": 0.04942833952385816,
+          "path_advantage_champion_direct_minus_breakthrough": 0.01783277086176053,
+          "p_eliminated_in_breakthrough_given_entry": 0.23273596112601258
+        },
+        {
+          "id": "wb",
+          "official_name": "北京WB",
+          "group": "MASTER",
+          "p_direct_knockout": 0.559545,
+          "p_breakthrough": 0.440455,
+          "p_stage1_elimination": 0,
+          "p_breakthrough_win": 0.32665,
+          "p_breakthrough_win_given_entry": 0.741619461693022,
+          "p_knockout": 0.886195,
+          "p_upper_semifinal": 0.414814,
+          "p_upper_final": 0.164177,
+          "p_upper_final_win": 0.057417,
+          "p_drop_to_lower": 0.828778,
+          "p_lower_final": 0.205004,
+          "p_final": 0.133572,
+          "p_champion": 0.043314,
+          "p_champion_given_knockout": 0.04887637596691473,
+          "terminal": {
+            "STAGE1": 0,
+            "BREAKTHROUGH": 0.113805,
+            "LB_R1": 0.220122,
+            "LB_R2": 0.263608,
+            "LB_SF": 0.140044,
+            "LB_F": 0.128849,
+            "FINAL": 0.090258,
+            "CHAMPION": 0.043314
+          },
+          "expected_series": 9.455782,
+          "expected_bo7_series": 3.455782,
+          "champion_given_direct": 0.05006031686459534,
+          "champion_given_breakthrough": 0.034743617395647686,
+          "path_advantage_champion_direct_minus_breakthrough": 0.015316699468947655,
+          "p_eliminated_in_breakthrough_given_entry": 0.25838053830697805
+        },
+        {
+          "id": "tesa",
+          "official_name": "长沙TES.A",
+          "group": "ELITE",
+          "p_direct_knockout": 0.343531,
+          "p_breakthrough": 0.616616,
+          "p_stage1_elimination": 0.039853,
+          "p_breakthrough_win": 0.357587,
+          "p_breakthrough_win_given_entry": 0.5799184581652114,
+          "p_knockout": 0.701118,
+          "p_upper_semifinal": 0.298414,
+          "p_upper_final": 0.106017,
+          "p_upper_final_win": 0.034287,
+          "p_drop_to_lower": 0.666831,
+          "p_lower_final": 0.135385,
+          "p_final": 0.079955,
+          "p_champion": 0.023687,
+          "p_champion_given_knockout": 0.03378461257591447,
+          "terminal": {
+            "STAGE1": 0.039853,
+            "BREAKTHROUGH": 0.259029,
+            "LB_R1": 0.202251,
+            "LB_R2": 0.223352,
+            "LB_SF": 0.105843,
+            "LB_F": 0.089717,
+            "FINAL": 0.056268,
+            "CHAMPION": 0.023687
+          },
+          "expected_series": 8.902557,
+          "expected_bo7_series": 2.902557,
+          "champion_given_direct": 0.033598132337401866,
+          "champion_given_breakthrough": 0.01969621287803106,
+          "path_advantage_champion_direct_minus_breakthrough": 0.013901919459370807,
+          "p_eliminated_in_breakthrough_given_entry": 0.42008154183478863
+        },
+        {
+          "id": "edgm",
+          "official_name": "上海EDG.M",
+          "group": "ELITE",
+          "p_direct_knockout": 0.316329,
+          "p_breakthrough": 0.639169,
+          "p_stage1_elimination": 0.044502,
+          "p_breakthrough_win": 0.360313,
+          "p_breakthrough_win_given_entry": 0.5637210190106215,
+          "p_knockout": 0.676642,
+          "p_upper_semifinal": 0.278408,
+          "p_upper_final": 0.095646,
+          "p_upper_final_win": 0.029969,
+          "p_drop_to_lower": 0.646673,
+          "p_lower_final": 0.12291,
+          "p_final": 0.070079,
+          "p_champion": 0.020174,
+          "p_champion_given_knockout": 0.029814879951288866,
+          "terminal": {
+            "STAGE1": 0.044502,
+            "BREAKTHROUGH": 0.278856,
+            "LB_R1": 0.205618,
+            "LB_R2": 0.218466,
+            "LB_SF": 0.099679,
+            "LB_F": 0.0828,
+            "FINAL": 0.049905,
+            "CHAMPION": 0.020174
+          },
+          "expected_series": 8.813378,
+          "expected_bo7_series": 2.813378,
+          "champion_given_direct": 0.02962422035286047,
+          "champion_given_breakthrough": 0.016901633214376793,
+          "path_advantage_champion_direct_minus_breakthrough": 0.012722587138483676,
+          "p_eliminated_in_breakthrough_given_entry": 0.43627898098937845
+        },
+        {
+          "id": "ksg",
+          "official_name": "KSG",
+          "group": "MASTER",
+          "p_direct_knockout": 0.207569,
+          "p_breakthrough": 0.792431,
+          "p_stage1_elimination": 0,
+          "p_breakthrough_win": 0.440971,
+          "p_breakthrough_win_given_entry": 0.5564787344260889,
+          "p_knockout": 0.64854,
+          "p_upper_semifinal": 0.188883,
+          "p_upper_final": 0.045357,
+          "p_upper_final_win": 0.009829,
+          "p_drop_to_lower": 0.638711,
+          "p_lower_final": 0.058283,
+          "p_final": 0.023299,
+          "p_champion": 0.004663,
+          "p_champion_given_knockout": 0.007189995990995159,
+          "terminal": {
+            "STAGE1": 0,
+            "BREAKTHROUGH": 0.35146,
+            "LB_R1": 0.303694,
+            "LB_R2": 0.210692,
+            "LB_SF": 0.066042,
+            "LB_F": 0.044813,
+            "FINAL": 0.018636,
+            "CHAMPION": 0.004663
+          },
+          "expected_series": 8.604736,
+          "expected_bo7_series": 2.604736,
+          "champion_given_direct": 0.00745294335859401,
+          "champion_given_breakthrough": 0.003932203560940953,
+          "path_advantage_champion_direct_minus_breakthrough": 0.0035207397976530566,
+          "p_eliminated_in_breakthrough_given_entry": 0.44352126557391114
+        },
+        {
+          "id": "rw",
+          "official_name": "济南RW侠",
+          "group": "ELITE",
+          "p_direct_knockout": 0.129912,
+          "p_breakthrough": 0.747029,
+          "p_stage1_elimination": 0.123059,
+          "p_breakthrough_win": 0.28892,
+          "p_breakthrough_win_given_entry": 0.38675874698304885,
+          "p_knockout": 0.418832,
+          "p_upper_semifinal": 0.126294,
+          "p_upper_final": 0.030992,
+          "p_upper_final_win": 0.006932,
+          "p_drop_to_lower": 0.4119,
+          "p_lower_final": 0.040055,
+          "p_final": 0.016201,
+          "p_champion": 0.00323,
+          "p_champion_given_knockout": 0.007711922680215456,
+          "terminal": {
+            "STAGE1": 0.123059,
+            "BREAKTHROUGH": 0.458109,
+            "LB_R1": 0.186959,
+            "LB_R2": 0.139093,
+            "LB_SF": 0.045793,
+            "LB_F": 0.030786,
+            "FINAL": 0.012971,
+            "CHAMPION": 0.00323
+          },
+          "expected_series": 7.93461,
+          "expected_bo7_series": 1.93461,
+          "champion_given_direct": 0.007343432477369296,
+          "champion_given_breakthrough": 0.00304673580276,
+          "path_advantage_champion_direct_minus_breakthrough": 0.004296696674609296,
+          "p_eliminated_in_breakthrough_given_entry": 0.6132412530169511
+        },
+        {
+          "id": "lgd-nbw",
+          "official_name": "杭州LGD.NBW",
+          "group": "ELITE",
+          "p_direct_knockout": 0.100843,
+          "p_breakthrough": 0.744315,
+          "p_stage1_elimination": 0.154842,
+          "p_breakthrough_win": 0.2784,
+          "p_breakthrough_win_given_entry": 0.374035186715302,
+          "p_knockout": 0.379243,
+          "p_upper_semifinal": 0.103879,
+          "p_upper_final": 0.023111,
+          "p_upper_final_win": 0.00465,
+          "p_drop_to_lower": 0.374593,
+          "p_lower_final": 0.029657,
+          "p_final": 0.010877,
+          "p_champion": 0.002019,
+          "p_champion_given_knockout": 0.005323763391809473,
+          "terminal": {
+            "STAGE1": 0.154842,
+            "BREAKTHROUGH": 0.465915,
+            "LB_R1": 0.185749,
+            "LB_R2": 0.122984,
+            "LB_SF": 0.036203,
+            "LB_F": 0.02343,
+            "FINAL": 0.008858,
+            "CHAMPION": 0.002019
+          },
+          "expected_series": 7.784228,
+          "expected_bo7_series": 1.784228,
+          "champion_given_direct": 0.005374691351903454,
+          "champion_given_breakthrough": 0.0019843748950377194,
+          "path_advantage_champion_direct_minus_breakthrough": 0.003390316456865735,
+          "p_eliminated_in_breakthrough_given_entry": 0.625964813284698
+        },
+        {
+          "id": "hero",
+          "official_name": "南通Hero久竞",
+          "group": "ELITE",
+          "p_direct_knockout": 0.090821,
+          "p_breakthrough": 0.738716,
+          "p_stage1_elimination": 0.170463,
+          "p_breakthrough_win": 0.23782,
+          "p_breakthrough_win_given_entry": 0.321936982548097,
+          "p_knockout": 0.328641,
+          "p_upper_semifinal": 0.087147,
+          "p_upper_final": 0.018695,
+          "p_upper_final_win": 0.003537,
+          "p_drop_to_lower": 0.325104,
+          "p_lower_final": 0.024195,
+          "p_final": 0.008445,
+          "p_champion": 0.001445,
+          "p_champion_given_knockout": 0.004396895092213083,
+          "terminal": {
+            "STAGE1": 0.170463,
+            "BREAKTHROUGH": 0.500896,
+            "LB_R1": 0.164459,
+            "LB_R2": 0.106267,
+            "LB_SF": 0.030183,
+            "LB_F": 0.019287,
+            "FINAL": 0.007,
+            "CHAMPION": 0.001445
+          },
+          "expected_series": 7.63204,
+          "expected_bo7_series": 1.63204,
+          "champion_given_direct": 0.004305171711388335,
+          "champion_given_breakthrough": 0.0014268000151614422,
+          "path_advantage_champion_direct_minus_breakthrough": 0.002878371696226893,
+          "p_eliminated_in_breakthrough_given_entry": 0.678063017451903
+        },
+        {
+          "id": "dyg",
+          "official_name": "深圳DYG",
+          "group": "ELITE",
+          "p_direct_knockout": 0.018564,
+          "p_breakthrough": 0.514155,
+          "p_stage1_elimination": 0.467281,
+          "p_breakthrough_win": 0.085957,
+          "p_breakthrough_win_given_entry": 0.16718110297478386,
+          "p_knockout": 0.104521,
+          "p_upper_semifinal": 0.016137,
+          "p_upper_final": 0.00194,
+          "p_upper_final_win": 0.000212,
+          "p_drop_to_lower": 0.104309,
+          "p_lower_final": 0.002382,
+          "p_final": 0.000484,
+          "p_champion": 0.00005,
+          "p_champion_given_knockout": 0.0004783727671951091,
+          "terminal": {
+            "STAGE1": 0.467281,
+            "BREAKTHROUGH": 0.428198,
+            "LB_R1": 0.071491,
+            "LB_R2": 0.02603,
+            "LB_SF": 0.004406,
+            "LB_F": 0.00211,
+            "FINAL": 0.000434,
+            "CHAMPION": 0.00005
+          },
+          "expected_series": 6.764153,
+          "expected_bo7_series": 0.764153,
+          "champion_given_direct": 0.00043094160741219563,
+          "champion_given_breakthrough": 0.00008168742888817574,
+          "path_advantage_champion_direct_minus_breakthrough": 0.0003492541785240199,
+          "p_eliminated_in_breakthrough_given_entry": 0.8328188970252162
+        }
+      ]
+    },
+    "unresolved_rules": [
+      {
+        "rule_name": "Stage 1 tiebreak",
+        "verification_status": "UNKNOWN_2026 (HISTORICAL_RULE_PROXY 2024/2025: points -> 净胜分 -> BO1 加赛)",
+        "classification": "IMMATERIAL",
+        "max_delta_championship": 0.00099,
+        "max_delta_final": 0.002596,
+        "max_delta_knockout": 0.019378
+      },
+      {
+        "rule_name": "Breakthrough pool / selection detail",
+        "verification_status": "PRINCIPLE VERIFIED_OFFICIAL_2026 (高顺位队伍依次挑选对手); selectors/pool UNKNOWN_2026 (HISTORICAL_RULE_PROXY 2025: M5,M6,E2 choose from E3-E5)",
+        "classification": "IMMATERIAL",
+        "max_delta_championship": 0.003448,
+        "max_delta_final": 0.007279,
+        "max_delta_knockout": 0.158333
+      },
+      {
+        "rule_name": "Seed-slot meaning",
+        "verification_status": "EXISTENCE VERIFIED_OFFICIAL_2026 (种子签位 for M1/M2); meaning UNKNOWN_2026; no historical proxy (2024/2025 had no seeds)",
+        "classification": "IMMATERIAL",
+        "max_delta_championship": 0.003659,
+        "max_delta_final": 0.006048,
+        "max_delta_knockout": 0
+      },
+      {
+        "rule_name": "Lower-bracket wiring",
+        "verification_status": "UNKNOWN_2026 (HISTORICAL_RULE_PROXY: realized 2024/2025 brackets identical to engine)",
+        "classification": "IMMATERIAL",
+        "max_delta_championship": 0.000772,
+        "max_delta_final": 0.000818,
+        "max_delta_knockout": 0
+      }
+    ]
+  }
+}

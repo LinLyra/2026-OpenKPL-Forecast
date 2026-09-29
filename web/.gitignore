@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+.env*
+npm-debug.log*
+.DS_Store
+
+# third-party visual assets: local prototype only (see WEB_BUILD_REPORT.md)
+/public/assets/map/
+/public/assets/kpl/
