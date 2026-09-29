@@ -1,0 +1,21 @@
+{
+  "freeze_id": "v1.0-prospective-freeze-2026-09-29",
+  "verified_at": "2026-09-29T12:18:09+08:00",
+  "git_commit": "7f96669aca885bfcdd546565371a4ce96b325d60",
+  "git_commit_role": "tagged metadata commit (step 2); content commit (step 1) = aaf2d280362ba112f8de66e5b69043664b26d07b",
+  "git_tag": "v1.0-prospective-freeze-2026-09-29",
+  "git_tag_object": "0b032cdaaee2801875e489307f60ed36edec6a2b",
+  "git_tag_type": "annotated",
+  "freeze_manifest_sha256": "f91af03829b97b86a8a27ef469229c02897e46e886474d7072740bde656f2480",
+  "test_count": 170,
+  "tests_passed": 170,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "lock_status": "PASS (lock.check() == [])",
+  "manifest_status": "PASS (33/33 candidate-manifest files match; 19/19 freeze-manifest file hashes match; primary forecast hash matches)",
+  "ledger_status": "PASS (file sha256 8579b0e4...; content sha256 excluding generated_at dfe42a35d4b9b458928f9ae2c61d3c1a0deacbfcf2ba5a3f7760d4fc47a90638)",
+  "strength_status": "PASS (49cacffc24c1eca84f78e4c1772e38b4a7be0d9ddca09bbdca78d85d69907dc7)",
+  "information_boundary": "PASS (0 Annual Finals rows, 0 post-cutoff rows, strength last match before cutoff)",
+  "working_tree_status": "CLEAN at tagged commit after post-freeze test run (git status --porcelain empty); this file is then committed on top of the tag",
+  "recomputation": "none; verification only read and hashed frozen artifacts"
+}
