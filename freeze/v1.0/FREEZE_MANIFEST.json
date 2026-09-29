@@ -8,7 +8,7 @@
   "provisional_scope": "unpublished tournament procedural details only; model, ratings and probabilities are final",
   "model_version": "openkpl-v1.0 frozen raw B5 SeasonResetElo (k=48, rho=0.9, scale=400); no BO7/roster/draft/state adjustment",
   "data_version": "v2026_09_28 canonical_series (1466 development series, last 2026-09-12)",
-  "git_commit": null,
+  "git_commit": "aaf2d280362ba112f8de66e5b69043664b26d07b",
   "git_commit_procedure": "two-step: step 1 content commit with git_commit=null; step 2 metadata commit sets git_commit to the step-1 SHA and records manifest_step1_sha256; annotated tag on the step-2 commit",
   "strength_file": "data/processed/tournament/frozen_team_strength_2026.parquet",
   "strength_sha256": "49cacffc24c1eca84f78e4c1772e38b4a7be0d9ddca09bbdca78d85d69907dc7",
@@ -117,5 +117,8 @@
     "src/openkpl/modeling/temporal/season_reset.py": "f3e768fc1a10d402675074fd9bf3e58446b7649b5e7b91003c2a4460b3b277e4",
     "src/openkpl/modeling/temporal/elo.py": "95444bad7df69b9144c10b1b6ad4bf7de74a1d17c3d2303c23167052cdfc51c3",
     "src/openkpl/modeling/temporal/base.py": "a757c832bfd1f53a9793b835d57ba82bf4b079a1796373472f2978ff53442833"
-  }
+  },
+  "git_commit_role": "content commit (step 1): all source, data, reports, freeze documents",
+  "manifest_step1_sha256": "01756b9b77885025b2882e8b1cc109aaf47f7aace87da87cb535348cde390873",
+  "metadata_recorded_at": "2026-09-29T12:17:42+08:00"
 }
