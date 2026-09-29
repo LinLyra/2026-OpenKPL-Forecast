@@ -147,19 +147,19 @@ export const en: Dict = {
     concept: {
       title: "Team strength: Elo ratings",
       body: "Every team has a rating. Winning against a stronger team gains more, losing to a weaker team drops more, and each new season nudges ratings back toward the mean to reflect roster changes, patch impact, and form swings. The gap between two ratings is the starting point for the series-win forecast.",
-      points: ["Each series updates the rating", "Each season pulls ratings back toward the mean", "The rating gap drives the probability"],
+      points: ["Each series updates the rating", "Ratings reset toward the mean at the start of a new season", "The rating gap drives the probability"],
     },
     selection: {
       title: "Why B5 was chosen",
       body: "We compared six candidate models: coin flip, historical win rate, basic Elo, tuned Elo, inactivity-decay Elo, and season-reset Elo. They were all tested on the same real matches using out-of-time validation, and B5 produced the lowest error, so it became the main model.",
-      metric: "Prediction error (log loss, lower is better)",
+      metric: "Prediction error",
       chosen: "Chosen",
       names: { B0: "Coin flip", B1: "Historical win rate", B2: "Basic Elo", B3: "Tuned Elo", B4: "Inactivity-decay Elo", B5: "Season-reset Elo" },
       additions: { B0: "random baseline", B1: "team history", B2: "Elo dynamics", B3: "temporal tuning", B4: "inactivity regression", B5: "season regression" },
     },
     validation: {
       title: "Out-of-time validation",
-      body: "The model can only use the past to predict the future: each round trains on matches that happened before a given point, then predicts the next section of the season. This avoids peeking at the answer. {folds} seasons and {series} series were validated this way.",
+      body: "We only use the past to predict the future: each round trains on matches that happened before a given point, then predicts the next section of the season, avoiding any look-ahead. This process covered {folds} seasons and {series} series.",
       train: "Train",
       test: "Predict",
     },
