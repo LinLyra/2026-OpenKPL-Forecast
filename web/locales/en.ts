@@ -48,8 +48,8 @@ export const en: Dict = {
     title: "Road to the Title",
     lead: "The format is fixed; the future bracket is not. Pick any two teams for a series probability, or follow one team from Stage 1 to the Grand Final.",
     structure: "Official format",
-    flow: "Simulated paths",
-    flowSub: "Ribbon width = probability. Hover a stage for detail.",
+    flow: "One million simulated roads to the title",
+    flowSub: "Ribbon width is the share of simulations that followed that path. Select a team and click a stage for detail.",
     select: "Select team",
     hover: "Hover a stage for detail",
     risk: "Path risk",
@@ -155,6 +155,7 @@ export const en: Dict = {
       metric: "Prediction error (log loss, lower is better)",
       chosen: "Chosen",
       names: { B0: "Coin flip", B1: "Historical win rate", B2: "Basic Elo", B3: "Tuned Elo", B4: "Inactivity-decay Elo", B5: "Season-reset Elo" },
+      additions: { B0: "random baseline", B1: "team history", B2: "Elo dynamics", B3: "temporal tuning", B4: "inactivity regression", B5: "season regression" },
     },
     validation: {
       title: "Out-of-time validation",

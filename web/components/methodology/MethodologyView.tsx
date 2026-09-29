@@ -23,8 +23,6 @@ export function MethodologyView({ locale }: { locale: Locale }) {
   const m = t.method;
   const d = methodology.data;
   const models = d.benchmark.models;
-  const worst = Math.max(...models.map((x) => x.log_loss));
-  const best = Math.min(...models.map((x) => x.log_loss));
   const folds = d.benchmark.folds;
   const seasons = [...new Set(folds.flatMap((f) => [...f.train_seasons, f.validation_season]))].sort();
 
@@ -45,23 +43,22 @@ export function MethodologyView({ locale }: { locale: Locale }) {
 
         <Section n="02" title={m.selection.title} body={m.selection.body}>
           <p className="text-caption text-mute">{m.selection.metric}</p>
-          <ul className="mt-4 space-y-3">
-            {models.map((md) => {
+          <ol className="mt-5 space-y-2">
+            {models.map((md, index) => {
               const chosen = md.model_id === "B5";
-              const rel = worst > best ? (worst - md.log_loss) / (worst - best) : 1;
+              const addition = m.selection.additions[md.model_id as keyof typeof m.selection.additions];
               return (
-                <li key={md.model_id} className="grid grid-cols-[2.25rem_minmax(0,9rem)_1fr_3.75rem] items-center gap-3">
-                  <span className={`num text-body font-bold ${chosen ? "text-gold" : "text-faint"}`}>{md.model_id}</span>
-                  <span className={`truncate text-body ${chosen ? "font-semibold text-fg" : "text-mute"}`}>{m.selection.names[md.model_id as keyof typeof m.selection.names]}</span>
-                  <span className="relative h-2 overflow-hidden rounded-full bg-ink-800">
-                    <span className={`absolute inset-y-0 left-0 rounded-full ${chosen ? "bg-gradient-to-r from-gold-deep to-gold-soft" : "bg-ink-700"}`}
-                      style={{ width: `${Math.max(rel, 0.03) * 100}%` }} />
-                  </span>
-                  <span className={`num text-right text-body ${chosen ? "font-semibold text-gold-soft" : "text-mute"}`}>{md.log_loss.toFixed(3)}</span>
+                <li key={md.model_id}>
+                  {index > 0 && <p className="ml-5 py-1 text-micro text-gold/70">↓ + {addition}</p>}
+                  <div className={`grid grid-cols-[2.75rem_minmax(0,1fr)_4rem] items-center gap-3 rounded-xl px-4 py-3 ${chosen ? "bg-gold/12 ring-1 ring-gold/45" : "bg-ink-850/65"}`}>
+                    <span className={`num text-body font-bold ${chosen ? "text-gold" : "text-faint"}`}>{md.model_id}</span>
+                    <span className={`text-body ${chosen ? "font-semibold text-fg" : "text-mute"}`}>{m.selection.names[md.model_id as keyof typeof m.selection.names]}</span>
+                    <span className={`num text-right text-body ${chosen ? "font-semibold text-gold-soft" : "text-mute"}`}>{md.log_loss.toFixed(3)}</span>
+                  </div>
                 </li>
               );
             })}
-          </ul>
+          </ol>
         </Section>
 
         <Section n="03" title={m.validation.title}

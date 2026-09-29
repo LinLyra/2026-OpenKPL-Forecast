@@ -6,7 +6,7 @@ export const NODE_W = 6;
 
 /** A stage node in the simulated probability flow (SVG). Height encodes probability. */
 export function StageNode({
-  id, x, top, height, label, value, color, active, terminal = false, labelSide = "top", onHover,
+  id, x, top, height, label, value, color, active, terminal = false, labelSide = "top", onHover, onSelect,
 }: {
   id: string;
   x: number;
@@ -19,6 +19,7 @@ export function StageNode({
   terminal?: boolean;
   labelSide?: "top" | "right";
   onHover?: (id: string | null) => void;
+  onSelect?: (id: string) => void;
 }) {
   const h = Math.max(height, 1.5);
   const lx = labelSide === "right" ? x + NODE_W + 10 : x - 2;
@@ -29,6 +30,13 @@ export function StageNode({
       onMouseLeave={() => onHover?.(null)}
       onFocus={() => onHover?.(id)}
       onBlur={() => onHover?.(null)}
+      onClick={() => onSelect?.(id)}
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          onSelect?.(id);
+        }
+      }}
       tabIndex={0}
       role="button"
       aria-label={`${label} ${value}`}

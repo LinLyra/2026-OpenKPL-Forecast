@@ -8,10 +8,9 @@ import { chromium } from "playwright-core";
 
 const BASE = process.env.BASE_URL ?? "http://127.0.0.1:3417";
 const PAGES = [
-  "/zh", "/zh/tournament", "/zh/teams", "/zh/teams/wolves", "/zh/teams/wolves/schedule", "/zh/teams/wolves/journey",
-  "/zh/teams/wolves/roster", "/zh/teams/wolves/tactical", "/zh/teams/dyg", "/zh/matchup", "/zh/methodology",
-  "/en", "/en/tournament", "/en/teams", "/en/teams/ag", "/en/teams/ag/journey", "/en/teams/ag/tactical", "/en/matchup",
-  "/en/methodology",
+  "/zh", "/zh/tournament", "/zh/teams", "/zh/teams/wolves", "/zh/teams/wolves/journey", "/zh/teams/dyg",
+  "/zh/matchup", "/zh/methodology", "/en", "/en/tournament", "/en/teams", "/en/teams/ag",
+  "/en/teams/ag/journey", "/en/matchup", "/en/methodology",
 ];
 
 const browser = await chromium.launch({ channel: "chrome" });
@@ -38,20 +37,14 @@ for (const width of [1440, 390]) {
 
 const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } });
 const page = await ctx.newPage();
-await page.goto(`${BASE}/zh/teams/wolves/tactical`, { waitUntil: "networkidle" });
-const mapLoaded = await page.evaluate(() => {
-  const img = [...document.images].find((i) => i.currentSrc.includes("hok-top"));
-  return img ? img.complete && img.naturalWidth > 0 : false;
-});
-if (!mapLoaded) failures++;
-console.log(`tactical reference map ${mapLoaded ? "OK" : "MISSING"}`);
-for (const name of ["打野", "团战"]) {
-  await page.getByRole(name === "团战" ? "tab" : "button", { name, exact: true }).first().click();
-  await page.waitForTimeout(1300);
-}
-const pressed = await page.locator("[aria-pressed=true]").allInnerTexts();
-const selected = await page.locator("[role=tab][aria-selected=true]").allInnerTexts();
-console.log(`tactical controls: role=${pressed.join("/")} state=${selected.join("/")}`);
+await page.goto(`${BASE}/zh/tournament`, { waitUntil: "networkidle" });
+await page.getByRole("button", { name: /北京JDG 14\.2%/ }).click();
+await page.locator('svg [role="button"]').nth(5).click();
+await page.waitForTimeout(300);
+const pathTeamSelected = await page.getByRole("button", { name: /北京JDG 14\.2%/ }).getAttribute("aria-pressed") === "true";
+const knockoutDetail = await page.getByText("胜者组", { exact: true }).isVisible();
+if (!pathTeamSelected || !knockoutDetail) failures++;
+console.log(`tournament path interaction ${pathTeamSelected && knockoutDetail ? "OK" : "FAIL"}`);
 
 await page.goto(`${BASE}/zh/matchup`, { waitUntil: "networkidle" });
 const matchupState = async () => {

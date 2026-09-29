@@ -2,37 +2,57 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { Fragment, useState } from "react";
-import { getSim, getStage1, tournament } from "@/lib/data";
+import { getSim, getStage1, teamsByChampion, tournament } from "@/lib/data";
 import { mmdd, pct } from "@/lib/format";
-import { dict, type Locale } from "@/lib/i18n";
+import { dict, teamName, type Locale } from "@/lib/i18n";
 import type { SimTeam, StageKey } from "@/lib/types";
-import { TeamSelect } from "@/components/common/TeamSelect";
-import { Panel, PanelTitle } from "@/components/common/ui";
+import { presentation } from "@/data/teamPresentation";
+import { Panel, PanelTitle, TeamLogo } from "@/components/common/ui";
 import { ProbabilityFlow, type FlowNodeId } from "./ProbabilityFlow";
 
 export function TournamentJourney({ locale, initialTeam = "wolves", showSelector = true }: { locale: Locale; initialTeam?: string; showSelector?: boolean }) {
   const t = dict(locale);
   const [teamId, setTeamId] = useState(initialTeam);
   const [hovered, setHovered] = useState<FlowNodeId | null>(null);
+  const [selected, setSelected] = useState<FlowNodeId>("champion");
   const sim = getSim(teamId)!;
+  const active = hovered ?? selected;
 
   return (
     <div className="space-y-6">
       {showSelector && <Structure locale={locale} />}
 
       <Panel>
-        <PanelTitle title={t.tournament.flow} sub={t.tournament.flowSub}
-          right={showSelector ? <TeamSelect locale={locale} value={teamId} onChange={setTeamId} label={t.tournament.select} className="w-full sm:w-72" /> : undefined} />
+        <PanelTitle title={t.tournament.flow} sub={t.tournament.flowSub} />
+        {showSelector && <TeamPathSelector locale={locale} value={teamId} onChange={(id) => { setTeamId(id); setSelected("champion"); }} />}
         <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_15rem]">
           <div className="min-w-0 overflow-x-auto">
-            <ProbabilityFlow sim={sim} locale={locale} hovered={hovered} onHover={setHovered} />
+            <ProbabilityFlow sim={sim} locale={locale} active={active} onHover={setHovered} onSelect={setSelected} />
           </div>
-          <StageDetail sim={sim} node={hovered} locale={locale} />
+          <StageDetail sim={sim} node={active} locale={locale} />
         </div>
       </Panel>
+    </div>
+  );
+}
 
-      <div className="grid gap-6 lg:grid-cols-1">
-        <KnockoutPaths sim={sim} locale={locale} />
+function TeamPathSelector({ locale, value, onChange }: { locale: Locale; value: string; onChange: (id: string) => void }) {
+  const t = dict(locale);
+  return (
+    <div className="mb-6">
+      <p className="sr-only">{t.tournament.select}</p>
+      <div className="grid grid-cols-4 gap-2 sm:grid-cols-6 lg:grid-cols-12" role="group" aria-label={t.tournament.select}>
+        {teamsByChampion.map((tm) => {
+          const selected = tm.id === value;
+          return (
+            <button key={tm.id} type="button" onClick={() => onChange(tm.id)} aria-pressed={selected}
+              aria-label={`${teamName(locale, presentation(tm.id).displayNameZh, presentation(tm.id).displayNameEn)} ${pct(tm.championship_probability)}`}
+              className={`group flex min-h-20 flex-col items-center justify-center rounded-xl px-1 py-2 transition ${selected ? "bg-gold/12 ring-1 ring-gold/60" : "bg-ink-850/55 opacity-55 hover:opacity-100"}`}>
+              <TeamLogo id={tm.id} size={34} className="transition-transform group-hover:scale-105" />
+              <span className={`num mt-1 text-micro ${selected ? "text-gold-soft" : "text-mute"}`}>{pct(tm.championship_probability)}</span>
+            </button>
+          );
+        })}
       </div>
     </div>
   );
@@ -96,7 +116,6 @@ function StageDetail({ sim, node, locale }: { sim: SimTeam; node: FlowNodeId | n
 
   return (
     <aside className="rounded-xl bg-ink-850/80 p-5" aria-live="polite">
-      {!node && <p className="text-micro text-faint">{tt.hover}</p>}
       <AnimatePresence mode="wait">
         <motion.div key={`${sim.id}-${node}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.18 }}>
           <p className="mt-1 text-h3 font-semibold">{i.stage}</p>
@@ -114,37 +133,20 @@ function StageDetail({ sim, node, locale }: { sim: SimTeam; node: FlowNodeId | n
             </div>
           )}
           {i.notes.map((n) => <p key={n} className="mt-3 border-t border-line pt-3 text-caption text-mute">{n}</p>)}
+          {node === "knockout" && (
+            <div className="mt-4 space-y-3 border-t border-line pt-3 text-caption">
+              <div>
+                <p className="font-semibold text-gold">{tt.upperPath}</p>
+                <p className="mt-1 text-mute">{tt.upperSemi} <span className="num text-fg">{pct(sim.p_upper_semifinal)}</span> → {tt.upperFinal} <span className="num text-fg">{pct(sim.p_upper_final)}</span> → {tt.upperFinalWin} <span className="num text-fg">{pct(sim.p_upper_final_win)}</span></p>
+              </div>
+              <div>
+                <p className="font-semibold text-gold">{tt.lowerPath}</p>
+                <p className="mt-1 text-mute">{tt.dropLower} <span className="num text-fg">{pct(sim.p_drop_to_lower)}</span> → {tt.lowerFinal} <span className="num text-fg">{pct(sim.p_lower_final)}</span></p>
+              </div>
+            </div>
+          )}
         </motion.div>
       </AnimatePresence>
     </aside>
   );
 }
-
-function KnockoutPaths({ sim, locale }: { sim: SimTeam; locale: Locale }) {
-  const tt = dict(locale).tournament;
-  const rows: { title: string; steps: [string, number][] }[] = [
-    { title: tt.upperPath, steps: [[tt.upperSemi, sim.p_upper_semifinal], [tt.upperFinal, sim.p_upper_final], [tt.upperFinalWin, sim.p_upper_final_win]] },
-    { title: tt.lowerPath, steps: [[tt.dropLower, sim.p_drop_to_lower], [tt.lowerFinal, sim.p_lower_final]] },
-  ];
-  return (
-    <Panel>
-      <PanelTitle title={tt.paths} sub="BO7" />
-      <div className="space-y-6">
-        {rows.map((r) => (
-          <div key={r.title}>
-            <p className="text-caption font-semibold text-gold">{r.title}</p>
-            <div className="mt-2 grid gap-2" style={{ gridTemplateColumns: `repeat(${r.steps.length}, minmax(0,1fr))` }}>
-              {r.steps.map(([label, v]) => (
-                <div key={label} className="rounded-xl bg-ink-850/80 px-4 py-3">
-                  <p className="text-caption text-mute">{label}</p>
-                  <p className="num mt-1 text-h2 font-semibold">{pct(v)}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    </Panel>
-  );
-}
-

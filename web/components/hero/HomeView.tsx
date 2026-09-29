@@ -10,7 +10,7 @@ import { TeamLogo } from "@/components/common/ui";
 export function HomeView({ locale }: { locale: Locale }) {
   const t = dict(locale);
   const h = t.home;
-  const [leader, ...rest] = teamsByChampion;
+  const [leader] = teamsByChampion;
   const name = (id: string) => { const p = presentation(id); return teamName(locale, p.displayNameZh, p.displayNameEn); };
   const photo = teamAssets(leader.id)?.teamPhoto;
   const maxP = leader.championship_probability;
@@ -40,43 +40,28 @@ export function HomeView({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      {/* Contenders 2–5 */}
-      <section className="mt-10">
-        <h2 className="kicker">{h.challengers}</h2>
-        <ol className="mt-4 grid grid-cols-2 gap-3 lg:grid-cols-4">
-          {rest.slice(0, 4).map((tm, i) => (
-            <li key={tm.id}>
-              <Link href={href(locale, `/teams/${tm.id}`)} className="panel group flex h-full items-center gap-4 p-4 transition-colors hover:border-gold md:p-5">
-                <TeamLogo id={tm.id} size={60} className="transition-transform group-hover:scale-105" />
-                <div className="min-w-0">
-                  <p className="text-caption text-faint">#{i + 2}</p>
-                  <p className="truncate text-body font-semibold text-fg">{name(tm.id)}</p>
-                  <p className="gold-num text-h1 leading-tight">{pct(tm.championship_probability)}</p>
-                </div>
-              </Link>
-            </li>
-          ))}
-        </ol>
-      </section>
-
-      {/* The field */}
+      {/* Championship field: probability controls identity scale, without duplicating a second ranking. */}
       <section className="panel mt-10 p-6 md:p-10">
         <div className="flex flex-wrap items-end justify-between gap-2">
           <h2 className="text-h2 font-semibold">{h.field}</h2>
           <p className="text-caption text-mute">{h.fieldSub}</p>
         </div>
         <div className="gold-rule mt-6" />
-        <ol className="mt-8 grid grid-cols-3 items-end gap-x-3 gap-y-8 sm:grid-cols-4 lg:grid-cols-12">
-          {teamsByChampion.map((tm) => {
-            const size = Math.round(40 + 56 * Math.sqrt(tm.championship_probability / maxP));
+        <ol className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-9">
+          {teamsByChampion.map((tm, index) => {
+            const featured = index < 3;
+            const size = featured
+              ? Math.round(72 + 40 * Math.sqrt(tm.championship_probability / maxP))
+              : Math.round(38 + 24 * Math.sqrt(tm.championship_probability / maxP));
             return (
-              <li key={tm.id}>
-                <Link href={href(locale, `/teams/${tm.id}`)} className="group flex flex-col items-center text-center">
-                  <span className="flex h-24 items-end">
+              <li key={tm.id} className={featured ? "lg:col-span-3" : "lg:col-span-1"}>
+                <Link href={href(locale, `/teams/${tm.id}`)} className={`group relative flex h-full flex-col items-center overflow-hidden rounded-xl text-center transition-colors ${featured ? "min-h-52 justify-center bg-ink-850/75 p-5 hover:bg-ink-800/70" : "min-h-36 justify-end px-2 py-4 hover:bg-ink-850/60"}`}>
+                  <span className="absolute left-3 top-3 num text-caption text-faint">#{index + 1}</span>
+                  <span className={`flex items-end ${featured ? "h-28" : "h-16"}`}>
                     <TeamLogo id={tm.id} size={size} priority={tm.id === leader.id} className="opacity-90 transition group-hover:scale-110 group-hover:opacity-100" />
                   </span>
-                  <span className={`num mt-3 text-body font-semibold ${tm.id === leader.id ? "text-gold-soft" : "text-fg"}`}>{pct(tm.championship_probability)}</span>
-                  <span className="mt-0.5 w-full truncate text-micro text-mute">{teamName(locale, presentation(tm.id).shortName, presentation(tm.id).displayNameEn)}</span>
+                  <span className={`num mt-3 font-semibold ${featured ? "text-h1" : "text-body"} ${tm.id === leader.id ? "text-gold-soft" : "text-fg"}`}>{pct(tm.championship_probability)}</span>
+                  <span className={`mt-0.5 w-full truncate text-mute ${featured ? "text-caption" : "text-micro"}`}>{teamName(locale, presentation(tm.id).shortName, presentation(tm.id).displayNameEn)}</span>
                 </Link>
               </li>
             );

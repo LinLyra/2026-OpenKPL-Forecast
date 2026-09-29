@@ -53,8 +53,8 @@ function ribbon(x0: number, a0: number, b0: number, x1: number, a1: number, b1: 
 }
 
 export function ProbabilityFlow({
-  sim, locale, hovered, onHover,
-}: { sim: SimTeam; locale: Locale; hovered: FlowNodeId | null; onHover: (id: FlowNodeId | null) => void }) {
+  sim, locale, active, onHover, onSelect,
+}: { sim: SimTeam; locale: Locale; active: FlowNodeId | null; onHover: (id: FlowNodeId | null) => void; onSelect: (id: FlowNodeId) => void }) {
   const t = dict(locale);
   const color = "#d9b36a";
   const { nodes, links } = flowModel(sim);
@@ -75,9 +75,23 @@ export function ProbabilityFlow({
     runner: t.stages.runnerUp,
     champion: t.stages.champion,
   };
+  const ancestors = new Set<FlowNodeId>();
+  if (active) {
+    ancestors.add(active);
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (const [from, to] of links) {
+        if (ancestors.has(to) && !ancestors.has(from)) {
+          ancestors.add(from);
+          changed = true;
+        }
+      }
+    }
+  }
 
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} className="w-full min-w-[760px]" role="img" aria-label={t.tournament.flow}>
+    <svg viewBox={`0 0 ${W} ${H}`} className="w-full min-w-[760px]" role="group" aria-label={t.tournament.flow}>
       <defs>
         <linearGradient id="flow-risk" x1="0" x2="0" y1="0" y2="1">
           <stop offset="0" stopColor={RISK} stopOpacity="0.08" />
@@ -95,7 +109,7 @@ export function ProbabilityFlow({
         const y0 = top(na) + oa, y1 = top(nb) + ib;
         const d = ribbon(na.x + NODE_W, y0, y0 + v * SCALE, nb.x, y1, y1 + v * SCALE);
         const risk = !!nb.terminal;
-        const lit = hovered === null || hovered === a || hovered === b;
+        const lit = active === null || (ancestors.has(a) && ancestors.has(b));
         return (
           <motion.path
             key={`${a}-${b}`}
@@ -121,10 +135,11 @@ export function ProbabilityFlow({
           label={labels[n.id]}
           value={pct(n.value)}
           color={n.terminal ? RISK : n.id === "champion" ? "#f3dca4" : color}
-          active={hovered === n.id}
+          active={active === n.id}
           terminal={n.terminal}
           labelSide={n.labelSide}
           onHover={(id) => onHover(id as FlowNodeId | null)}
+          onSelect={(id) => onSelect(id as FlowNodeId)}
         />
       ))}
     </svg>
