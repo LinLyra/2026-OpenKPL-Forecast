@@ -46,10 +46,10 @@ export const en: Dict = {
   tournament: {
     kicker: "Format & paths",
     title: "Road to the Title",
-    lead: "The format is fixed; the future bracket is not. Pick any two teams for a series probability, or follow one team from Stage 1 to the Grand Final.",
+    lead: "Across one million tournament simulations, this is how a team moves through the real KPL structure: Stage 1 → direct / breakthrough → knockout → final → champion.",
     structure: "Official format",
-    flow: "One million simulated roads to the title",
-    flowSub: "Ribbon width is the share of simulations that followed that path. Select a team and click a stage for detail.",
+    flow: "Tournament probability map",
+    flowSub: "Each path width reflects the frequency that stage actually appears in the simulation; select a team and click a stage for detail.",
     select: "Select team",
     hover: "Hover a stage for detail",
     risk: "Path risk",

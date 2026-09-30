@@ -31,11 +31,11 @@ export function MethodologyView({ locale }: { locale: Locale }) {
       <PageHeader kicker={m.kicker} title={m.title} lead={m.lead} />
       <div className="mt-10 space-y-6">
         <Section n="01" title={m.concept.title} body={m.concept.body}>
-          <ol className="grid h-full gap-3 sm:grid-cols-3">
+          <ol className="grid h-full auto-rows-fr gap-3 sm:grid-cols-3">
             {m.concept.points.map((p, i) => (
-              <li key={p} className="flex flex-col justify-between rounded-xl bg-ink-850/80 p-5">
+              <li key={p} className="flex h-full min-h-[200px] flex-col justify-start rounded-xl bg-ink-850/80 p-5">
                 <span className="num text-caption text-gold">0{i + 1}</span>
-                <span className="mt-8 text-h3 font-semibold">{p}</span>
+                <span className="mt-8 text-h3 font-semibold leading-tight">{p}</span>
               </li>
             ))}
           </ol>
